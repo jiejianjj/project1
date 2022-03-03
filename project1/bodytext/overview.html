@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>karaoke</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Murecho:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="script.js"></script>
+
+    <style>
+      * {
+        margin: 0;
+      }
+      body {
+        margin: 20px;
+        cursor: url("../karaoke.png"), auto;
+      }
+      article {
+        height: 94vh;
+        overflow: scroll;
+        margin: 0 20px 0 20px;
+        
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
+      }
+      #chinese {
+        grid-column: 2/4;
+        font-family: tensentype-ruihei, sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 16pt;
+        line-height: 22pt;
+        text-indent: 2em;
+        color:CornflowerBlue;
+      }
+      #english {
+        grid-column: 4/6;
+        font-family: hoss-round, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 17pt;
+        line-height: 22pt;
+        text-indent: 17pt;
+        color:	DarkSeaGreen;
+      }
+      #japanese {
+        grid-column: 6/8;
+        font-family: "Murecho", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 16pt;
+        line-height: 22pt;
+        text-indent: 2em;
+        color:MediumPurple;
+      }
+      h2 {
+        color: DarkOrange;
+        font-size: 30pt;
+        font-weight: 600;
+        margin-top: 22pt;
+        margin-bottom: 22pt;
+        text-indent: 0px;
+      }
+      h3 {
+        
+        color: Salmon;
+        font-size: 24pt;
+        font-weight: 500;
+        margin-top: 22pt;
+        margin-bottom: 22pt;
+        text-indent: 0px;
+        line-height: 30px;
+      }
+      span {
+        cursor: pointer;
+        position: relative;
+        top: -0.4em;
+        font-size: 80%;
+        color: Tomato;
+      }
+      footer{
+        color: 	HotPink;
+      }
+      .c{
+        font-family: tensentype-ruihei, sans-serif;
+        font-weight: 300;
+        font-size: 14pt;
+        align-self:end;
+        grid-column: 5/8;
+      }
+      .e{
+        font-family: hoss-round, sans-serif;
+        font-weight: 400;
+        font-size: 15pt;
+        align-self:end;
+        grid-column: 2/4;
+      }
+      .j{
+        font-family: "Murecho", sans-serif;
+        font-weight: 300;
+        font-size: 14pt;
+        align-self:end;
+        grid-column: 2/5;
+      }
+      #cc1, #cc2, #cc3, #cc4, #cc5{
+        display: none;
+      }
+      figure {
+        display: none;
+      }
+      .imgjp {
+        height: 80vh;
+      }
+      .figurejp {
+        font-family: "Murecho", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        text-align: center;
+        font-size: 14pt;
+        text-indent: 0;
+      }
+    </style>
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "qvn5qjj",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <article id="chinese">
+        <p>
+          卡拉OK，是源自日本关西地方的娛樂性質歌唱活動，通常是在播放預錄在錄影帶之類儲存媒介上、沒有主唱人聲的音樂伴奏同時，在電視螢幕上同步播放有著節拍提示的歌詞，然後由參與者邊看著歌詞邊持麥克風歌唱。其日語原名意為「無人樂隊」。自從1971年日本人井上大佑發明了最早的音樂伴唱帶後，它已成為現今最受歡迎的大眾休閒娛樂方式之一。
+        </p>
+
+        <p>
+          卡拉OK的名字源自於日文，其中卡拉（カラ）是漢字「空」之訓讀，OK（オケ）則是管弦樂團之諧音，合起來意指唱歌時沒有真正的樂隊伴唱，只有影音伴唱。但與華語圈的習慣相反，日本的卡拉OK廳并不播放原声原影的卡拉OK伴唱帶<span id="c1">[1]</span>。JVC曾於1980年代在中國大陸以「客楽我歌」註冊產品商標。<span
+            id= "c2">[2]</span
+          >
+        </p>
+        <h2>歷史</h2>
+        <h3>1970年代</h3>
+        <p>
+          1971年，日本神戶市的音樂家井上大佑發明了第一部卡拉OK機器<span id="c3">[3]</span>（另有說法為1967年日電工業的根岸重一最早销售，或是1968年浜崎厳）。<span
+            id="c4">[4]</span
+          ><span id="c5">[5]</span>
+        </p>
+        <h3>1990年代</h3>
+        <p>
+          卡拉OK面世之後，由於卡拉OK器材和伴唱器材的商業化，以及歌曲著作權等問題的阻礙，沉寂了很長時間，未能得以普及，而井上大佑也未能因發明卡拉OK得到專利權而獲利。
+        </p>
+        <p>
+          1980年代中後期，有選曲功能的CD音響存儲形式和VCD音影存儲形式的成熟，取代錄音錄影帶的捲帶搜索功能，卡拉OK才能得到實質性發展。
+        </p>
+        <p>
+          在日本大規模流行之後，很快，卡拉OK也在1989年傳到了東亞以及東南亞，接著傳到了世界的其他地方。
+        </p>
+        <p>
+          卡拉OK的發展普及，有賴於字幕VCD的大量生產。VCD生產線及技術當時由日本壟斷。簡體中文的卡拉OK用VCD碟的生產基地集中在台灣、香港、華南地區的合資工廠。
+        </p>
+        <p>
+          1989年中國大陸因反對資產階級自由化，卡拉OK器材和字幕VCD碟的生產和進口受到嚴格限制。1991年以後，卡拉OK在中國大陸才有迅速發展的機會。
+        </p>
+        <h3>2010年代</h3>
+        <p>
+          隨著寬頻網路與手持設備的硬體更加成熟，利用雲端技術將卡拉OK網路化，透過手持設備即可下載影音伴唱檔案，使用者可以透過電腦、行動電話或是平板電腦，搭配KTV應用程式進行歌唱。
+        </p>
+        <p>
+          KTV
+          APP與卡拉OK最大的相異之處，在於使用的麥克風差別，受限於電腦與手持設備僅提供小電容式的麥克風，因此收音效果無法與卡拉OK相比，卡拉OK所採用的收音設備為動圈式麥克風，電腦與手持設備必須透過動圈式麥克風轉接器，才能搭配動圈式使用，讓收音效果與卡拉OK一樣。
+        </p>
+        <h2>卡拉OK店的運作</h2>
+        <p>
+          卡拉OK除了在日本本土非常流行之外，也進一步地推廣到其他許多地區，包括韓國、台灣、香港及中国大陆。1988年卡拉OK傳入香港並迅速發展。由於大批香港商人赴中國大陸地區投資經商，也將卡拉OK文化傳播開來。中國大陸第一間卡拉OK是1990年在海南省以中外合資形式出現。隨著翻版碟大量生產和音響器材走私進口，卡拉OK瞬間開遍中國大陸所有大中城市。並於1991年中起，向縣城以下地區發展，成為色情活動的主要場所，也有些發展成夜總會。
+        </p>
+        <p>
+          台灣有商人更進一步將卡拉OK結合當時市面上非常流行的MTV，而變成改良式包廂型態的卡拉OK，稱為「KTV」。KTV的概念在傳回日本本土後也逐漸受到歡迎，成為近年來主流的經營形式，稱為「卡拉OK包廂」。
+        </p>
+        <p>
+          隨著互聯網以及Youtube、优酷、土豆网等媒體分享網站普及，有網民會把KTV片段放至網上，或為沒有卡啦OK字幕的MV加上字幕，甚至出現網上卡啦OK系統（如巨星、全民K歌、酷我K歌、呱呱K歌伴侣、爱吼网、哆来咪发KTV、K米网、爱卡拉、爱唱久久、CarolOK雲端行動KTV等）。但此類作法大都違反了著作權法規或是遊走於合法邊緣。
+        </p>
+        <p>
+          另外大型卡拉OK店與投幣式卡拉OK店兩者間的消費價位相差甚距，最主要的原因是房間裝潢設計的質感、歌曲的新鮮度與客人歌唱音量彼此間的干擾程度，大型卡拉OK店偏向多機密閉式裝潢，投幣式卡拉OK店偏向單機半開放式廣場。
+        </p>
+      </article>
+      
+      <article id="english">
+        <p>
+          Karaoke is a type of interactive entertainment usually offered in
+          clubs and bars, where people sing along to recorded music using a
+          microphone. The music is an instrumental version of a well-known
+          popular song. Lyrics are usually displayed on a video screen, along
+          with a moving symbol, changing colour, or music video images, to guide
+          the singer. In Chinese-speaking countries and regions such as mainland
+          China, Hong Kong, Taiwan and Singapore, a karaoke box is called a KTV.
+          The global karaoke market has been estimated to be worth nearly $10
+          billion.<span>[1]</span>
+        </p>
+        <h2>History</h2>
+        <h3>1960s: Development of Audio-Visual-Recording Devices</h3>
+        <p>
+          From 1961 to 1966, the American TV network NBC carried a karaoke-like
+          series, Sing Along with Mitch, featuring host Mitch Miller and a
+          chorus, which superimposed the lyrics to their songs near the bottom
+          of the TV screen for home audience participation.<span>[2]</span> The
+          primary difference between Karaoke and sing-along songs is the absence
+          of the lead vocalist.
+        </p>
+        <p>
+          Sing-alongs (present since the beginning of singing) fundamentally
+          changed with the introduction of new technology. In the late 1960s and
+          into the 1970s, stored audible materials began to dominate the music
+          recording industry and revolutionized the portability and ease of use
+          of band and instrumental music by musicians and entertainers as the
+          demand for entertainers increased globally. This may have been
+          attributable to the introduction of music cassette tapes, technology
+          that arose from the need to customize music recordings and the desire
+          for a “handy” format that would allow fast and convenient duplication
+          of music and thereby meet the requirements of the entertainers’
+          lifestyles and the “footloose” character of the entertainment
+          industry.
+        </p>
+        <h3>1970s: Development of the Karaoke Machine</h3>
+        <p>
+          The karaoke-styled machine was developed in various places in Japan.
+          Even before the Invention of the first machines, the word “karaoke”
+          had long been used in Japan’s entertainment industry to refer to the
+          use of instrumental recordings as backing tracks in situations when a
+          live band could not be arranged for a singer.<span>[3]</span> Japanese
+          engineer Shigeichi Negishi, who ran a consumer electronics assembly
+          business in Tokyo, made the first prototype in 1967.<span>[4]</span
+          ><span>[5]</span><span>[6]</span> He subsequently began mass producing
+          coin-operated versions under the brand name “Sparko Box,” making it
+          the first commercially available karaoke machine. For media, it used
+          8-track cassette tapes of commercially available instrumental
+          recordings. Lyrics were provided in a paper booklet.<span>[7]</span>
+          However, he ran into distribution troubles and ceased production of
+          the Sparko Box shortly thereafter.<span>[8]</span> Another early
+          pioneer was Toshiharu Yamashita, who worked as a singing coach, and in
+          1970 sold an 8-track playback deck with microphone for sing-alongs.
+        </p>
+        <p>
+          In 1971, nightclub musician Daisuke Inoue<span>[9]</span>
+          independently invented his own karaoke machine in the city of
+          Kobe.<span>[10]</span><span>[11]</span> His biggest contribution was
+          understanding the difficulty amateurs had in singing pop songs,
+          recording his own versions of popular songs in keys that made them
+          easier for casual singers. As such he also included a rudimentary
+          reverb function to help mask singers’ deficiencies. For these reasons,
+          he is often considered to be the inventor of the modern business model
+          for karaoke, even though he was not the first to create a machine and
+          did not, like Negishi or Yamashita, file a patent.<span>[12]</span>
+          Music has long been part of Japan’s nightlife, and particularly so in
+          the postwar era, when a variety of establishments such as cabarets and
+          hostess clubs emerged to serve the needs of salarymen unwinding and
+          entertaining clients. Music, whether performed for listening or
+          singing along, played a key role.<span>[13]</span> Inoue, a
+          bandleader, drummer, and Electone keyboardist, specialized in leading
+          sing-alongs at nightclubs in Sannnomiya, the entertainment district of
+          the city of Kobe. He grew so popular that he became overbooked, and
+          began recording instrumentals for clients when he could not personally
+          perform for them. Realizing the potential for the market, he
+          commissioned a coin-operated machine that metered out several minutes
+          of singing time. Like Negishi’s, it was based on an 8-Track cassette
+          deck, and Inoue called it the “8 Juke.”<span>[14]</span> Inoue loaned
+          the machines to establishments for free in exchange for a portion of
+          the monthly earnings from the machines.<span>[15]</span> He placed the
+          first 8 Jukes in Sannomiya’s “snack bars,” but they initially failed
+          to take off. Inoue then hired hostesses to ostentatiously sing on
+          them, which successfully sparked interest. This also caused a great
+          deal of friction with Inoue’s fellow musicians, who saw it as drawing
+          customers away from them. Nevertheless karaoke spread throughout Kobe,
+          then, over the course of the Seventies, all of Japan as major
+          manufacturers such as JVC began producing their own versions of the
+          singing machine.<span>[16]</span> Karaoke was long performed mainly in
+          bars and hostess clubs in front of other patrons, but in the Eighties,
+          a new style with private rooms emerged, called karaoke boxes. This
+          became the dominant form of karaoke performance in Japan. In 2004,
+          Daisuke Inoue was awarded the tongue-in-cheek Ig Nobel Peace Prize for
+          inventing karaoke, “thereby providing an entirely new way for people
+          to learn to tolerate each other.”<span>[17]</span>
+        </p>
+        <p>
+          The patent holder of the karaoke machine is Roberto del Rosario, who
+          is from the Philippines. He developed the karaoke’s sing-along system
+          in 1975 and is recognized as the sole holder of a patent for a karaoke
+          system in the world.<span>[18]</span>
+        </p>
+        <h3>Later Developments</h3>
+        <p>
+          Shortly after the development of the LaserDisc, Pioneer started to
+          offer Video Karaoke machines in the 1980s. These are capable of
+          displaying lyrics over a video that accompanies the music.<span
+            >[19]</span
+          ><span>[20]</span>
+        </p>
+        <p>
+          In 1992, a scientist named Yuichi Yasutomo created a networked karaoke
+          system for Brother Industries. Called “tsushin karaoke”
+          (“communications karaoke”) it served up songs in MIDI format via phone
+          lines to modem-equipped karaoke machines. This new technology swept
+          Japan; by 1998, 94% of karaoke was being sung on networked karaoke
+          machines.<span>[21]</span> As an early form of music on demand, it
+          could be called the first successful audio streaming service. It also
+          allowed for big data analysis of songs popularity in realtime.<span
+            >[22]</span
+          >
+        </p>
+        <p>
+          Karaoke soon spread to the rest of Asia and other countries all over
+          the world. In-home karaoke machines soon followed but lacked success
+          in the American and Canadian markets. When creators became aware of
+          this problem, karaoke machines were no longer being sold strictly for
+          the purpose of karaoke but as home theater systems to enhance
+          television watching to “movie theater like quality”. Home theater
+          systems took off, and karaoke went from being the main purpose of the
+          stereo system to a side feature.
+        </p>
+        <p>
+          As more music became available for karaoke machines, more people
+          within the industry saw karaoke as a profitable form of lounge and
+          nightclub entertainment. It is not uncommon for some bars to have
+          karaoke performances seven nights a week.<span>[23]</span> commonly
+          with high-end sound equipment superior to the small, stand-alone
+          consumer versions. Dance floors and lighting effects are also becoming
+          common sights in karaoke bars. Lyrics are often displayed on multiple
+          television screens around the bar.
+        </p>
+        <h2>Technology</h2>
+        <p>
+          A basic karaoke machine consists of a music player, microphone inputs,
+          a means of altering the pitch of the played music, and an audio
+          output. Some low-end machines attempt to provide vocal suppression so
+          that one can feed regular songs into the machine and remove the voice
+          of the original singer; however, this is rarely effective. Most common
+          machines are CD+G, Laser Disc, VCD or DVD players with microphone
+          inputs and an audio mixer built in. CD+G players use a special track
+          called subcode to encode the lyrics and pictures displayed on the
+          screen while other formats natively display both audio and video.
+        </p>
+        <p>
+          Most karaoke machines have technology that electronically changes the
+          pitch of the music so that amateur singers can choose a key that is
+          appropriate for their vocal range, while maintaining the original
+          tempo of the song. (Old systems which used cassettes changed the pitch
+          by altering playback speed, but none are still on the market, and
+          their commercial use is virtually nonexistent.)
+        </p>
+        <p>
+          A popular game using karaoke is to type in a random number and call up
+          a song, which participants attempt to sing. In some machines, this
+          game is pre-programmed and may be limited to a genre so that they
+          cannot call up an obscure national anthem that none of the
+          participants can sing. This game has come to be called “Kamikaze
+          Karaoke” or “karaoke Roulette” in some parts of the United States and
+          Canada.
+        </p>
+        <p>
+          Many low-end entertainment systems have a karaoke mode that attempts
+          to remove the vocal track from regular audio CDs, using an Out Of
+          Phase Stereo (OOPS) technique. This is done by center channel
+          extraction, which exploits the fact that in most stereo recordings the
+          vocals are in the center. This means that the voice, as part of the
+          music, has equal volume on both stereo channels and no phase
+          difference. To get the quasi-karaoke (mono) track, the left channel of
+          the original audio is subtracted from the right channel. The Sega
+          Saturn also has a “mute vocals” feature that is based on the same
+          principle and is also able to adjust the pitch of the song to match
+          the singer’s vocal range.
+        </p>
+        <p>
+          This crude approach results in the often-poor performance of voice
+          removal. Common effects are hearing the reverb effects on the voice
+          track (due to stereo reverb on the vocals not being in the center);
+          also, other instruments (snare/bass drum, bass guitar and solo
+          instruments) that happen to be mixed into the center get removed,
+          degrading this approach to hardly more than a gimmick in those
+          devices. Recent years have seen the development of new techniques
+          based on the fast Fourier transform. Although still not perfect, the
+          results are usually much better than the old technique, because the
+          stereo left-right comparison can be done on individual frequencies.
+        </p>
+      </article>
+      <figure class="figurejp">
+        <img class="imgjp" src="KaraokeMachine.jpeg" />
+        <figcaption>カラオケの機械</figcaption>
+      </figure>
+      <article id="japanese">
+        <p>
+          通常、楽曲の伴奏部分だけを「事前に記録」している記録媒体（音楽テープやディスク等）を機械で再生して演奏する。現場では開始時に機械を操作するだけで後は自動的に行われる。
+          この形式は日本で生まれたもので、カラオケが娯楽として普及するにつれ、「カラオケ」を使用して歌を歌うための装置、さらにはその装置を使って歌う行為や、カラオケボックスなど歌うための場所を提供している店舗などを「カラオケ」と略して指すようにもなった。カラオケは、歌って楽しみストレスを発散させたりするため娯楽に分類され、レジャー白書で統計を取る一項目ともなった。娯楽向けのカラオケは純粋に伴奏だけではなく、歌いやすくするためのボーカル用メロディが収録されている。また、歌唱のための娯楽用カラオケとは別に、楽器練習用に特定パートだけを除いたカラオケも教材として普及している。
+        </p>
+        <h2>カラオケの発祥</h2>
+        <p>
+          カラオケのカラは「空」、オケは「オーケストラ」の略で、楽団・楽隊による生演奏ではなく、レコードやテープで代用することを指し、本来は放送業界で使われていた用語であった。一説にはNHK交響楽団員らの雑談から出た言葉という。録音機材が発達する前は放送は基本的に生放送で行われていたが、次第に録音素材が用いられるようになり、費用がかかるオーケストラを準備させずとも、あらかじめ録音した「カラオケ」に歌手の唄を重ねることが技術的に可能になると、番組制作経費の削減目的で普及した。カラオケという言葉が普及する以前は「空演奏」と表現することが多かった。現在でもこの意味での「カラオケ」は放送業界用語として使われている。
+        </p>
+        <p>
+          カラオケ・空演奏は、元々は歌を歌う際に本来居るべきオーケストラがいない、という意味なので、カラオケ用の音源自体はマイナスワンと言われていたこともあった（曲から、1パートのみ削減されていることから）。<span
+            >[1]</span
+          >
+        </p>
+        <p>
+          1970年以前には、日本ではすでにハードウェアとしてはマイク入力つきの8トラック磁気テープ式小型ジュークボックスが、また、ソフトウェアとしては伴奏用ミュージックテープが販売され、これらを使って歌を歌わせる店が出現していた。<span>[2]</span>初期の8トラック式小型ジュークボックス装置としては、1967年に発売された根岸重一による国際商品のミュージックボックスや、1968年に発売された浜崎厳によるミニジューク等がある。<span
+            >[3]</span
+          ><span>[4]</span>
+        </p>
+        <p>
+          バンドマン出身の井上大佑は、カラオケ関連サービスと専用装置を1971年に発明したと主張している。井上は、8トラックテープ再生機にあらかじめ用意された調やテンポから選択して再生・歌唱できるテープを添付し「8
+          Juke（エイトジューク）」と名づけてリース販売し、人気を博した。初期にはコイン式の有料再生装置で、テープ1本当り4曲、10本セットの計40曲で、料金は5分で100円でスナック等に設置された。2010年秋、井上の著書『カラオケを創（つく）った男』の著作権が2万口に分割、高額で権利を売り付ける業者が表れていることが判明し問題となった。<span
+            >[5]</span
+          >
+        </p>
+        <p>
+          当初は音声入力にエコーを掛ける程度の付加機能だったが、その後はキー変更やテンポ調整などに対応し歌いやすくしたものが主流になり、さらに採点や音声変換など、遊びの要素も含めた多機能化が進んでいる。選曲もリモコン式から、バーコード入力、タッチパネル式端末と発達した。また歌詞の表示も、当初は歌声喫茶と同様に「歌本」や歌詞カードを見ながら歌っていたが、レーザーディスク普及後はモニターに歌詞が字幕スーパーの形で表示され、歌うべき部分の色を変えて歌い手をサポートする仕組みが一般化している。
+        </p>
+      </article>
+      <footer class="c">
+        <p id="cc1"><span>[1]</span>潘淑红. 《卡拉OK著作权纠纷案法理评析》. 《法学》 (华东政法大学).</p>
+        <p id="cc2"><span>[2]</span>客乐我歌. </p>
+        <p id="cc3"><span>[3]</span>Who Invented the Karaoke Machine? Events-in-Music.com</p>
+        <p id="cc4"><span>[4]</span>烏賀陽弘道 『カラオケ秘史―創意工夫の世界革命―』</p>
+        <p id="cc5"><span>[5]</span>野口恒 『カラオケ文化産業論』</p>
+      </footer>
+      <footer class="e">
+
+      </footer>
+    </div>
+  
+  </body>
+</html>
