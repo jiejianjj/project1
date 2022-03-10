@@ -53,18 +53,16 @@
         box-sizing: border-box;
       }
       body {
-
         cursor: url("../karaoke.png"), auto;
       }
       article {
         height: 100vh;
         overflow: scroll;
         padding: 20px 20px 0 20px;
-
       }
       .container {
         display: grid;
-        grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
+        grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
       }
       #chinese {
         grid-column: 2/4;
@@ -72,7 +70,7 @@
         font-weight: 200;
         font-style: normal;
         font-size: 16pt;
-        line-height: 22pt;
+        line-height: 1.375em;
         text-indent: 2em;
         color: CornflowerBlue;
       }
@@ -82,8 +80,8 @@
         font-weight: 300;
         font-style: normal;
         font-size: 17pt;
-        line-height: 22pt;
-        text-indent: 17pt;
+        line-height: 1.295em;
+        text-indent: 1em;
         color: DarkSeaGreen;
       }
       #japanese {
@@ -92,11 +90,12 @@
         font-weight: 300;
         font-style: normal;
         font-size: 16pt;
-        line-height: 22pt;
+        line-height: 1.375em;
         text-indent: 2em;
         color: MediumPurple;
       }
       h2 {
+        font-family: "Murecho", sans-serif;
         color: DarkOrange;
         font-size: 30pt;
         font-weight: 600;
@@ -106,6 +105,7 @@
         line-height: 40px;
       }
       h3 {
+        font-family: "Murecho", sans-serif;
         color: Salmon;
         font-size: 24pt;
         font-weight: 500;
@@ -121,62 +121,171 @@
         font-size: 80%;
         color: Tomato;
       }
-      footer {
-        color: HotPink;
+      .caption {
+        grid-column: 8/10;
       }
       .c {
         font-family: tensentype-ruihei, sans-serif;
         font-weight: 300;
-        font-size: 14pt;
-        align-self: end;
-        grid-column: 5/8;
+        font-size: 12pt;
+        color: CornflowerBlue;
       }
       .e {
         font-family: hoss-round, sans-serif;
         font-weight: 400;
-        font-size: 15pt;
-        align-self: end;
-        grid-column: 2/4;
+        font-size: 13pt;
+        color: DarkSeaGreen;
       }
       .j {
         font-family: "Murecho", sans-serif;
         font-weight: 300;
-        font-size: 14pt;
-        align-self: end;
-        grid-column: 2/5;
+        font-size: 12pt;
+        color: MediumPurple;
       }
       #cc1,
       #cc2,
       #cc3,
       #cc4,
-      #cc5 {
+      #cc5,
+      #ee1,
+      #ee2,
+      #ee3,
+      #ee4,
+      #ee5,
+      #ee6,
+      #ee7,
+      #ee8,
+      #ee9,
+      #ee10,
+      #ee11,
+      #ee12,
+      #ee13,
+      #ee14,
+      #ee15,
+      #ee16,
+      #ee17,
+      #ee18,
+      #ee19,
+      #ee20,
+      #ee21,
+      #ee22,
+      #ee23,
+      #jj1,
+      #jj2,
+      #jj3,
+      #jj4,
+      #jj5 {
         display: none;
       }
-
+      a,
+      a:visited {
+        color: inherit;
+      }
       figure {
-        display: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
       }
       img {
         max-width: 100%;
         max-height: 80vh;
       }
-      .figurejp {
-        font-family: "Murecho", sans-serif;
+      .figurecn {
+        font-family: tensentype-ruihei, sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        text-align: center;
+        font-size: 13pt;
+        text-indent: 0;
+      }
+      .figureen {
+        font-family: hoss-round, sans-serif;
         font-weight: 300;
         font-style: italic;
         text-align: center;
         font-size: 14pt;
         text-indent: 0;
       }
+      .figurejp {
+        font-family: "Murecho", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        text-align: center;
+        font-size: 13pt;
+        text-indent: 0;
+      }
+      .btn-group{
+        display: none;
+        position: fixed;
+        bottom: 50pt;
+        left: 20pt;
+      }
+      button {
+        border-radius: 100%;
+        z-index: 5;
+        border: none;
+        color: white;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 0px;
+      }
+
+      #showc {
+        font-family: tensentype-ruihei, sans-serif;
+        background-color: CornflowerBlue;
+      }
+      #showe {
+        font-family: hoss-round, sans-serif;
+        background-color: DarkSeaGreen;
+      }
+      #showj {
+        font-family: "Murecho", sans-serif;
+        background-color: MediumPurple;
+      }
+      @media only screen and (max-width: 600px) {
+        .container {
+          display: block;
+        }
+        #chinese,
+        #japanese,
+        #english {
+          display: none;
+        }
+        #chinese,
+        #japanese {
+          font-size: 14pt;
+        }
+        #english {
+          font-size: 13pt;
+        }
+        h2{
+          font-size: 24pt;
+        }
+        h3{
+          font-size:20pt;
+        }
+        .caption {
+          display: inline-block;
+          height: inherit;
+        }
+        .btn-group{
+          display: block;
+        }
+      }
     </style>
   </head>
   <body>
+    <div class="btn-group"><button id="showc">中</button>
+      <button id="showe">EN</button>
+      <button id="showj">日</button></div>
     <div class="container">
       <article id="chinese">
         <p>
           卡拉OK，是源自日本关西地方的娛樂性質歌唱活動，通常是在播放預錄在錄影帶之類儲存媒介上、沒有主唱人聲的音樂伴奏同時，在電視螢幕上同步播放有著節拍提示的歌詞，然後由參與者邊看著歌詞邊持麥克風歌唱。其日語原名意為「無人樂隊」。自從1971年日本人井上大佑發明了最早的音樂伴唱帶後，它已成為現今最受歡迎的大眾休閒娛樂方式之一。
         </p>
-
         <p>
           卡拉OK的名字源自於日文，其中卡拉（カラ）是漢字「空」之訓讀，OK（オケ）則是管弦樂團之諧音，合起來意指唱歌時沒有真正的樂隊伴唱，只有影音伴唱。但與華語圈的習慣相反，日本的卡拉OK廳并不播放原声原影的卡拉OK伴唱帶<span
             id="c1"
@@ -208,6 +317,10 @@
         <p>
           卡拉OK的發展普及，有賴於字幕VCD的大量生產。VCD生產線及技術當時由日本壟斷。簡體中文的卡拉OK用VCD碟的生產基地集中在台灣、香港、華南地區的合資工廠。
         </p>
+        <figure class="figurecn">
+          <img src="Taipei_KTV-Eingangshalle.jpeg" />
+          <figcaption>台北錢櫃PartyWorld忠孝店的入口</figcaption>
+        </figure>
         <p>
           1989年中國大陸因反對資產階級自由化，卡拉OK器材和字幕VCD碟的生產和進口受到嚴格限制。1991年以後，卡拉OK在中國大陸才有迅速發展的機會。
         </p>
@@ -215,6 +328,10 @@
         <p>
           隨著寬頻網路與手持設備的硬體更加成熟，利用雲端技術將卡拉OK網路化，透過手持設備即可下載影音伴唱檔案，使用者可以透過電腦、行動電話或是平板電腦，搭配KTV應用程式進行歌唱。
         </p>
+        <figure class="figurecn">
+          <img src="maxresdefault.jpeg" />
+          <figcaption>家用點歌機</figcaption>
+        </figure>
         <p>
           KTV
           APP與卡拉OK最大的相異之處，在於使用的麥克風差別，受限於電腦與手持設備僅提供小電容式的麥克風，因此收音效果無法與卡拉OK相比，卡拉OK所採用的收音設備為動圈式麥克風，電腦與手持設備必須透過動圈式麥克風轉接器，才能搭配動圈式使用，讓收音效果與卡拉OK一樣。
@@ -226,6 +343,12 @@
         <p>
           台灣有商人更進一步將卡拉OK結合當時市面上非常流行的MTV，而變成改良式包廂型態的卡拉OK，稱為「KTV」。KTV的概念在傳回日本本土後也逐漸受到歡迎，成為近年來主流的經營形式，稱為「卡拉OK包廂」。
         </p>
+        <figure class="figurecn">
+          <img
+            src="6f8f39bc-6b92-480d-90d8-42c2e3e88774054ec72d-8985-4421-842d-97f79d161ee4.jpeg"
+          />
+          <figcaption>挚爱纯k（夹带私货）</figcaption>
+        </figure>
         <p>
           隨著互聯網以及Youtube、优酷、土豆网等媒體分享網站普及，有網民會把KTV片段放至網上，或為沒有卡啦OK字幕的MV加上字幕，甚至出現網上卡啦OK系統（如巨星、全民K歌、酷我K歌、呱呱K歌伴侣、爱吼网、哆来咪发KTV、K米网、爱卡拉、爱唱久久、CarolOK雲端行動KTV等）。但此類作法大都違反了著作權法規或是遊走於合法邊緣。
         </p>
@@ -233,7 +356,6 @@
           另外大型卡拉OK店與投幣式卡拉OK店兩者間的消費價位相差甚距，最主要的原因是房間裝潢設計的質感、歌曲的新鮮度與客人歌唱音量彼此間的干擾程度，大型卡拉OK店偏向多機密閉式裝潢，投幣式卡拉OK店偏向單機半開放式廣場。
         </p>
       </article>
-
       <article id="english">
         <p>
           Karaoke is a type of interactive entertainment usually offered in
@@ -244,7 +366,7 @@
           the singer. In Chinese-speaking countries and regions such as mainland
           China, Hong Kong, Taiwan and Singapore, a karaoke box is called a KTV.
           The global karaoke market has been estimated to be worth nearly $10
-          billion.<span>[1]</span>
+          billion.<span id="e1">[1]</span>
         </p>
         <h2>History</h2>
         <h3>1960s: Development of Audio-Visual-Recording Devices</h3>
@@ -252,10 +374,20 @@
           From 1961 to 1966, the American TV network NBC carried a karaoke-like
           series, Sing Along with Mitch, featuring host Mitch Miller and a
           chorus, which superimposed the lyrics to their songs near the bottom
-          of the TV screen for home audience participation.<span>[2]</span> The
-          primary difference between Karaoke and sing-along songs is the absence
-          of the lead vocalist.
+          of the TV screen for home audience participation.<span id="e2"
+            >[2]</span
+          >
+          The primary difference between Karaoke and sing-along songs is the
+          absence of the lead vocalist.
         </p>
+        <figure class="figureen">
+          <img src="1200px-Karaoke-irish-pub.jpeg" />
+          <figcaption>
+            Karaoke in the Irish Pub<a href="http://www.olddubliner.de/">
+              "The Old Dubliner" </a
+            >in Hamburg, Germany, picture taken without flash
+          </figcaption>
+        </figure>
         <p>
           Sing-alongs (present since the beginning of singing) fundamentally
           changed with the introduction of new technology. In the late 1960s and
@@ -276,35 +408,50 @@
           Even before the Invention of the first machines, the word “karaoke”
           had long been used in Japan’s entertainment industry to refer to the
           use of instrumental recordings as backing tracks in situations when a
-          live band could not be arranged for a singer.<span>[3]</span> Japanese
-          engineer Shigeichi Negishi, who ran a consumer electronics assembly
-          business in Tokyo, made the first prototype in 1967.<span>[4]</span
-          ><span>[5]</span><span>[6]</span> He subsequently began mass producing
-          coin-operated versions under the brand name “Sparko Box,” making it
-          the first commercially available karaoke machine. For media, it used
-          8-track cassette tapes of commercially available instrumental
-          recordings. Lyrics were provided in a paper booklet.<span>[7]</span>
-          However, he ran into distribution troubles and ceased production of
-          the Sparko Box shortly thereafter.<span>[8]</span> Another early
-          pioneer was Toshiharu Yamashita, who worked as a singing coach, and in
-          1970 sold an 8-track playback deck with microphone for sing-alongs.
+          live band could not be arranged for a singer.<span id="e3">[3]</span>
+          Japanese engineer Shigeichi Negishi, who ran a consumer electronics
+          assembly business in Tokyo, made the first prototype in 1967.<span
+            id="e4"
+            >[4]</span
+          ><span id="e5">[5]</span><span id="e6">[6]</span> He subsequently
+          began mass producing coin-operated versions under the brand name
+          “Sparko Box,” making it the first commercially available karaoke
+          machine. For media, it used 8-track cassette tapes of commercially
+          available instrumental recordings. Lyrics were provided in a paper
+          booklet.<span id="e7">[7]</span> However, he ran into distribution
+          troubles and ceased production of the Sparko Box shortly
+          thereafter.<span id="e8">[8]</span> Another early pioneer was
+          Toshiharu Yamashita, who worked as a singing coach, and in 1970 sold
+          an 8-track playback deck with microphone for sing-alongs.
         </p>
+        <figure class="figureen">
+          <img src="FEA-Karaoke.jpeg" />
+          <figcaption>
+            <a
+              href="https://www.toledoblade.com/a-e/music-theater-dance/2020/01/05/toledo-karaoke-night-buster-brown-the-distillery/stories/20200105003"
+              >The bygone craze of karaoke still has its fans | The Blade</a
+            >
+          </figcaption>
+        </figure>
         <p>
-          In 1971, nightclub musician Daisuke Inoue<span>[9]</span>
+          In 1971, nightclub musician Daisuke Inoue<span id="e9">[9]</span>
           independently invented his own karaoke machine in the city of
-          Kobe.<span>[10]</span><span>[11]</span> His biggest contribution was
-          understanding the difficulty amateurs had in singing pop songs,
-          recording his own versions of popular songs in keys that made them
-          easier for casual singers. As such he also included a rudimentary
-          reverb function to help mask singers’ deficiencies. For these reasons,
-          he is often considered to be the inventor of the modern business model
-          for karaoke, even though he was not the first to create a machine and
-          did not, like Negishi or Yamashita, file a patent.<span>[12]</span>
+          Kobe.<span id="e10">[10]</span><span id="e11">[11]</span> His biggest
+          contribution was understanding the difficulty amateurs had in singing
+          pop songs, recording his own versions of popular songs in keys that
+          made them easier for casual singers. As such he also included a
+          rudimentary reverb function to help mask singers’ deficiencies. For
+          these reasons, he is often considered to be the inventor of the modern
+          business model for karaoke, even though he was not the first to create
+          a machine and did not, like Negishi or Yamashita, file a patent.<span
+            id="e12"
+            >[12]</span
+          >
           Music has long been part of Japan’s nightlife, and particularly so in
           the postwar era, when a variety of establishments such as cabarets and
           hostess clubs emerged to serve the needs of salarymen unwinding and
           entertaining clients. Music, whether performed for listening or
-          singing along, played a key role.<span>[13]</span> Inoue, a
+          singing along, played a key role.<span id="e13">[13]</span> Inoue, a
           bandleader, drummer, and Electone keyboardist, specialized in leading
           sing-alongs at nightclubs in Sannnomiya, the entertainment district of
           the city of Kobe. He grew so popular that he became overbooked, and
@@ -312,37 +459,41 @@
           perform for them. Realizing the potential for the market, he
           commissioned a coin-operated machine that metered out several minutes
           of singing time. Like Negishi’s, it was based on an 8-Track cassette
-          deck, and Inoue called it the “8 Juke.”<span>[14]</span> Inoue loaned
-          the machines to establishments for free in exchange for a portion of
-          the monthly earnings from the machines.<span>[15]</span> He placed the
-          first 8 Jukes in Sannomiya’s “snack bars,” but they initially failed
-          to take off. Inoue then hired hostesses to ostentatiously sing on
-          them, which successfully sparked interest. This also caused a great
-          deal of friction with Inoue’s fellow musicians, who saw it as drawing
-          customers away from them. Nevertheless karaoke spread throughout Kobe,
-          then, over the course of the Seventies, all of Japan as major
-          manufacturers such as JVC began producing their own versions of the
-          singing machine.<span>[16]</span> Karaoke was long performed mainly in
-          bars and hostess clubs in front of other patrons, but in the Eighties,
-          a new style with private rooms emerged, called karaoke boxes. This
-          became the dominant form of karaoke performance in Japan. In 2004,
-          Daisuke Inoue was awarded the tongue-in-cheek Ig Nobel Peace Prize for
-          inventing karaoke, “thereby providing an entirely new way for people
-          to learn to tolerate each other.”<span>[17]</span>
+          deck, and Inoue called it the “8 Juke.”<span id="e14">[14]</span>
+          Inoue loaned the machines to establishments for free in exchange for a
+          portion of the monthly earnings from the machines.<span id="e15"
+            >[15]</span
+          >
+          He placed the first 8 Jukes in Sannomiya’s “snack bars,” but they
+          initially failed to take off. Inoue then hired hostesses to
+          ostentatiously sing on them, which successfully sparked interest. This
+          also caused a great deal of friction with Inoue’s fellow musicians,
+          who saw it as drawing customers away from them. Nevertheless karaoke
+          spread throughout Kobe, then, over the course of the Seventies, all of
+          Japan as major manufacturers such as JVC began producing their own
+          versions of the singing machine.<span id="e16">[16]</span> Karaoke was
+          long performed mainly in bars and hostess clubs in front of other
+          patrons, but in the Eighties, a new style with private rooms emerged,
+          called karaoke boxes. This became the dominant form of karaoke
+          performance in Japan. In 2004, Daisuke Inoue was awarded the
+          tongue-in-cheek Ig Nobel Peace Prize for inventing karaoke, “thereby
+          providing an entirely new way for people to learn to tolerate each
+          other.”<span id="e17">[17]</span>
         </p>
         <p>
           The patent holder of the karaoke machine is Roberto del Rosario, who
           is from the Philippines. He developed the karaoke’s sing-along system
           in 1975 and is recognized as the sole holder of a patent for a karaoke
-          system in the world.<span>[18]</span>
+          system in the world.<span id="e18">[18]</span>
         </p>
         <h3>Later Developments</h3>
         <p>
           Shortly after the development of the LaserDisc, Pioneer started to
           offer Video Karaoke machines in the 1980s. These are capable of
           displaying lyrics over a video that accompanies the music.<span
+            id="e19"
             >[19]</span
-          ><span>[20]</span>
+          ><span id="e20">[20]</span>
         </p>
         <p>
           In 1992, a scientist named Yuichi Yasutomo created a networked karaoke
@@ -350,11 +501,10 @@
           (“communications karaoke”) it served up songs in MIDI format via phone
           lines to modem-equipped karaoke machines. This new technology swept
           Japan; by 1998, 94% of karaoke was being sung on networked karaoke
-          machines.<span>[21]</span> As an early form of music on demand, it
-          could be called the first successful audio streaming service. It also
-          allowed for big data analysis of songs popularity in realtime.<span
-            >[22]</span
-          >
+          machines.<span id="e21">[21]</span> As an early form of music on
+          demand, it could be called the first successful audio streaming
+          service. It also allowed for big data analysis of songs popularity in
+          realtime.<span id="e22">[22]</span>
         </p>
         <p>
           Karaoke soon spread to the rest of Asia and other countries all over
@@ -370,11 +520,11 @@
           As more music became available for karaoke machines, more people
           within the industry saw karaoke as a profitable form of lounge and
           nightclub entertainment. It is not uncommon for some bars to have
-          karaoke performances seven nights a week.<span>[23]</span> commonly
-          with high-end sound equipment superior to the small, stand-alone
-          consumer versions. Dance floors and lighting effects are also becoming
-          common sights in karaoke bars. Lyrics are often displayed on multiple
-          television screens around the bar.
+          karaoke performances seven nights a week.<span id="e23">[23]</span>
+          commonly with high-end sound equipment superior to the small,
+          stand-alone consumer versions. Dance floors and lighting effects are
+          also becoming common sights in karaoke bars. Lyrics are often
+          displayed on multiple television screens around the bar.
         </p>
         <h2>Technology</h2>
         <p>
@@ -396,6 +546,10 @@
           by altering playback speed, but none are still on the market, and
           their commercial use is virtually nonexistent.)
         </p>
+        <figure class="figureen">
+          <img src="karaoke-02.jpeg" />
+          <figcaption>SHANGHAI ROOM in Seattle</figcaption>
+        </figure>
         <p>
           A popular game using karaoke is to type in a random number and call up
           a song, which participants attempt to sing. In some machines, this
@@ -431,10 +585,6 @@
           stereo left-right comparison can be done on individual frequencies.
         </p>
       </article>
-      <figure class="figurejp">
-        <img class="imgjp" src="KaraokeMachine.jpeg" />
-        <figcaption>カラオケの機械</figcaption>
-      </figure>
       <article id="japanese">
         <p>
           通常、楽曲の伴奏部分だけを「事前に記録」している記録媒体（音楽テープやディスク等）を機械で再生して演奏する。現場では開始時に機械を操作するだけで後は自動的に行われる。
@@ -446,17 +596,31 @@
         </p>
         <p>
           カラオケ・空演奏は、元々は歌を歌う際に本来居るべきオーケストラがいない、という意味なので、カラオケ用の音源自体はマイナスワンと言われていたこともあった（曲から、1パートのみ削減されていることから）。<span
+            id="j1"
             >[1]</span
           >
         </p>
+        <figure class="figurejp">
+          <img src="KaraokeMachine.jpeg" />
+          <figcaption>カラオケの機械</figcaption>
+        </figure>
         <p>
-          1970年以前には、日本ではすでにハードウェアとしてはマイク入力つきの8トラック磁気テープ式小型ジュークボックスが、また、ソフトウェアとしては伴奏用ミュージックテープが販売され、これらを使って歌を歌わせる店が出現していた。<span>[2]</span>初期の8トラック式小型ジュークボックス装置としては、1967年に発売された根岸重一による国際商品のミュージックボックスや、1968年に発売された浜崎厳によるミニジューク等がある。<span
+          1970年以前には、日本ではすでにハードウェアとしてはマイク入力つきの8トラック磁気テープ式小型ジュークボックスが、また、ソフトウェアとしては伴奏用ミュージックテープが販売され、これらを使って歌を歌わせる店が出現していた。<span
+            id="j2"
+            >[2]</span
+          >初期の8トラック式小型ジュークボックス装置としては、1967年に発売された根岸重一による国際商品のミュージックボックスや、1968年に発売された浜崎厳によるミニジューク等がある。<span
+            id="j3"
             >[3]</span
-          ><span>[4]</span>
+          ><span id="j4">[4]</span>
         </p>
+        <figure class="figurejp">
+          <img src="image_6483441-resize.jpeg" />
+          <figcaption>カラオケＣＬＵＢ ＤＡＭ 薩摩川内店</figcaption>
+        </figure>
         <p>
           バンドマン出身の井上大佑は、カラオケ関連サービスと専用装置を1971年に発明したと主張している。井上は、8トラックテープ再生機にあらかじめ用意された調やテンポから選択して再生・歌唱できるテープを添付し「8
           Juke（エイトジューク）」と名づけてリース販売し、人気を博した。初期にはコイン式の有料再生装置で、テープ1本当り4曲、10本セットの計40曲で、料金は5分で100円でスナック等に設置された。2010年秋、井上の著書『カラオケを創（つく）った男』の著作権が2万口に分割、高額で権利を売り付ける業者が表れていることが判明し問題となった。<span
+            id="j5"
             >[5]</span
           >
         </p>
@@ -464,21 +628,201 @@
           当初は音声入力にエコーを掛ける程度の付加機能だったが、その後はキー変更やテンポ調整などに対応し歌いやすくしたものが主流になり、さらに採点や音声変換など、遊びの要素も含めた多機能化が進んでいる。選曲もリモコン式から、バーコード入力、タッチパネル式端末と発達した。また歌詞の表示も、当初は歌声喫茶と同様に「歌本」や歌詞カードを見ながら歌っていたが、レーザーディスク普及後はモニターに歌詞が字幕スーパーの形で表示され、歌うべき部分の色を変えて歌い手をサポートする仕組みが一般化している。
         </p>
       </article>
-      <footer class="c">
-        <p id="cc1">
-          <span>[1]</span>潘淑红. 《卡拉OK著作权纠纷案法理评析》. 《法学》
-          (华东政法大学).
-        </p>
-        <p id="cc2"><span>[2]</span>客乐我歌.</p>
-        <p id="cc3">
-          <span>[3]</span>Who Invented the Karaoke Machine? Events-in-Music.com
-        </p>
-        <p id="cc4">
-          <span>[4]</span>烏賀陽弘道 『カラオケ秘史―創意工夫の世界革命―』
-        </p>
-        <p id="cc5"><span>[5]</span>野口恒 『カラオケ文化産業論』</p>
-      </footer>
-      <footer class="e"></footer>
+      <article class="caption">
+        <footer class="c">
+          <p id="cc1">
+            <span>[1]</span>潘淑红. 《卡拉OK著作权纠纷案法理评析》. 《法学》
+            (华东政法大学).
+          </p>
+          <p id="cc2">
+            <span>[2]</span
+            ><a
+              href="https://web.archive.org/web/20140222014141/http://www.searchtmr.com/details?trqi=cb40615033fff349"
+              >客乐我歌.</a
+            >
+          </p>
+          <p id="cc3">
+            <span>[3]</span
+            ><a href="https://events-in-music.com/"
+              >Who Invented the Karaoke Machine? Events-in-Music.com</a
+            >
+          </p>
+          <p id="cc4">
+            <span>[4]</span>烏賀陽弘道 『カラオケ秘史―創意工夫の世界革命―』
+          </p>
+          <p id="cc5"><span>[5]</span>野口恒 『カラオケ文化産業論』</p>
+        </footer>
+        <footer class="e">
+          <p id="ee1">
+            <span>[1]</span
+            ><a
+              href="https://torrentfreak.com/uk-police-and-prs-shutdown-karaoke-torrent-site-150313/"
+              >UK Police and PRS Shutdown Karaoke Torrent Site. Torrentfreak.</a
+            >
+          </p>
+          <p id="ee2">
+            <span>[2]</span
+            ><a
+              href="https://en.wikipedia.org/wiki/The_Complete_Directory_to_Prime_Time_Network_and_Cable_TV_Shows_1946%E2%80%93Present"
+              >Brooks, Tim; Marsh, Earle (1992), The Complete Directory to Prime
+              Time Network TV Shows, Ballantine Books, ISBN 978-0-345-37792-0</a
+            >
+          </p>
+          <p id="ee3">
+            <span>[3]</span>Alt, Matt (2021). Pure Invention: How Japan Made the
+            Modern World. Crown. p. 88. ISBN 978-1-9848-2671-8.
+          </p>
+          <p id="ee4">
+            <span>[4]</span><a href="http://www.karaoke.or.jp/03nenpyo/"></a>"A
+            History of KARAOKE". All-Japan Karaoke Industrialist Association.
+          </p>
+          <p id="ee5">
+            <span>[5]</span>Ugaya, Hiromichi (2008). Karaoke Secret History –
+            world revolution of ingenuity. Shinchosha Publishing. pp. 49–53.
+            ISBN 978-4106102929.
+          </p>
+          <p id="ee6">
+            <span>[6]</span
+            ><a
+              href="https://web.archive.org/web/20190109014209/https://www.jpo.go.jp/torikumi_e/kokusai_e/training/enishi/theme/No11_December2015_11.pdf"
+              >Selection from TOP 100 Japanese Innovations of "Karaoke"" (PDF).
+              IP Friends Connections.</a
+            >
+          </p>
+          <p id="ee7">
+            <span>[7]</span
+            ><a
+              href="https://kotaku.com/the-man-who-invented-karaoke-is-95-and-his-machine-stil-1844154550"
+              >"The Man Who Invented Karaoke Is 95 And His Machine Still Works".
+              kotaku.com.</a
+            >
+          </p>
+          <p id="ee8">
+            <span>[8]</span>Alt, Matt (2021). Pure Invention: How Japan Made the
+            Modern World. Crown. pp. 89–90. ISBN 978-1-9848-2671-8.
+          </p>
+          <p id="ee9">
+            <span>[9]</span
+            ><a
+              href="https://web.archive.org/web/20080305204829/http://www.events-in-music.com/who-invented-the-karaoke-machine.html"
+              >Who Invented the Karaoke Machine?</a
+            >
+          </p>
+          <p id="ee10">
+            <span>[10]</span
+            ><a
+              href="https://web.archive.org/web/20090321051214/http://www.inouej1.com/index.html"
+              >井上大祐【カラオケ発明者】 J-ONE/INOUE</a
+            >
+          </p>
+          <p id="ee11">
+            <span>[11]</span>Time 100:Daisuke Inoue, 23–30 August 1999 VOL. 154
+            NO. 7/8
+          </p>
+          <p id="ee12">
+            <span>[12]</span>Alt, Matt (2021). Pure Invention: How Japan Made
+            the Modern World. Crown. pp. 90–93. ISBN 978-1-9848-2671-8.
+          </p>
+          <p id="ee13">
+            <span>[13]</span>Alt, Matt (2021). Pure Invention: How Japan Made
+            the Modern World. Crown. pp. 84–90. ISBN 978-1-9848-2671-8.
+          </p>
+          <p id="ee14">
+            <span>[14]</span>Alt, Matt (2021). Pure Invention: How Japan Made
+            the Modern World. Crown. pp. 90–91. ISBN 978-1-9848-2671-8.
+          </p>
+          <p id="ee15">
+            <span>[15]</span>Alt, Matt (2021). Pure Invention: How Japan Made
+            the Modern World. Crown. p. 92. ISBN 978-1-9848-2671-8.
+          </p>
+          <p id="ee16">
+            <span>[16]</span>Alt, Matt (2021). Pure Invention: How Japan Made
+            the Modern World. Crown. p. 82. ISBN 978-1-9848-2671-8.
+          </p>
+          <p id="ee17">
+            <span>[17]</span
+            ><a href="https://improbable.com/ig/winners/#ig2004">
+              "The 2004 Ig Nobel Prize Winners". Winners of the Ig Nobel Prize.
+              Improbable Research.</a
+            >
+          </p>
+          <p id="ee18">
+            <span>[18]</span
+            ><a
+              href="https://www.bbc.com/travel/article/20110812-travelwise-karaoke-in-the-philippines"
+              >"BBC – Travel – Karaoke in the Philippines"</a
+            >
+          </p>
+          <p id="ee19">
+            <span>[19]</span
+            ><a
+              href="https://books.google.com/books?id=jg8EAAAAMBAJ&pg=PA41-IA3#v=onepage&q&f=false"
+              >"Billboard – Karaoke Japan"</a
+            >
+          </p>
+          <p id="ee20">
+            <span>[20]</span
+            ><a
+              href="https://archive.org/details/VendingTimesVOL29NO10August1989Clearscan/page/n91/mode/2up"
+              >"U.S. Dealers Set To Chime In On Karaoke Sing-A-Long Profits /
+              Japanese Karaoke Craze Ready To Roll Into Lucrative American Music
+              Market". Vending Times. Vol. 29, no. 10.</a
+            >
+          </p>
+          <p id="ee21">
+            <span>[21]</span
+            ><a href="https://www.karaoke.or.jp/03nenpyo/03_02.php"
+              >"Karoke History Chart"</a
+            >
+          </p>
+          <p id="ee22">
+            <span>[22]</span>Alt, Matt (2021). Pure Invention: How Japan Made
+            the Modern World. Crown. pp. 177–178. ISBN 978-1-9848-2671-8.
+          </p>
+          <p id="ee23">
+            <span>[23]</span
+            ><a
+              href="https://books.google.com/books?id=nVTqAQAAQBAJ&q=karaoke+performances+seven+nights+a+week&pg=PA67#v=snippet&q=karaoke%20performances%20seven%20nights%20a%20week&f=false"
+              >Zhou, Xun; Tarocco, Francesca (1 June 2013). Karaoke: The Global
+              Phenomenon. Reaktion Books. ISBN 9781780232409.</a
+            >
+          </p>
+        </footer>
+        <footer class="j">
+          <p id="jj1">
+            <span>[1]</span
+            ><a
+              href="https://ja.wikipedia.org/wiki/%E3%81%8A%E3%81%8B%E3%81%88%E3%82%8A%E3%81%AA%E3%81%95%E3%81%84_(%E4%B8%AD%E5%B3%B6%E3%81%BF%E3%82%86%E3%81%8D%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+              >中島みゆきのアルバム『おかえりなさい』に付属していた7インチシングル盤に収録された歌唱なしの「あばよ/追いかけてヨコハマ」でこの名称が使われている。</a
+            >
+          </p>
+          <p id="jj2">
+            <span>[2]</span>カラオケ歴史年表 - 全国カラオケ事業者協会
+          </p>
+          <p id="jj3">
+            <span>[3]</span
+            ><a
+              href="https://ja.wikipedia.org/wiki/%E7%83%8F%E8%B3%80%E9%99%BD%E5%BC%98%E9%81%93"
+              >烏賀陽弘道
+              『カラオケ秘史―創意工夫の世界革命―』（新潮社、2008年）、ISBN
+              978-4106102929</a
+            >
+          </p>
+          <p id="jj4">
+            <span>[4]</span
+            ><a href="https://ja.wikipedia.org/wiki/%E9%87%8E%E5%8F%A3%E6%81%92"
+              >野口恒 『カラオケ文化産業論』（PHP研究所、2005年）、ISBN
+              978-4569642222</a
+            >
+          </p>
+          <p id="jj5">
+            <span>[5]</span
+            ><a href="https://www.yomiuri.co.jp/"
+              >カラオケ発明者の著作物権利、２万口に分割登録 読売新聞</a
+            >
+          </p>
+        </footer>
+      </article>
     </div>
   </body>
 </html>

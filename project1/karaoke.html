@@ -4,6 +4,13 @@
     <meta charset="utf-8" />
     <title>karaoke</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      type="text/javascript"
+    ></script>
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="script.js"></script>
     <style>
       @font-face {
@@ -67,6 +74,16 @@
         } */
         100% {
           width: 100%;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .lyrics{
+          font-size: 36pt;
+          -webkit-text-stroke: 1px black;
+        }
+        .sung{
+          font-size: 36pt;
+          -webkit-text-stroke: 1px blue;
         }
       }
     </style>
