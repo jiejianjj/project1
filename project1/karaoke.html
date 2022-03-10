@@ -8,10 +8,6 @@
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       type="text/javascript"
     ></script>
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script src="script.js"></script>
     <style>
       @font-face {
         font-family: VCR;
@@ -33,7 +29,7 @@
         -webkit-text-stroke: 0.5px white;
       } */
 
-      .lyrics {
+      #lyrics {
         width: fit-content;
         position: absolute;
         top: 30vh;
@@ -43,7 +39,7 @@
         -webkit-text-stroke: 3px black;
         font-size: 200pt;
       }
-      .sung {
+      #sung {
         display: none;
         position: absolute;
         top: 30vh;
@@ -56,7 +52,7 @@
         -webkit-text-stroke: 3px blue;
         white-space: nowrap;
       }
-      .lyrics:hover ~ .sung {
+      #lyrics:hover ~ #sung {
         display: block;
       }
 
@@ -77,12 +73,12 @@
         }
       }
       @media only screen and (max-width: 600px) {
-        .lyrics {
-          font-size: 18pt;
+        #lyrics {
+          font-size:36pt;
           -webkit-text-stroke: 1px black;
         }
-        .sung {
-          font-size: 18pt;
+        #sung {
+          font-size: 36pt;
           -webkit-text-stroke: 1px blue;
         }
       }
@@ -91,12 +87,13 @@
   <body>
     <!-- <h1 class="lyrics">KARAOKE TECHNOLOGY</h1> -->
     <a href="bodytext/overview.html"
-      ><div class="lyrics">
+      ><div id="lyrics">
         <span>KARAOKE</span>
       </div>
-      <div class="sung">
+      <div id="sung">
         <span>KARAOKE</span>
       </div>
     </a>
   </body>
+  <script src="script.js"></script>
 </html>
