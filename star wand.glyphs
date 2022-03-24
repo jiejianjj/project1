@@ -1,0 +1,2678 @@
+{
+.appVersion = "3108";
+.formatVersion = 3;
+DisplayStrings = (
+"/star n",
+"/n.1",
+"/star5th",
+o
+);
+date = "2022-03-17 02:26:44 +0000";
+familyName = "New Font";
+fontMaster = (
+{
+id = m01;
+metricValues = (
+{
+over = 16;
+pos = 800;
+},
+{
+over = 16;
+pos = 700;
+},
+{
+over = 16;
+pos = 500;
+},
+{
+over = -16;
+},
+{
+over = -16;
+pos = -200;
+},
+{
+over = -16;
+}
+);
+name = Regular;
+}
+);
+glyphs = (
+{
+glyphname = A;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 65;
+},
+{
+glyphname = B;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 66;
+},
+{
+glyphname = C;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 67;
+},
+{
+glyphname = D;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 68;
+},
+{
+glyphname = E;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 69;
+},
+{
+glyphname = F;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 70;
+},
+{
+glyphname = G;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 71;
+},
+{
+glyphname = H;
+lastChange = "2022-03-17 02:48:11 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = star5th;
+}
+);
+width = 600;
+}
+);
+unicode = 72;
+},
+{
+glyphname = I;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 73;
+},
+{
+glyphname = J;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 74;
+},
+{
+glyphname = K;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 75;
+},
+{
+glyphname = L;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 76;
+},
+{
+glyphname = M;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 77;
+},
+{
+glyphname = N;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 78;
+},
+{
+glyphname = O;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 79;
+},
+{
+glyphname = P;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 80;
+},
+{
+glyphname = Q;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 81;
+},
+{
+glyphname = R;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 82;
+},
+{
+glyphname = S;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 83;
+},
+{
+glyphname = T;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 84;
+},
+{
+glyphname = U;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 85;
+},
+{
+glyphname = V;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 86;
+},
+{
+glyphname = W;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 87;
+},
+{
+glyphname = X;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 88;
+},
+{
+glyphname = Y;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 89;
+},
+{
+glyphname = Z;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 90;
+},
+{
+glyphname = a;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 97;
+},
+{
+glyphname = b;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 98;
+},
+{
+glyphname = c;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 99;
+},
+{
+glyphname = d;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 100;
+},
+{
+glyphname = e;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 101;
+},
+{
+glyphname = f;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 102;
+},
+{
+glyphname = g;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 103;
+},
+{
+glyphname = h;
+lastChange = "2022-03-17 15:50:14 +0000";
+layers = (
+{
+layerId = m01;
+width = 610;
+}
+);
+unicode = 104;
+},
+{
+glyphname = i;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 105;
+},
+{
+glyphname = j;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 106;
+},
+{
+glyphname = k;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 107;
+},
+{
+glyphname = l;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 108;
+},
+{
+glyphname = m;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 109;
+},
+{
+glyphname = n;
+lastChange = "2022-03-18 15:29:10 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (160,120);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,80);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,160);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,320);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,200);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,240);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,280);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,360);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,400);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (60,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (10,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (60,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (210,400);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (260,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (260,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (310,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (360,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,400);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,360);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,320);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,280);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,240);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,200);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (510,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,160);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (210,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,120);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,80);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,160);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,320);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,200);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,240);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,280);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,360);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,400);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (60,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,400);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,360);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,320);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,280);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,240);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,200);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (360,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+pos = (790,0);
+ref = wand;
+scale = (1,9.6);
+},
+{
+alignment = -1;
+pos = (770,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+angle = 90;
+pos = (740,0);
+ref = wand;
+},
+{
+alignment = -1;
+pos = (1000,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+pos = (1020,0);
+ref = wand;
+scale = (1,9.6);
+},
+{
+alignment = -1;
+pos = (800,400);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (850,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (850,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+angle = 90;
+pos = (1000,500);
+ref = wand;
+scale = (1,2);
+},
+{
+angle = 90;
+pos = (850,0);
+ref = wand;
+},
+{
+angle = 90;
+pos = (1120,0);
+ref = wand;
+scale = (1,2);
+},
+{
+alignment = -1;
+pos = (460,120);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,80);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,120);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,80);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,160);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (720,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+angle = 90;
+pos = (790,0);
+ref = wand;
+scale = (1,0.7998);
+},
+{
+alignment = -1;
+pos = (670,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (620,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (670,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (1050,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+pos = (1070,0);
+ref = wand;
+scale = (1,8.7996);
+},
+{
+pos = (740,0);
+ref = wand;
+scale = (1,9.5999);
+}
+);
+width = 600;
+}
+);
+unicode = 110;
+},
+{
+glyphname = o;
+lastChange = "2022-03-17 16:17:06 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (200,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (250,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (150,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (100,80);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (100,120);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (100,160);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (100,200);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (50,120);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (50,160);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (100,240);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (100,280);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (100,320);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (100,360);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (300,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (350,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (400,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (50,200);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (50,240);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (50,280);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (50,320);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (50,360);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (100,400);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (450,440);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (400,480);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (500,80);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (500,120);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (500,160);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (500,200);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (550,120);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (550,160);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (500,240);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (500,280);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (500,320);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (500,360);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (350,480);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (300,480);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (250,480);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (200,440);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (550,200);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (550,240);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (550,280);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (550,320);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (550,360);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (500,400);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (840,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (1090,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (740,360);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (790,400);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (1140,440);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (1240,360);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (1190,400);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (840,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+pos = (810,80);
+ref = wand;
+scale = (1,6.4);
+},
+{
+pos = (760,120);
+ref = wand;
+scale = (1,4.8);
+},
+{
+pos = (1160,80);
+ref = wand;
+scale = (1,6.4);
+},
+{
+pos = (1210,120);
+ref = wand;
+scale = (1,4.8);
+},
+{
+angle = 90;
+pos = (1040,20);
+ref = wand;
+scale = (1,2);
+},
+{
+alignment = -1;
+pos = (890,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (1040,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+angle = 90;
+pos = (1040,500);
+ref = wand;
+scale = (1,2);
+},
+{
+alignment = -1;
+pos = (890,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (1040,480);
+ref = star;
+scale = (0.5,0.5);
+}
+);
+width = 600;
+}
+);
+unicode = 111;
+},
+{
+glyphname = p;
+lastChange = "2022-03-17 16:34:10 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (160,120);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,80);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,160);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,320);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,200);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,240);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,280);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,360);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,400);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (60,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (10,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (60,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (210,400);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (260,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,120);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,80);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,160);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,320);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,200);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,240);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,280);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,360);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,400);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,-200);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,-160);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,-120);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (210,-200);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,-200);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,-160);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,-120);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (60,-200);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,-40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,-40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,-80);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,-80);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (210,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (260,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (310,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (510,440);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,480);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (560,80);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (560,120);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (560,160);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (560,200);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (610,120);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (610,160);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (560,240);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (560,280);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (560,320);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (560,360);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (360,480);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (310,480);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (610,200);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (610,240);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (610,280);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (610,320);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (610,360);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (560,400);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+pos = (790,-200);
+ref = wand;
+scale = (1,13.6);
+},
+{
+alignment = -1;
+pos = (770,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+angle = 90;
+pos = (740,-200);
+ref = wand;
+},
+{
+alignment = -1;
+pos = (800,400);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (850,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+angle = 90;
+pos = (850,-200);
+ref = wand;
+},
+{
+pos = (740,-200);
+ref = wand;
+scale = (1,13.5998);
+},
+{
+alignment = -1;
+pos = (720,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+angle = 90;
+pos = (790,-200);
+ref = wand;
+scale = (1,0.7998);
+},
+{
+alignment = -1;
+pos = (670,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (620,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (670,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (800,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (1050,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (1100,440);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (1200,360);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+alignment = -1;
+pos = (1150,400);
+ref = star;
+scale = (-0.5,0.5);
+},
+{
+pos = (1120,80);
+ref = wand;
+scale = (1,6.4);
+},
+{
+pos = (1170,120);
+ref = wand;
+scale = (1,4.8);
+},
+{
+angle = 90;
+pos = (1000,20);
+ref = wand;
+scale = (1,2);
+},
+{
+alignment = -1;
+pos = (850,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (1000,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+angle = 90;
+pos = (1000,500);
+ref = wand;
+scale = (1,2);
+},
+{
+alignment = -1;
+pos = (850,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (1000,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (360,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,480);
+ref = star;
+scale = (-0.5,0.5);
+}
+);
+width = 600;
+}
+);
+unicode = 112;
+},
+{
+glyphname = q;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 113;
+},
+{
+glyphname = r;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 114;
+},
+{
+glyphname = s;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 115;
+},
+{
+glyphname = t;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 116;
+},
+{
+glyphname = u;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 117;
+},
+{
+glyphname = v;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 118;
+},
+{
+glyphname = w;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 119;
+},
+{
+glyphname = x;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 120;
+},
+{
+glyphname = y;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 121;
+},
+{
+glyphname = z;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 122;
+},
+{
+glyphname = h.001;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (160,120);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,80);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,160);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,320);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,200);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,240);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,280);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,360);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,400);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,520);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (160,560);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,520);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,560);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (60,560);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (210,240);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (260,280);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (260,320);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (310,320);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (360,320);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,280);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,240);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,200);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,160);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,120);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,80);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,320);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (460,280);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (510,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (210,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,120);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,80);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,160);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,320);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,200);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,240);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,280);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,360);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,440);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,400);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (110,480);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (60,0);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,240);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,200);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,160);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,120);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,80);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (410,40);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (360,280);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+pos = (790,0);
+ref = wand;
+scale = (1,11.3);
+},
+{
+alignment = -1;
+pos = (770,560);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+angle = 90;
+pos = (790,0);
+ref = wand;
+},
+{
+alignment = -1;
+pos = (990,320);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+pos = (1010,0);
+ref = wand;
+scale = (1,6.4);
+},
+{
+alignment = -1;
+pos = (800,240);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (850,280);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (850,320);
+ref = star;
+scale = (0.5,0.5);
+},
+{
+angle = 90;
+pos = (996,333);
+ref = wand;
+scale = (1,2);
+},
+{
+angle = 90;
+pos = (850,0);
+ref = wand;
+},
+{
+angle = 90;
+pos = (1070,0);
+ref = wand;
+}
+);
+width = 610;
+}
+);
+},
+{
+glyphname = n.1;
+lastChange = "2022-03-17 18:21:29 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+ref = star5th;
+},
+{
+alignment = -1;
+pos = (0,50);
+ref = star5th;
+},
+{
+alignment = -1;
+pos = (0,100);
+ref = star5th;
+}
+);
+width = 600;
+}
+);
+},
+{
+glyphname = zero;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 48;
+},
+{
+glyphname = one;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 49;
+},
+{
+glyphname = two;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 50;
+},
+{
+glyphname = three;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 51;
+},
+{
+glyphname = four;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 52;
+},
+{
+glyphname = five;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 53;
+},
+{
+glyphname = six;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 54;
+},
+{
+glyphname = seven;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 55;
+},
+{
+glyphname = eight;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 56;
+},
+{
+glyphname = nine;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 57;
+},
+{
+glyphname = space;
+layers = (
+{
+layerId = m01;
+width = 200;
+}
+);
+unicode = 32;
+},
+{
+glyphname = period;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 46;
+},
+{
+glyphname = comma;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 44;
+},
+{
+glyphname = hyphen;
+layers = (
+{
+layerId = m01;
+width = 600;
+}
+);
+unicode = 45;
+},
+{
+glyphname = star;
+lastChange = "2022-03-17 03:06:23 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(80,0,l),
+(65,40,l),
+(100,60,l),
+(60,60,l),
+(50,100,l),
+(40,60,l),
+(0,60,l),
+(35,40,l),
+(20,0,l),
+(50,24,l)
+);
+}
+);
+width = 100;
+}
+);
+},
+{
+glyphname = star5th;
+lastChange = "2022-03-17 18:41:46 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(51,37,l),
+(41,31,l),
+(31,37,l),
+(31,25,l),
+(18,19,l),
+(31,13,l),
+(30,0,l),
+(41,7,l),
+(51,0,l),
+(52,13,l),
+(62,19,l),
+(52,25,l)
+);
+}
+);
+width = 600;
+}
+);
+},
+{
+glyphname = wand;
+lastChange = "2022-03-17 03:18:28 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(0,0,l),
+(10,0,l),
+(10,50,l),
+(0,50,l)
+);
+}
+);
+width = 10;
+}
+);
+}
+);
+metrics = (
+{
+type = ascender;
+},
+{
+type = "cap height";
+},
+{
+type = "x-height";
+},
+{
+type = baseline;
+},
+{
+type = descender;
+},
+{
+type = "italic angle";
+}
+);
+unitsPerEm = 1000;
+versionMajor = 1;
+versionMinor = 0;
+}

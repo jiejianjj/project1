@@ -4,17 +4,47 @@
     <meta charset="utf-8" />
     <title>JJ’s Web Type Class Site</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <style>
-      
+      body{
+        color: black;
+      }
+      a,
+      a:visited {
+        color: orange;
+      }
+      .darkmode {
+        background: black;
+        color: white;
+      }
+      .darkmode h1 {
+        color: yellow;
+      }
+      button{
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        border-radius: 12px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover{
+        background-color: orange;
+      }
     </style>
   </head>
   <body>
-<h1>&#128511;JJ</h1>
-<h2><a href="project1/karaoke.html">karaoke</a></h2>
-<h2>week2</h2>
-<h3><a href="week2/layout2.html">layout 2</a>  <a href="week2/layout3.html">layout 3</a></h3>
-<h2>week4</h2>
-<h3><a href="week4/magic.html">“magical” glyphs</a></h3>
+    <h1>&#128511;JJ</h1>
+    <h2><a href="project1/karaoke.html">karaoke</a></h2>
+    <h2>week2</h2>
+    <h3>
+      <a href="week2/layout2.html">layout 2</a>
+      <a href="week2/layout3.html">layout 3</a>
+    </h3>
+    <h2>week4</h2>
+    <h3><a href="week4/magic.html">“magical” glyphs</a></h3>
+    <button id="darkmode">Dark/Light</button>
   </body>
 </html>
