@@ -11,10 +11,7 @@
 
 :root{
 	--wght: 300;
-	--wdth: 120;
-	--XHGT: 100;
-
-	--color: red;
+	--color: black;
 }
 body{
 	font-family: 'Sins', serif;
@@ -26,7 +23,7 @@ body{
 }
 
 .magmatic, .magmatic *{
-	font-variation-settings: 'wght' var(--wght),'wdth' var(--wdth), 'XHGT' var(--XHGT);
+	font-variation-settings: 'wght' var(--wght);
 }
 
 section{
@@ -35,8 +32,8 @@ section{
 
 
 #intro{
-	font-size:30vw;
-	line-height: 0.9;
+	font-size:15vw;
+	line-height: 1;
 	text-align: center;
 }
 
@@ -76,23 +73,3 @@ input.axis-range{
 	margin: 0 20px;
 }
 
-
-/*BUTTON STYLES*/
-
-#buttons{
-	text-align: center;
-}
-button{
-	font-family: 'Sins', sans-serif;
-	font-variation-settings: 'wght' 300,'wdth' 100, 'XHGT' 0;
-	font-size: 1em;
-	background: white;
-	border-radius: 50%;
-	outline: none;
-	border: 2px solid black;
-	padding: 1em;
-}
-button:hover{
-	color: blue;
-	cursor: pointer;
-}

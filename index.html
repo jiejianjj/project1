@@ -3,48 +3,39 @@
   <head>
     <meta charset="utf-8" />
     <title>JJ’s Web Type Class Site</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     <style>
-      body{
-        color: black;
-      }
-      a,
-      a:visited {
-        color: orange;
-      }
-      .darkmode {
-        background: black;
-        color: white;
-      }
-      .darkmode h1 {
-        color: yellow;
-      }
-      button{
-        position: fixed;
-        right: 30px;
-        bottom: 30px;
-        border-radius: 12px;
-        background-color: white;
-        border: none;
-        cursor: pointer;
-      }
-      button:hover{
-        background-color: orange;
-      }
+      
     </style>
   </head>
   <body>
+    <section>
     <h1>&#128511;JJ</h1>
     <h2><a href="project1/karaoke.html">karaoke</a></h2>
     <h2>week2</h2>
     <h3>
-      <a href="week2/layout2.html">layout 2</a>
-      <a href="week2/layout3.html">layout 3</a>
+      <a href="week2/layout2.html">layout2</a>
+      <a href="week2/layout3.html">layout3</a>
     </h3>
     <h2>week4</h2>
-    <h3><a href="week4/magic.html">“magical” glyphs</a></h3>
+    <h3><a href="week4/magic.html">modular</a></h3>
+  </section>
+    <section id="intro" class="magical">
+      <div id="bigletter">Magical<br>Girls</div>
+  </section>
+  <section id="sliders">
+      <ul>                   
+          <li data-axes="wght">
+              <div class="range-name">wght</div>
+              <div class="min">100</div>
+              <input data-type="wght" class="range axis-range menu" type="range" min="100" max="900" value="400">
+              <div class="max">700</div>
+          </li> 
+      </ul>
+  </section>
     <button id="darkmode">Dark/Light</button>
   </body>
 </html>
