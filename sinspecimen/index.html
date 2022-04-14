@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <title>Magical Girls × Seven Sins</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -25,7 +24,7 @@
         color: black;
         font-family: "Sins", serif;
         font-style: normal;
-        font-size: 15px;
+        font-size: 1rem;
         line-height: 1.5;
         color: var(--color);
         height: 100vh;
@@ -54,7 +53,7 @@
 
       .typeonimage {
         padding:1%;
-        font-size: 12pt;
+        font-size: 1rem;
         background-color: white;
         position: absolute;
         top: 50%;
@@ -67,8 +66,13 @@
         height: auto; 
         object-fit:contain;
       }
-.grid{
+.container{
   display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
 }
 
       @font-face {
@@ -86,7 +90,7 @@
       }
 
       #intro {
-        font-size: 10em;
+        font-size: 11rem;
         line-height: 1;
         text-align: center;
       }
@@ -115,6 +119,43 @@
       #sins:hover{
         fill: white;
       }
+
+      #pr,
+      #gr,
+      #lu,
+      #en,
+      #gl,
+      #wr,
+      #sl{
+        font-size: 10rem;
+        padding: 5%;
+        text-align: center;
+        line-height: 1;;
+      }
+
+      #pr{
+        font-variation-settings: "wght" 100;
+      }
+      #gr{
+        font-variation-settings: "wght" 200;
+      }
+      #lu{
+        font-variation-settings: "wght" 300;
+      }
+      #en{
+        font-variation-settings: "wght" 400;
+      }
+      #gl{
+        font-variation-settings: "wght" 500;
+      }
+      #wr{
+        font-variation-settings: "wght" 600;
+      }
+      #sl{
+        font-variation-settings: "wght" 700;
+      }
+
+
       #crossfade > object { 
     width: 100%;
     height: 100%;
@@ -192,7 +233,7 @@
   </head>
   <body>
     <section></section>
-    <div class="chapter">
+    <div class="chapter container">
       <section id="intro" class="magical">
         <div id="bigletter">Magical Seven Girls Sins</div>
       </section>
@@ -231,12 +272,20 @@
         </div>
       </section>
     </div>
-    <div class="chapter">
+    <div>
       <div id="crossfade">
         <object data="assets/SVG/lustcircle.svg"></object>
         <object data="assets/SVG/envycircle.svg"></object>
       </div>
-      
     </div>
+    <div class="container">
+      <div id="pr">...Let not the mighty man boast of his might.</div>
+    </div>
+    <div class="container"><div id="gr">Be content with such things as you have.</div></div>
+    <div class="container"><div id="lu">Flee also youthful lusts.</div></div>
+    <div class="container"><div id="en">But envy is rottenness to the bones.</div></div>
+    <div class="container"><div id="gl">Therefore, whether you eat or drink, or whatever you do, do all to the glory of God.</div></div>
+    <div class="container"><div id="wr">Beloved, never avenge yourselves, but leave it to the wrath of God.</div></div>
+    <div class="container"><div id="sl">Go to the ant, you sluggard! Consider her ways and be wise.</div></div>
   </body>
 </html>
