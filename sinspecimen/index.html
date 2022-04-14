@@ -75,7 +75,12 @@
     justify-content: center;
     overflow: hidden;
 }
-
+.onum{
+  font-variant-numeric: oldstyle-nums;
+  -moz-font-feature-settings: "onum";
+  -webkit-font-feature-settings: "onum";
+  font-feature-settings: "onum";
+}
       @font-face {
         font-family: "Sins";
         src: url("assets/SinsVF.ttf") format("truetype-variations");
@@ -136,27 +141,60 @@
 
       #pr{
         font-variation-settings: "wght" 100;
+        color: blue;
       }
       #gr{
         font-variation-settings: "wght" 200;
+        color: green;
       }
       #lu{
         font-variation-settings: "wght" 300;
+        color: purple;
       }
       #en{
         font-variation-settings: "wght" 400;
+        color: darkred;
       }
       #gl{
         font-variation-settings: "wght" 500;
+        color: yellow;
       }
       #wr{
         font-variation-settings: "wght" 600;
+        color:orangered;
       }
       #sl{
         font-variation-settings: "wght" 700;
+        color: grey;
       }
-
-
+.showcase{
+  display: grid;
+grid-template-columns: 56rem auto;
+}
+      #chart{
+        grid-column:1/2;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 4rem);
+        /* grid-template-columns:  auto auto auto auto auto auto auto auto auto auto auto auto auto auto; */
+        font-size: 3rem;
+        font-variation-settings: "wght" var(--wght);
+        padding: 2%;
+        
+      }
+      .small{
+        background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+      }
+  #b1{
+    display: none;
+  }
+  #s1:hover #b1{
+display: block;
+  }
+      
       #crossfade > object { 
     width: 100%;
     height: 100%;
@@ -288,5 +326,103 @@
     <div class="container chapter"><div id="gl">Whether you eat or drink, do all to the glory of God.</div></div>
     <div class="container chapter"><div id="wr">Never avenge yourselves, but leave it to the wrath of God.</div></div>
     <div class="container chapter"><div id="sl">Go to the ant, you sluggard! Consider her ways and be wise.</div></div>
+    <div class="showcase">
+    <div id="chart">
+      <span class="small" id="s1">A</span>
+      <span class="small" id="s2">B</span>
+      <span class="small" id="s3">C</span>
+      <span class="small" id="s4">D</span>
+      <span class="small" id="s5">E</span>
+      <span class="small" id="s6">F</span>
+      <span class="small" id="s7">G</span>
+      <span class="small" id="s8">H</span>
+      <span class="small" id="s9">I</span>
+      <span class="small" id="s10">J</span>
+      <span class="small" id="s11">K</span>
+      <span class="small" id="s12">L</span>
+      <span class="small" id="s13">M</span>
+      <span class="small" id="s14">N</span>
+      <span class="small" id="s15">O</span>
+      <span class="small" id="s16">P</span>
+      <span class="small" id="s17">Q</span>
+      <span class="small" id="s18">R</span>
+      <span class="small" id="s19">S</span>
+      <span class="small" id="s20">T</span>
+      <span class="small" id="s21">U</span>
+      <span class="small" id="s22">V</span>
+      <span class="small" id="s23">W</span>
+      <span class="small" id="s24">X</span>
+      <span class="small" id="s25">Y</span>
+      <span class="small" id="s26">Z</span>
+      <span class="small" id="s27">a</span>
+      <span class="small" id="s28">b</span>
+      <span class="small" id="s29">c</span>
+      <span class="small" id="s30">d</span>
+      <span class="small" id="s31">e</span>
+      <span class="small" id="s32">f</span>
+      <span class="small" id="s33">g</span>
+      <span class="small" id="s34">h</span>
+      <span class="small" id="s35">i</span>
+      <span class="small" id="s36">j</span>
+      <span class="small" id="s37">k</span>
+      <span class="small" id="s38">l</span>
+      <span class="small" id="s39">m</span>
+      <span class="small" id="s40">n</span>
+      <span class="small" id="s41">o</span>
+      <span class="small" id="s42">p</span>
+      <span class="small" id="s43">q</span>
+      <span class="small" id="s44">r</span>
+      <span class="small" id="s45">s</span>
+      <span class="small" id="s46">t</span>
+      <span class="small" id="s47">u</span>
+      <span class="small" id="s48">v</span>
+      <span class="small" id="s49">w</span>
+      <span class="small" id="s50">x</span>
+      <span class="small" id="s51">y</span>
+      <span class="small" id="s52">z</span>
+      <span class="small" id="s53">0</span>
+      <span class="small" id="s54">1</span>
+      <span class="small" id="s55">2</span>
+      <span class="small" id="s56">3</span>
+      <span class="small" id="s57">4</span>
+      <span class="small" id="s58">5</span>
+      <span class="small" id="s59">6</span>
+      <span class="small" id="s60">7</span>
+      <span class="small" id="s61">8</span>
+      <span class="small" id="s62">9</span>
+      <span class="onum small" id="s63">0</span>
+      <span class="onum small" id="s64">1</span>
+      <span class="onum small" id="s65">2</span>
+      <span class="onum small" id="s67">3</span>
+      <span class="onum small" id="s68">4</span>
+      <span class="onum small" id="s69">5</span>
+      <span class="onum small" id="s70">6</span>
+      <span class="onum small" id="s71">7</span>
+      <span class="onum small" id="s72">8</span>
+      <span class="onum small" id="s73">9</span>
+      <span class="small" id="s74">!</span>
+      <span class="small" id="s75">?</span>
+      <span class="small" id="s76">.</span>
+      <span class="small" id="s77">,</span>
+      <span class="small" id="s78">-</span>
+      <span class="small" id="s79">—</span>
+      <span class="small" id="s80">—</span>
+      <span class="small" id="s81">(</span>
+      <span class="small" id="s82">)</span>
+      <span class="small" id="s83">{</span>
+      <span class="small" id="s84">}</span>
+      <span class="small" id="s85">[</span>
+      <span class="small" id="s86">]</span>
+      <span class="small" id="s87">“</span>
+      <span class="small" id="s88">”</span>
+      <span class="small" id="s89">‘</span>
+      <span class="small" id="s90">’</span>
+      <span class="small" id="s91">&</span>
+      <span class="small" id="s92">$</span>
+    </div>
+    <div>
+      <span class="big" id="b1">A</span>
+    </div>
+  </div>
   </body>
 </html>

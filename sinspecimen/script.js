@@ -21,6 +21,21 @@ $(document).ready(function(){
             });
             
         });
+        $('#chart').mousemove(function(event) {
+    
+            console.log(event.pageX, event.pageY);
+    
+            let cursorX = event.pageX / $(this).width();
+    
+            let settingX = Math.floor(cursorX * wghtmax);
+    
+            // console.log( settingX, settingY)
+    
+            $("#chart").css({
+                "--wght": settingX
+            });
+            
+        });
         //click buttons
 	$('#pride').click(function(event) {
 		$("#bigletter").css({
