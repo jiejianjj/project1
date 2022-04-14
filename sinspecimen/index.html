@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Magical Girls × Seven Sins</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --wght: 300;
+        --color: black;
+      }
+      body {
+        color: black;
+        font-family: "Sins", serif;
+        font-style: normal;
+        font-size: 15px;
+        line-height: 1.5;
+        color: var(--color);
+        height: 100vh;
+      }
+      a,
+      a:visited {
+        color: orange;
+      }
+      .chapter {
+        width: 100%;
+        height: 100%;
+      }
+      #buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .sinbuttons {
+        margin: 1%;
+        width: 10vw;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        color: black;
+      }
+
+      .typeonimage {
+        padding:1%;
+        font-size: 12pt;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+svg{
+  color:red;
+}
+      img {
+        width: 100%;
+      }
+
+      object {
+        width: 100%;
+      }
+
+      @font-face {
+        font-family: "Sins";
+        src: url("assets/SinsVF.ttf") format("truetype-variations");
+      }
+
+      .magical,
+      .magical * {
+        font-variation-settings: "wght" var(--wght);
+      }
+
+      section {
+        padding: 2rem 3rem;
+      }
+
+      #intro {
+        font-size: 10em;
+        line-height: 1;
+        text-align: center;
+      }
+
+      #content {
+        width: 33em;
+        height: 500px;
+        --wght: 900;
+      }
+
+      #content p {
+        transition: font-variation-settings 400ms ease-in-out;
+      }
+
+      /*SLIDER STYLES*/
+
+      #sliders ul {
+        margin: auto;
+      }
+      #sliders li {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .range-name,
+      .min,
+      .max {
+        width: 100px;
+      }
+      .min {
+        text-align: right;
+      }
+      .range-name::after {
+        content: ": ";
+      }
+
+      input.axis-range {
+        width: 580px;
+        margin: 0 20px;
+      }
+      #pride:hover{
+        fill: blue;
+      }
+      #greed:hover{
+        fill: green;
+      }
+      #lust:hover{
+        fill: purple;
+      }
+      #envy:hover{
+        fill: darkred;
+      }
+      #gluttony:hover{
+        fill: yellow;
+      }
+      #wrath:hover{
+        fill: orangered;
+      }
+      #sloth:hover{
+        fill: grey;
+      }
+      #sin:hover{
+        fill: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section></section>
+    <div class="chapter">
+      <section id="intro" class="magical">
+        <div id="bigletter">Magical Seven Girls Sins</div>
+      </section>
+      <section id="buttons">
+        <div class="sinbuttons">
+          <svg id="pride" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M8.71,61l34.83,8.71L34.83,87.08,52.25,113.2,69.66,87.08,61,69.66,95.79,61,87.08,87.08,69.66,104.5,61,121.91v8.71L52.25,148l-8.71-17.42v-8.71L34.83,104.5,17.42,87.08Z" transform="translate(-8.71 -60.95)"/></g></g></svg>
+          <div class="typeonimage">pride</div>
+        </div>
+        <div class="sinbuttons">
+          <svg id="greed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M8.71,87.08,52.25,104.5,34.83,61,52.25,95.79,69.66,61,52.25,104.5,95.79,87.08,61,104.5l34.83,17.41L52.25,104.5,69.66,148,52.25,113.2,34.83,148,52.25,104.5,8.71,121.91,43.54,104.5Z" transform="translate(-8.71 -60.95)"/></g></g></svg>
+          <div class="typeonimage">greed</div>
+        </div>
+        <div class="sinbuttons">
+          <svg id="lust" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M8.71,99.27V80.11L27.87,61,47,80.11,67.05,61,86.21,80.11V99.27l-9.58,20-9.58,9.58v9.58h9.58l19.16-9.58L76.63,148H57.47l-29.6-19.16-9.58-9.58Z" transform="translate(-8.71 -60.95)"/></g></g></svg>
+          <div class="typeonimage">lust</div>
+        </div>
+        <div class="sinbuttons">
+          <svg id="envy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M17.42,121.91,8.71,104.49,34.83,61l17.42,8.71L69.66,61l26.13,43.54-8.71,17.42L61,148l17.41-43.54L52.25,78.37,61,104.49,52.25,148l-8.71-43.54,8.71-26.12L26.12,104.49,43.54,148Z" transform="translate(-8.71 -60.95)"/></g></g></svg>
+          <div class="typeonimage">envy</div>
+        </div>
+        <div class="sinbuttons">
+          <svg id="gluttony" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M26.12,95.79l-8.7,8.71L8.71,87.08,34.83,61H61l17.41,8.71,8.71,8.71,8.71,26.13-8.71,26.12-8.71,8.71L61,148H34.83L8.71,130.62V113.2l8.71,8.71L61,113.2Z" transform="translate(-8.71 -60.95)"/></g></g></svg>
+          <div class="typeonimage">gluttony</div>
+        </div>
+        <div class="sinbuttons">
+          <svg id="wrath" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M34.83,104.49,8.71,61,43.54,87.08,52.25,61,61,87.08,95.79,61,69.67,104.49l26.12-8.7L78.37,121.91H95.79L61,148,52.25,78.37,43.54,148,8.71,121.91H26.12L8.71,95.79Z" transform="translate(-8.71 -60.95)"/></g></g></svg>
+          <div class="typeonimage">wrath</div>
+        </div>
+        <div class="sinbuttons">
+          <svg id="sloth" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M8.71,78.37V61L26.12,104.5l26.13,8.7,26.12-8.7L95.79,61V148H8.71V78.37Z" transform="translate(-8.71 -60.96)"/></g></g></svg>
+          <div class="typeonimage">sloth</div>
+        </div>
+        <div class="sinbuttons">
+          <svg id="sin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M8.71,78.37V61H95.79V148H8.71V78.37Z" transform="translate(-8.71 -60.95)"/></g></g></svg>
+          <div class="typeonimage">sin</div>
+        </div>
+      </section>
+    </div>
+    <img src="assets/lustcircle.png" />
+  </body>
+</html>
