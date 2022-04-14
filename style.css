@@ -33,7 +33,24 @@ a:visited {
 .darkmode h1 {
   color: yellow;
 }
-button {
+#buttons{
+	text-align: center;
+}
+button{
+	font-family: 'sins';
+	font-variation-settings: 'wght' 900;
+	font-size: 1em;
+	background: white;
+	border-radius: 50%;
+	outline: none;
+	border: 2px solid black;
+	padding: 1em;
+}
+button:hover{
+	color: blue;
+	cursor: pointer;
+}
+#darkmode {
   font-family: sins;
   position: fixed;
   right: 30px;
@@ -44,7 +61,7 @@ button {
   border: none;
   cursor: pointer;
 }
-button:hover {
+#darkmode:hover {
   background-color: orange;
 }
 
@@ -64,7 +81,7 @@ section {
 }
 
 #intro {
-  font-size: 10vw;
+  font-size: 20vw;
   line-height: 1;
   text-align: center;
 }
