@@ -61,16 +61,15 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
-svg{
-  color:red;
-}
-      img {
-        width: 100%;
-      }
-
       object {
+        padding: 1%;
         width: 100%;
+        height: auto; 
+        object-fit:contain;
       }
+.grid{
+  display: flex;
+}
 
       @font-face {
         font-family: "Sins";
@@ -92,43 +91,6 @@ svg{
         text-align: center;
       }
 
-      #content {
-        width: 33em;
-        height: 500px;
-        --wght: 900;
-      }
-
-      #content p {
-        transition: font-variation-settings 400ms ease-in-out;
-      }
-
-      /*SLIDER STYLES*/
-
-      #sliders ul {
-        margin: auto;
-      }
-      #sliders li {
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-      }
-
-      .range-name,
-      .min,
-      .max {
-        width: 100px;
-      }
-      .min {
-        text-align: right;
-      }
-      .range-name::after {
-        content: ": ";
-      }
-
-      input.axis-range {
-        width: 580px;
-        margin: 0 20px;
-      }
       #pride:hover{
         fill: blue;
       }
@@ -153,6 +115,79 @@ svg{
       #sin:hover{
         fill: white;
       }
+      #crossfade > object { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    opacity: 0;
+    z-index: -1;
+    backface-visibility: hidden;
+    -webkit-animation: imageAnimation 6s linear infinite 0s;
+    -moz-animation: imageAnimation 6s linear infinite 0s;
+    -o-animation: imageAnimation 6s linear infinite 0s;
+    -ms-animation: imageAnimation 6s linear infinite 0s;
+    animation: imageAnimation 6s linear infinite 0s; 
+}
+
+#crossfade > object:nth-child(2)  {
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 3s; 
+}
+@-webkit-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-moz-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -moz-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -moz-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-o-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -o-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -o-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-ms-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -ms-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -ms-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
     </style>
   </head>
   <body>
@@ -196,6 +231,12 @@ svg{
         </div>
       </section>
     </div>
-    <img src="assets/lustcircle.png" />
+    <div class="chapter">
+      <div id="crossfade">
+        <object data="assets/SVG/lustcircle.svg"></object>
+        <object data="assets/SVG/envycircle.svg"></object>
+      </div>
+      
+    </div>
   </body>
 </html>
