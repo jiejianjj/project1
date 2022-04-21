@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Magical Girls × Seven Sins</title>
+    <title>Magical 7Sins</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -20,22 +20,23 @@
         --wght: 300;
         --color: black;
       }
-      body {
+      body {    
+        background-image: linear-gradient(white,white,AliceBlue,Azure,OldLace,LavenderBlush,GhostWhite,Ivory,Linen,WhiteSmoke,MintCream,HoneyDew,white,white);
         color: black;
         font-family: "Sins", serif;
         font-style: normal;
         font-size: 1rem;
         line-height: 1.5;
         color: var(--color);
-        height: 100vh;
+      
       }
       a,
       a:visited {
-        color: orange;
+        color: inherit;
       }
       .chapter {
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
       }
       #buttons {
         width: 100vh;
@@ -113,10 +114,30 @@
         position: relative;
         text-align: center;
         color: black;
-  top: -36%;
+  top: -35%;
   left: 12%;
 }
-    
+.sinbuttons1:hover{
+  color:blue;
+}
+.sinbuttons2:hover{
+  color:orangered;
+}
+.sinbuttons3:hover{
+  color:crimson;
+}
+.sinbuttons4:hover{
+  color:darkmagenta;
+}
+.sinbuttons5:hover{
+  color:gold;
+}
+.sinbuttons6:hover{
+  color:silver;
+}
+.sinbuttons7:hover{
+  color:darkgreen;
+}
       .typeonimage {
         position: absolute;
     top: 108%;
@@ -162,7 +183,7 @@
       }
 
       #intro {
-        font-size: 11rem;
+        font-size: 12rem;
         line-height: 1;
         text-align: center;
         margin:auto;
@@ -172,25 +193,22 @@
         fill: blue;
       }
       #greed:hover {
-        fill: green;
-      }
-      #lust:hover {
-        fill: purple;
-      }
-      #envy:hover {
-        fill: darkred;
-      }
-      #gluttony:hover {
-        fill: yellow;
-      }
-      #wrath:hover {
         fill: orangered;
       }
-      #sloth:hover {
-        fill: grey;
+      #lust:hover {
+        fill: crimson;
       }
-      #sins:hover {
-        fill: white;
+      #envy:hover {
+        fill: darkmagenta;
+      }
+      #gluttony:hover {
+        fill: gold;
+      }
+      #wrath:hover {
+        fill: silver;
+      }
+      #sloth:hover {
+        fill: darkgreen;
       }
 
       #pr,
@@ -212,42 +230,53 @@
       }
       #gr {
         font-variation-settings: "wght" 200;
-        color: green;
+        color: orangered;
       }
       #lu {
         font-variation-settings: "wght" 300;
-        color: purple;
+        color: crimson;
       }
       #en {
         font-variation-settings: "wght" 400;
-        color: darkred;
+        color: darkmagenta;
       }
       #gl {
         font-variation-settings: "wght" 500;
-        color: yellow;
+        color: gold;
       }
       #wr {
         font-variation-settings: "wght" 600;
-        color: orangered;
+        color: silver;
       }
       #sl {
         font-variation-settings: "wght" 700;
-        color: grey;
+        color: darkgreen;
       }
-      .showcase {
-        display: grid;
-        grid-template-columns: 56rem auto;
+      #girls{
+        font-size:3rem;
+        padding:10%;
+        line-height: 1.1;
+        text-align: center;
       }
-      #chart {
-        grid-column: 1/2;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 4rem);
-        /* grid-template-columns:  auto auto auto auto auto auto auto auto auto auto auto auto auto auto; */
-        font-size: 3rem;
-        font-variation-settings: "wght" var(--wght);
-        padding: 2%;
-        margin: 3%;
+      .caption{
+        position: relative;
+        bottom: -5rem;
+        font-size: 1rem;
+        font-variant-numeric: oldstyle-nums;
+        -moz-font-feature-settings: "onum";
+        -webkit-font-feature-settings: "onum";
+        font-feature-settings: "onum";
+        color:inherit;
       }
+      
+      #showcase {
+        
+        font-size:5rem;
+        text-align:center;
+        flex-wrap: wrap;
+        padding:2%;
+      }
+
       .small {
         background-color: rgba(255, 255, 255, 0.8);
         border: 1px solid rgba(0, 0, 0, 0.8);
@@ -255,39 +284,88 @@
         font-size: 30px;
         text-align: center;
       }
-      #individual {
-        grid-column: 2/3;
+     
+      #spell{
+        
+        position: absolute;
+        top: 5rem;
+        cursor:pointer;
+        font-size: 2rem;
       }
-      .big {
-        display: block;
-      }
-      #s1:hover .big {
-        display: block;
-      }
-
+footer{
+ 
+  font-size: 1rem;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+}
+#top{
+  text-decoration: underline;
+  cursor: pointer;
+}
       #crossfade > object {
         width: 600px;
         height: 600px;
         position: absolute;
-        top: 150%;
+        top: 250%;
   left: 50%;
   transform: translate(-50%, -50%);
         color: transparent;
         opacity: 0;
         backface-visibility: hidden;
-        -webkit-animation: imageAnimation 6s linear infinite 0s;
-        -moz-animation: imageAnimation 6s linear infinite 0s;
-        -o-animation: imageAnimation 6s linear infinite 0s;
-        -ms-animation: imageAnimation 6s linear infinite 0s;
-        animation: imageAnimation 6s linear infinite 0s;
+        -webkit-animation: imageAnimation 30s linear infinite 0s;
+        -moz-animation: imageAnimation 30s linear infinite 0s;
+        -o-animation: imageAnimation 30s linear infinite 0s;
+        -ms-animation: imageAnimation 30s linear infinite 0s;
+        animation: imageAnimation 30s linear infinite 0s;
       }
 
       #crossfade > object:nth-child(2) {
+        -webkit-animation-delay: 3s;
+        -moz-animation-delay: 3s;
+        -o-animation-delay: 3s;
+        -ms-animation-delay: 3s;
+        animation-delay: 4s;
+      }
+
+      #crossfade > object:nth-child(3) {
         -webkit-animation-delay: 6s;
         -moz-animation-delay: 6s;
         -o-animation-delay: 6s;
         -ms-animation-delay: 6s;
-        animation-delay: 3s;
+        animation-delay: 8s;
+      }
+
+      #crossfade > object:nth-child(4) {
+        -webkit-animation-delay:9s;
+        -moz-animation-delay: 9s;
+        -o-animation-delay: 9s;
+        -ms-animation-delay: 9s;
+        animation-delay: 12s;
+      }
+
+      #crossfade > object:nth-child(5) {
+        -webkit-animation-delay: 12s;
+        -moz-animation-delay: 12s;
+        -o-animation-delay: 12s;
+        -ms-animation-delay: 12s;
+        animation-delay: 16s;
+      }
+
+      #crossfade > object:nth-child(6) {
+        -webkit-animation-delay: 15s;
+        -moz-animation-delay: 15s;
+        -o-animation-delay: 15s;
+        -ms-animation-delay: 15s;
+        animation-delay: 20s;
+      }
+
+      #crossfade > object:nth-child(7) {
+        -webkit-animation-delay: 18s;
+        -moz-animation-delay: 18s;
+        -o-animation-delay: 18s;
+        -ms-animation-delay: 18s;
+        animation-delay: 24s;
       }
       @-webkit-keyframes imageAnimation {
         0% {
@@ -393,13 +471,23 @@
   <body>
     <div class="chapter container">
       <section id="intro" class="magical">
-        <div id="bigletter">Magical Seven Girls Sins</div>
+        <div id="bigletter">Magical 7Sins</div>
       </section>
+    </div>
+    <div class="chapter container">
+      <div id="girls" class="magical">
+        Magical 7Sins is a variable typeface designed by Jie Jian JJ. <br><br>Inspired by magical girls, a genre that has been linked to female empowerment since the 1970s, from exploring female sexuality to weaponizing femininity. By combining magical girls with the Seven Sins, this typeface aims to destigmatize the notion that (magical) girls have to be virtuous.
+      </div>
     </div>
     <div class="chapter">
       <div id="crossfade">
+        <object data="assets/SVG/pridecircle.svg"></object>
+        <object data="assets/SVG/greedcircle.svg"></object>
         <object data="assets/SVG/lustcircle.svg"></object>
         <object data="assets/SVG/envycircle.svg"></object>
+        <object data="assets/SVG/gluttonycircle.svg"></object>
+        <object data="assets/SVG/wrathcircle.svg"></object>
+        <object data="assets/SVG/slothcircle.svg"></object>
       </div>
       <section id="buttons">
         
@@ -516,33 +604,47 @@
         </div>
       </section>
     </div>
-    <div class="container chapter">
-      <div id="pr">Let not the mighty man boast of his might.</div>
+    <div id="pr" class="container chapter">
+      <div>Let not the mighty man boast of his might.</div>
+      <div class="caption">Jeremiah 9:23-24</div>
     </div>
-    <div class="container chapter">
-      <div id="gr">Be content with such things as you have.</div>
+    <div id="gr" class="container chapter">
+      <div>Be content with such things as you have.</div>
+      <div class="caption">Hebrews 13:5</div>
     </div>
-    <div class="container chapter">
-      <div id="lu">Flee also youthful lusts.</div>
+    <div id="lu" class="container chapter">
+      <div>Flee also youthful lusts.</div>
+      <div class="caption">2 Timothy 2:22</div>
     </div>
-    <div class="container chapter">
-      <div id="en">But envy is rottenness to the bones.</div>
+    <div id="en" class="container chapter">
+      <div>But envy is rottenness to the bones.</div>
+      <div class="caption">Proverbs 14:30</div>
     </div>
-    <div class="container chapter">
-      <div id="gl">Whether you eat or drink, do all to the glory of God.</div>
+    <div id="gl" class="container chapter">
+      <div>Whether you eat or drink, do all to the glory of God.</div>
+      <div class="caption">1 Corinthians 10:31</div>
     </div>
-    <div class="container chapter">
-      <div id="wr">
+    <div id="wr" class="container chapter">
+      <div>
         Never avenge yourselves, but leave it to the wrath of God.
       </div>
+      <div class="caption">Romans 12:19</div>
     </div>
-    <div class="container chapter">
-      <div id="sl">
-        Go to the ant, you sluggard! Consider her ways and be wise.
+    <div id="sl" class="container chapter">
+      <div>
+        Go to the ant, you sluggard!
       </div>
+      <div class="caption">Proverbs 6:6-11</div>
     </div>
-    <div class="showcase">
-      <div id="chart">
+    <div class="chapter container" style="position:relative">
+      <div id="spell">
+        Cast a Spell!
+      </div>
+<div id="showcase"></div>
+<footer>
+  <span id="top">Magical 7Sins</span> is a variable typeface designed by <a href="https://jjjiejian.me/" target="_blank">Jie Jian JJ</a>. Instructed by <a href="https://motsuka.com/">Marie Otsuka</a>. 2022
+</footer>
+      <!-- <div id="chart">
         <span class="small" id="s1">A</span>
         <span class="small" id="s2">B</span>
         <span class="small" id="s3">C</span>
@@ -637,7 +739,7 @@
       </div>
       <div id="individual">
         <span class="big" id="b1">A</span>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>

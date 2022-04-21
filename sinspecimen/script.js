@@ -21,7 +21,7 @@ $(document).ready(function(){
             });
             
         });
-        $('#chart').mousemove(function(event) {
+        $('#girls').mousemove(function(event) {
     
             console.log(event.pageX, event.pageY);
     
@@ -31,59 +31,64 @@ $(document).ready(function(){
     
             // console.log( settingX, settingY)
     
-            $("#chart").css({
+            $("#girls").css({
                 "--wght": settingX
             });
             
         });
         //click buttons
 	$('#pride').click(function(event) {
-		$("#bigletter").css({
-			"--wght": 100,
-		});	
+        $([document.documentElement, document.body]).animate({scrollTop: $("#pr").offset().top});
 	});
     $('#greed').click(function(event) {
-		$("#bigletter").css({
-			"--wght": 200,
-		});	
+		$([document.documentElement, document.body]).animate({scrollTop: $("#gr").offset().top});
 	});
     $('#lust').click(function(event) {
-		$("#bigletter").css({
-			"--wght": 300,
-		});	
+		$([document.documentElement, document.body]).animate({scrollTop: $("#lu").offset().top});
 	});
     $('#envy').click(function(event) {
-		$("#bigletter").css({
-			"--wght": 400,
-		});	
+		$([document.documentElement, document.body]).animate({scrollTop: $("#en").offset().top});
 	});
     $('#gluttony').click(function(event) {
-		$("#bigletter").css({
-			"--wght": 500,
-		});	
+		$([document.documentElement, document.body]).animate({scrollTop: $("#gl").offset().top});
 	});
     $('#wrath').click(function(event) {
-		$("#bigletter").css({
-			"--wght": 600,
-		});	
+		$([document.documentElement, document.body]).animate({scrollTop: $("#wr").offset().top});
 	});
     $('#sloth').click(function(event) {
-		$("#bigletter").css({
-			"--wght": 700,
-		});	
+		$([document.documentElement, document.body]).animate({scrollTop: $("#sl").offset().top});
 	});
-    $('#sins').click(function(event) {
-		$("#bigletter").css({
-			"--wght": 800,
-		});	
+    $('#top').click(function(event) {
+		$([document.documentElement, document.body]).animate({scrollTop:0});
 	});
-
-
     }
     );
-    
+ var showcase=document.getElementById("showcase"); 
+    let spellsource="                    ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!?.,-——(){}[]“”‘’&$"
+   let spell=spellsource.split("");
+   genspell()
+   
+   function genspell(){
+    let w = getRandomIntInclusive(7, 60)
+    for (let i = 7; i < w; i++) {
+    let n = getRandomIntInclusive(0, 100);
+    let magic = document.createElement("span");
+    magic.innerHTML = spell[n];
+    showcase.appendChild(magic);
+   }
+}
+$('#spell').click(function(event){
+    remove();
+    genspell();
+})
+function remove() {
+    var div = document.getElementById("showcase");
+    while (div.firstChild) div.removeChild(div.firstChild);
+  }
     // Function to generate random number 
-    function randomNumber(min, max) { 
-        return Math.floor(Math.random() * (max - min) + min);
-    }
+    function getRandomIntInclusive(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+      }
 });
