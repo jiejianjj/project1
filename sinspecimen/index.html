@@ -38,49 +38,115 @@
         height: 100%;
       }
       #buttons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 100vh;
+  height: 100vh;
+  position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+
       }
-      .sinbuttons {
+      .sinbuttons1{
         margin: 1%;
-        width: 10vw;
+        width: 50px;
         cursor: pointer;
         position: relative;
         text-align: center;
         color: black;
-      }
-
+        top: 1%;
+  left: 46%;
+}
+.sinbuttons2{
+  margin: 1%;
+        width: 50px;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        color: black;
+  top: 7%;
+  left: 80%;
+}
+.sinbuttons3{
+  margin: 1%;
+        width: 50px;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        color: black;
+  top: 28%;
+  left: 90%;
+}
+.sinbuttons4{
+  margin: 1%;
+        width: 50px;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        color: black;
+  top: 55%;
+  left: 73%;
+}
+.sinbuttons5{
+  margin: 1%;
+        width: 50px;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        color: black;
+  top: 47%;
+  left: 19%;
+}
+.sinbuttons6{
+  margin: 1%;
+        width: 50px;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        color: black;
+  top: 3%;
+  left: 1%;
+}
+.sinbuttons7{
+  margin: 1%;
+        width: 50px;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        color: black;
+  top: -36%;
+  left: 12%;
+}
+    
       .typeonimage {
-        padding:1%;
-        font-size: 1rem;
-        background-color: white;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    top: 108%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        padding: 1%;
+        font-size: 1rem;
+        
       }
       object {
         padding: 1%;
         width: 100%;
-        height: auto; 
-        object-fit:contain;
+        height: auto;
+        object-fit: contain;
       }
-.container{
-  display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: row;
-    justify-content: center;
-    overflow: hidden;
-}
-.onum{
-  font-variant-numeric: oldstyle-nums;
-  -moz-font-feature-settings: "onum";
-  -webkit-font-feature-settings: "onum";
-  font-feature-settings: "onum";
-}
+      .container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: row;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .onum {
+        font-variant-numeric: oldstyle-nums;
+        -moz-font-feature-settings: "onum";
+        -webkit-font-feature-settings: "onum";
+        font-feature-settings: "onum";
+      }
       @font-face {
         font-family: "Sins";
         src: url("assets/SinsVF.ttf") format("truetype-variations");
@@ -99,30 +165,31 @@
         font-size: 11rem;
         line-height: 1;
         text-align: center;
+        margin:auto;
       }
 
-      #pride:hover{
+      #pride:hover {
         fill: blue;
       }
-      #greed:hover{
+      #greed:hover {
         fill: green;
       }
-      #lust:hover{
+      #lust:hover {
         fill: purple;
       }
-      #envy:hover{
+      #envy:hover {
         fill: darkred;
       }
-      #gluttony:hover{
+      #gluttony:hover {
         fill: yellow;
       }
-      #wrath:hover{
+      #wrath:hover {
         fill: orangered;
       }
-      #sloth:hover{
+      #sloth:hover {
         fill: grey;
       }
-      #sins:hover{
+      #sins:hover {
         fill: white;
       }
 
@@ -132,297 +199,445 @@
       #en,
       #gl,
       #wr,
-      #sl{
+      #sl {
         font-size: 9rem;
         padding: 5%;
         text-align: center;
-        line-height: 1;;
+        line-height: 1;
       }
 
-      #pr{
+      #pr {
         font-variation-settings: "wght" 100;
         color: blue;
       }
-      #gr{
+      #gr {
         font-variation-settings: "wght" 200;
         color: green;
       }
-      #lu{
+      #lu {
         font-variation-settings: "wght" 300;
         color: purple;
       }
-      #en{
+      #en {
         font-variation-settings: "wght" 400;
         color: darkred;
       }
-      #gl{
+      #gl {
         font-variation-settings: "wght" 500;
         color: yellow;
       }
-      #wr{
+      #wr {
         font-variation-settings: "wght" 600;
-        color:orangered;
+        color: orangered;
       }
-      #sl{
+      #sl {
         font-variation-settings: "wght" 700;
         color: grey;
       }
-.showcase{
-  display: grid;
-grid-template-columns: 56rem auto;
-}
-      #chart{
-        grid-column:1/2;
+      .showcase {
+        display: grid;
+        grid-template-columns: 56rem auto;
+      }
+      #chart {
+        grid-column: 1/2;
         display: grid;
         grid-template-columns: repeat(auto-fill, 4rem);
         /* grid-template-columns:  auto auto auto auto auto auto auto auto auto auto auto auto auto auto; */
         font-size: 3rem;
         font-variation-settings: "wght" var(--wght);
         padding: 2%;
-        
+        margin: 3%;
       }
-      .small{
+      .small {
         background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
       }
-  #b1{
-    display: none;
-  }
-  #s1:hover #b1{
-display: block;
-  }
-      
-      #crossfade > object { 
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    color: transparent;
-    opacity: 0;
-    z-index: -1;
-    backface-visibility: hidden;
-    -webkit-animation: imageAnimation 6s linear infinite 0s;
-    -moz-animation: imageAnimation 6s linear infinite 0s;
-    -o-animation: imageAnimation 6s linear infinite 0s;
-    -ms-animation: imageAnimation 6s linear infinite 0s;
-    animation: imageAnimation 6s linear infinite 0s; 
-}
+      #individual {
+        grid-column: 2/3;
+      }
+      .big {
+        display: block;
+      }
+      #s1:hover .big {
+        display: block;
+      }
 
-#crossfade > object:nth-child(2)  {
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 3s; 
-}
-@-webkit-keyframes imageAnimation { 
-    0% { opacity: 0;
-    -webkit-animation-timing-function: ease-in; }
-    8% { opacity: 1;
-         -webkit-animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
-}
+      #crossfade > object {
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+        color: transparent;
+        opacity: 0;
+        backface-visibility: hidden;
+        -webkit-animation: imageAnimation 6s linear infinite 0s;
+        -moz-animation: imageAnimation 6s linear infinite 0s;
+        -o-animation: imageAnimation 6s linear infinite 0s;
+        -ms-animation: imageAnimation 6s linear infinite 0s;
+        animation: imageAnimation 6s linear infinite 0s;
+      }
 
-@-moz-keyframes imageAnimation { 
-    0% { opacity: 0;
-    -moz-animation-timing-function: ease-in; }
-    8% { opacity: 1;
-         -moz-animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
-}
+      #crossfade > object:nth-child(2) {
+        -webkit-animation-delay: 6s;
+        -moz-animation-delay: 6s;
+        -o-animation-delay: 6s;
+        -ms-animation-delay: 6s;
+        animation-delay: 3s;
+      }
+      @-webkit-keyframes imageAnimation {
+        0% {
+          opacity: 0;
+          -webkit-animation-timing-function: ease-in;
+        }
+        8% {
+          opacity: 1;
+          -webkit-animation-timing-function: ease-out;
+        }
+        17% {
+          opacity: 1;
+        }
+        25% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
 
-@-o-keyframes imageAnimation { 
-    0% { opacity: 0;
-    -o-animation-timing-function: ease-in; }
-    8% { opacity: 1;
-         -o-animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
-}
+      @-moz-keyframes imageAnimation {
+        0% {
+          opacity: 0;
+          -moz-animation-timing-function: ease-in;
+        }
+        8% {
+          opacity: 1;
+          -moz-animation-timing-function: ease-out;
+        }
+        17% {
+          opacity: 1;
+        }
+        25% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
 
-@-ms-keyframes imageAnimation { 
-    0% { opacity: 0;
-    -ms-animation-timing-function: ease-in; }
-    8% { opacity: 1;
-         -ms-animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
-}
+      @-o-keyframes imageAnimation {
+        0% {
+          opacity: 0;
+          -o-animation-timing-function: ease-in;
+        }
+        8% {
+          opacity: 1;
+          -o-animation-timing-function: ease-out;
+        }
+        17% {
+          opacity: 1;
+        }
+        25% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
 
-@keyframes imageAnimation { 
-    0% { opacity: 0;
-    animation-timing-function: ease-in; }
-    8% { opacity: 1;
-         animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
-}
+      @-ms-keyframes imageAnimation {
+        0% {
+          opacity: 0;
+          -ms-animation-timing-function: ease-in;
+        }
+        8% {
+          opacity: 1;
+          -ms-animation-timing-function: ease-out;
+        }
+        17% {
+          opacity: 1;
+        }
+        25% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes imageAnimation {
+        0% {
+          opacity: 0;
+          animation-timing-function: ease-in;
+        }
+        8% {
+          opacity: 1;
+          animation-timing-function: ease-out;
+        }
+        17% {
+          opacity: 1;
+        }
+        25% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
     </style>
   </head>
   <body>
-    <section></section>
     <div class="chapter container">
       <section id="intro" class="magical">
         <div id="bigletter">Magical Seven Girls Sins</div>
       </section>
-      <section id="buttons">
-        <div class="sinbuttons">
-          <svg id="pride" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M8.71,61l34.83,8.71L34.83,87.08,52.25,113.2,69.66,87.08,61,69.66,95.79,61,87.08,87.08,69.66,104.5,61,121.91v8.71L52.25,148l-8.71-17.42v-8.71L34.83,104.5,17.42,87.08Z" transform="translate(-8.71 -60.95)"/></g></g></svg>
-          <div class="typeonimage">pride</div>
-        </div>
-        <div class="sinbuttons">
-          <svg id="greed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M8.71,87.08,52.25,104.5,34.83,61,52.25,95.79,69.66,61,52.25,104.5,95.79,87.08,61,104.5l34.83,17.41L52.25,104.5,69.66,148,52.25,113.2,34.83,148,52.25,104.5,8.71,121.91,43.54,104.5Z" transform="translate(-8.71 -60.95)"/></g></g></svg>
-          <div class="typeonimage">greed</div>
-        </div>
-        <div class="sinbuttons">
-          <svg id="lust" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M8.71,99.27V80.11L27.87,61,47,80.11,67.05,61,86.21,80.11V99.27l-9.58,20-9.58,9.58v9.58h9.58l19.16-9.58L76.63,148H57.47l-29.6-19.16-9.58-9.58Z" transform="translate(-8.71 -60.95)"/></g></g></svg>
-          <div class="typeonimage">lust</div>
-        </div>
-        <div class="sinbuttons">
-          <svg id="envy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M17.42,121.91,8.71,104.49,34.83,61l17.42,8.71L69.66,61l26.13,43.54-8.71,17.42L61,148l17.41-43.54L52.25,78.37,61,104.49,52.25,148l-8.71-43.54,8.71-26.12L26.12,104.49,43.54,148Z" transform="translate(-8.71 -60.95)"/></g></g></svg>
-          <div class="typeonimage">envy</div>
-        </div>
-        <div class="sinbuttons">
-          <svg id="gluttony" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M26.12,95.79l-8.7,8.71L8.71,87.08,34.83,61H61l17.41,8.71,8.71,8.71,8.71,26.13-8.71,26.12-8.71,8.71L61,148H34.83L8.71,130.62V113.2l8.71,8.71L61,113.2Z" transform="translate(-8.71 -60.95)"/></g></g></svg>
-          <div class="typeonimage">gluttony</div>
-        </div>
-        <div class="sinbuttons">
-          <svg id="wrath" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M34.83,104.49,8.71,61,43.54,87.08,52.25,61,61,87.08,95.79,61,69.67,104.49l26.12-8.7L78.37,121.91H95.79L61,148,52.25,78.37,43.54,148,8.71,121.91H26.12L8.71,95.79Z" transform="translate(-8.71 -60.95)"/></g></g></svg>
-          <div class="typeonimage">wrath</div>
-        </div>
-        <div class="sinbuttons">
-          <svg id="sloth" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M8.71,78.37V61L26.12,104.5l26.13,8.7,26.12-8.7L95.79,61V148H8.71V78.37Z" transform="translate(-8.71 -60.96)"/></g></g></svg>
-          <div class="typeonimage">sloth</div>
-        </div>
-        <div class="sinbuttons">
-          <svg id="sins" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M8.71,78.37V61H95.79V148H8.71V78.37Z" transform="translate(-8.71 -60.95)"/></g></g></svg>
-          <div class="typeonimage">sin</div>
-        </div>
-      </section>
     </div>
-    <div>
+    <div class="chapter">
       <div id="crossfade">
         <object data="assets/SVG/lustcircle.svg"></object>
         <object data="assets/SVG/envycircle.svg"></object>
       </div>
+      <section id="buttons">
+        
+        <div class="sinbuttons1">
+          <svg
+            id="pride"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 87.08 87.08"
+          >
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path
+                  d="M8.71,61l34.83,8.71L34.83,87.08,52.25,113.2,69.66,87.08,61,69.66,95.79,61,87.08,87.08,69.66,104.5,61,121.91v8.71L52.25,148l-8.71-17.42v-8.71L34.83,104.5,17.42,87.08Z"
+                  transform="translate(-8.71 -60.95)"
+                />
+              </g>
+            </g>
+          </svg>
+          <div class="typeonimage">pride</div>
+        </div>
+        <div class="sinbuttons2">
+          <svg id="greed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08">
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path
+                  d="M8.71,87.08,52.25,104.5,34.83,61,52.25,78.37,69.66,61,52.25,104.5,95.79,87.08,78.37,104.5l17.42,17.41L52.25,104.5,69.66,148,52.25,130.62,34.83,148,52.25,104.5,8.71,121.91,26.12,104.5Z"
+                  transform="translate(-8.71 -60.95)"
+                />
+              </g>
+            </g>
+          </svg>
+          <div class="typeonimage">greed</div>
+        </div>
+        <div class="sinbuttons3">
+          <svg
+            id="lust"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 87.08 87.08"
+          >
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path
+                  d="M8.71,99.27V80.11L27.87,61,47,80.11,67.05,61,86.21,80.11V99.27l-9.58,20-9.58,9.58v9.58h9.58l19.16-9.58L76.63,148H57.47l-29.6-19.16-9.58-9.58Z"
+                  transform="translate(-8.71 -60.95)"
+                />
+              </g>
+            </g>
+          </svg>
+          <div class="typeonimage">lust</div>
+        </div>
+        <div class="sinbuttons4">
+          <svg
+            id="envy"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 87.08 87.08"
+          >
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path
+                  d="M17.42,121.91,8.71,104.49,34.83,61l17.42,8.71L69.66,61l26.13,43.54-8.71,17.42L61,148l17.41-43.54L52.25,78.37,61,104.49,52.25,148l-8.71-43.54,8.71-26.12L26.12,104.49,43.54,148Z"
+                  transform="translate(-8.71 -60.95)"
+                />
+              </g>
+            </g>
+          </svg>
+          <div class="typeonimage">envy</div>
+        </div>
+        <div class="sinbuttons5">
+          <svg id="gluttony" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.08 87.08">
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path
+                  d="M26.12,87.08l-8.7,17.42L8.71,78.37,34.83,61H61l17.41,8.71,8.71,8.71,8.71,26.13-8.71,26.12-8.71,8.71L61,148H34.83l-17.41-8.71L8.71,113.2l17.41,17.42L69.66,78.37Z"
+                  transform="translate(-8.71 -60.95)"
+                />
+              </g>
+            </g>
+          </svg>
+          <div class="typeonimage">gluttony</div>
+        </div>
+        <div class="sinbuttons6">
+          <svg
+            id="wrath"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 87.08 87.08"
+          >
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path
+                  d="M34.83,104.49,8.71,61,43.54,87.08,52.25,61,61,87.08,95.79,61,69.67,104.49l26.12-8.7L78.37,121.91H95.79L61,148,52.25,78.37,43.54,148,8.71,121.91H26.12L8.71,95.79Z"
+                  transform="translate(-8.71 -60.95)"
+                />
+              </g>
+            </g>
+          </svg>
+          <div class="typeonimage">wrath</div>
+        </div>
+        <div class="sinbuttons7">
+          <svg
+            id="sloth"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 87.08 87.08"
+          >
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path
+                  d="M8.71,78.37V61L26.12,104.5l26.13,8.7,26.12-8.7L95.79,61V148H8.71V78.37Z"
+                  transform="translate(-8.71 -60.96)"
+                />
+              </g>
+            </g>
+          </svg>
+          <div class="typeonimage">sloth</div>
+        </div>
+      </section>
     </div>
     <div class="container chapter">
-      <div id="pr">...Let not the mighty man boast of his might.</div>
+      <div id="pr">Let not the mighty man boast of his might.</div>
     </div>
-    <div class="container chapter"><div id="gr">Be content with such things as you have.</div></div>
-    <div class="container chapter"><div id="lu">Flee also youthful lusts.</div></div>
-    <div class="container chapter"><div id="en">But envy is rottenness to the bones.</div></div>
-    <div class="container chapter"><div id="gl">Whether you eat or drink, do all to the glory of God.</div></div>
-    <div class="container chapter"><div id="wr">Never avenge yourselves, but leave it to the wrath of God.</div></div>
-    <div class="container chapter"><div id="sl">Go to the ant, you sluggard! Consider her ways and be wise.</div></div>
+    <div class="container chapter">
+      <div id="gr">Be content with such things as you have.</div>
+    </div>
+    <div class="container chapter">
+      <div id="lu">Flee also youthful lusts.</div>
+    </div>
+    <div class="container chapter">
+      <div id="en">But envy is rottenness to the bones.</div>
+    </div>
+    <div class="container chapter">
+      <div id="gl">Whether you eat or drink, do all to the glory of God.</div>
+    </div>
+    <div class="container chapter">
+      <div id="wr">
+        Never avenge yourselves, but leave it to the wrath of God.
+      </div>
+    </div>
+    <div class="container chapter">
+      <div id="sl">
+        Go to the ant, you sluggard! Consider her ways and be wise.
+      </div>
+    </div>
     <div class="showcase">
-    <div id="chart">
-      <span class="small" id="s1">A</span>
-      <span class="small" id="s2">B</span>
-      <span class="small" id="s3">C</span>
-      <span class="small" id="s4">D</span>
-      <span class="small" id="s5">E</span>
-      <span class="small" id="s6">F</span>
-      <span class="small" id="s7">G</span>
-      <span class="small" id="s8">H</span>
-      <span class="small" id="s9">I</span>
-      <span class="small" id="s10">J</span>
-      <span class="small" id="s11">K</span>
-      <span class="small" id="s12">L</span>
-      <span class="small" id="s13">M</span>
-      <span class="small" id="s14">N</span>
-      <span class="small" id="s15">O</span>
-      <span class="small" id="s16">P</span>
-      <span class="small" id="s17">Q</span>
-      <span class="small" id="s18">R</span>
-      <span class="small" id="s19">S</span>
-      <span class="small" id="s20">T</span>
-      <span class="small" id="s21">U</span>
-      <span class="small" id="s22">V</span>
-      <span class="small" id="s23">W</span>
-      <span class="small" id="s24">X</span>
-      <span class="small" id="s25">Y</span>
-      <span class="small" id="s26">Z</span>
-      <span class="small" id="s27">a</span>
-      <span class="small" id="s28">b</span>
-      <span class="small" id="s29">c</span>
-      <span class="small" id="s30">d</span>
-      <span class="small" id="s31">e</span>
-      <span class="small" id="s32">f</span>
-      <span class="small" id="s33">g</span>
-      <span class="small" id="s34">h</span>
-      <span class="small" id="s35">i</span>
-      <span class="small" id="s36">j</span>
-      <span class="small" id="s37">k</span>
-      <span class="small" id="s38">l</span>
-      <span class="small" id="s39">m</span>
-      <span class="small" id="s40">n</span>
-      <span class="small" id="s41">o</span>
-      <span class="small" id="s42">p</span>
-      <span class="small" id="s43">q</span>
-      <span class="small" id="s44">r</span>
-      <span class="small" id="s45">s</span>
-      <span class="small" id="s46">t</span>
-      <span class="small" id="s47">u</span>
-      <span class="small" id="s48">v</span>
-      <span class="small" id="s49">w</span>
-      <span class="small" id="s50">x</span>
-      <span class="small" id="s51">y</span>
-      <span class="small" id="s52">z</span>
-      <span class="small" id="s53">0</span>
-      <span class="small" id="s54">1</span>
-      <span class="small" id="s55">2</span>
-      <span class="small" id="s56">3</span>
-      <span class="small" id="s57">4</span>
-      <span class="small" id="s58">5</span>
-      <span class="small" id="s59">6</span>
-      <span class="small" id="s60">7</span>
-      <span class="small" id="s61">8</span>
-      <span class="small" id="s62">9</span>
-      <span class="onum small" id="s63">0</span>
-      <span class="onum small" id="s64">1</span>
-      <span class="onum small" id="s65">2</span>
-      <span class="onum small" id="s67">3</span>
-      <span class="onum small" id="s68">4</span>
-      <span class="onum small" id="s69">5</span>
-      <span class="onum small" id="s70">6</span>
-      <span class="onum small" id="s71">7</span>
-      <span class="onum small" id="s72">8</span>
-      <span class="onum small" id="s73">9</span>
-      <span class="small" id="s74">!</span>
-      <span class="small" id="s75">?</span>
-      <span class="small" id="s76">.</span>
-      <span class="small" id="s77">,</span>
-      <span class="small" id="s78">-</span>
-      <span class="small" id="s79">—</span>
-      <span class="small" id="s80">—</span>
-      <span class="small" id="s81">(</span>
-      <span class="small" id="s82">)</span>
-      <span class="small" id="s83">{</span>
-      <span class="small" id="s84">}</span>
-      <span class="small" id="s85">[</span>
-      <span class="small" id="s86">]</span>
-      <span class="small" id="s87">“</span>
-      <span class="small" id="s88">”</span>
-      <span class="small" id="s89">‘</span>
-      <span class="small" id="s90">’</span>
-      <span class="small" id="s91">&</span>
-      <span class="small" id="s92">$</span>
+      <div id="chart">
+        <span class="small" id="s1">A</span>
+        <span class="small" id="s2">B</span>
+        <span class="small" id="s3">C</span>
+        <span class="small" id="s4">D</span>
+        <span class="small" id="s5">E</span>
+        <span class="small" id="s6">F</span>
+        <span class="small" id="s7">G</span>
+        <span class="small" id="s8">H</span>
+        <span class="small" id="s9">I</span>
+        <span class="small" id="s10">J</span>
+        <span class="small" id="s11">K</span>
+        <span class="small" id="s12">L</span>
+        <span class="small" id="s13">M</span>
+        <span class="small" id="s14">N</span>
+        <span class="small" id="s15">O</span>
+        <span class="small" id="s16">P</span>
+        <span class="small" id="s17">Q</span>
+        <span class="small" id="s18">R</span>
+        <span class="small" id="s19">S</span>
+        <span class="small" id="s20">T</span>
+        <span class="small" id="s21">U</span>
+        <span class="small" id="s22">V</span>
+        <span class="small" id="s23">W</span>
+        <span class="small" id="s24">X</span>
+        <span class="small" id="s25">Y</span>
+        <span class="small" id="s26">Z</span>
+        <span class="small" id="s27">a</span>
+        <span class="small" id="s28">b</span>
+        <span class="small" id="s29">c</span>
+        <span class="small" id="s30">d</span>
+        <span class="small" id="s31">e</span>
+        <span class="small" id="s32">f</span>
+        <span class="small" id="s33">g</span>
+        <span class="small" id="s34">h</span>
+        <span class="small" id="s35">i</span>
+        <span class="small" id="s36">j</span>
+        <span class="small" id="s37">k</span>
+        <span class="small" id="s38">l</span>
+        <span class="small" id="s39">m</span>
+        <span class="small" id="s40">n</span>
+        <span class="small" id="s41">o</span>
+        <span class="small" id="s42">p</span>
+        <span class="small" id="s43">q</span>
+        <span class="small" id="s44">r</span>
+        <span class="small" id="s45">s</span>
+        <span class="small" id="s46">t</span>
+        <span class="small" id="s47">u</span>
+        <span class="small" id="s48">v</span>
+        <span class="small" id="s49">w</span>
+        <span class="small" id="s50">x</span>
+        <span class="small" id="s51">y</span>
+        <span class="small" id="s52">z</span>
+        <span class="small" id="s53">0</span>
+        <span class="small" id="s54">1</span>
+        <span class="small" id="s55">2</span>
+        <span class="small" id="s56">3</span>
+        <span class="small" id="s57">4</span>
+        <span class="small" id="s58">5</span>
+        <span class="small" id="s59">6</span>
+        <span class="small" id="s60">7</span>
+        <span class="small" id="s61">8</span>
+        <span class="small" id="s62">9</span>
+        <span class="onum small" id="s63">0</span>
+        <span class="onum small" id="s64">1</span>
+        <span class="onum small" id="s65">2</span>
+        <span class="onum small" id="s67">3</span>
+        <span class="onum small" id="s68">4</span>
+        <span class="onum small" id="s69">5</span>
+        <span class="onum small" id="s70">6</span>
+        <span class="onum small" id="s71">7</span>
+        <span class="onum small" id="s72">8</span>
+        <span class="onum small" id="s73">9</span>
+        <span class="small" id="s74">!</span>
+        <span class="small" id="s75">?</span>
+        <span class="small" id="s76">.</span>
+        <span class="small" id="s77">,</span>
+        <span class="small" id="s78">-</span>
+        <span class="small" id="s79">—</span>
+        <span class="small" id="s80">—</span>
+        <span class="small" id="s81">(</span>
+        <span class="small" id="s82">)</span>
+        <span class="small" id="s83">{</span>
+        <span class="small" id="s84">}</span>
+        <span class="small" id="s85">[</span>
+        <span class="small" id="s86">]</span>
+        <span class="small" id="s87">“</span>
+        <span class="small" id="s88">”</span>
+        <span class="small" id="s89">‘</span>
+        <span class="small" id="s90">’</span>
+        <span class="small" id="s91">&</span>
+        <span class="small" id="s92">$</span>
+      </div>
+      <div id="individual">
+        <span class="big" id="b1">A</span>
+      </div>
     </div>
-    <div>
-      <span class="big" id="b1">A</span>
-    </div>
-  </div>
   </body>
 </html>

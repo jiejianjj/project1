@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(document).ready(function(){
-
+       
         console.log('script loaded');
     
         const wghtmax = 900;
