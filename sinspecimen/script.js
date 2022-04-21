@@ -36,6 +36,21 @@ $(document).ready(function(){
             });
             
         });
+        $('#showcase').mousemove(function(event) {
+    
+            console.log(event.pageX, event.pageY);
+    
+            let cursorX = event.pageX / $(this).width();
+    
+            let settingX = Math.floor(cursorX * wghtmax);
+    
+            // console.log( settingX, settingY)
+    
+            $("#showcase").css({
+                "--wght": settingX
+            });
+            
+        });
         //click buttons
 	$('#pride').click(function(event) {
         $([document.documentElement, document.body]).animate({scrollTop: $("#pr").offset().top});
