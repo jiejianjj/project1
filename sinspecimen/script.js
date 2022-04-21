@@ -79,19 +79,60 @@ $(document).ready(function(){
     }
     );
  var showcase=document.getElementById("showcase"); 
-    let spellsource="                    ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!?.,-——(){}[]“”‘’&$"
-   let spell=spellsource.split("");
-   genspell()
+    let capspell=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+   let lowerspell="abcdefghijklmnopqrstuvwxyz0123456789"
+   let lower=lowerspell.split("");
+   let punctuations = ["!","?",".",",","-","–","—","(",")","{","}","[","]","“","”","‘","’","&","$"];
+
+   genspell();
    
    function genspell(){
-    let w = getRandomIntInclusive(7, 60)
-    for (let i = 7; i < w; i++) {
-    let n = getRandomIntInclusive(0, 100);
+    let cap1=document.createElement("span");
+    cap1.innerHTML= capspell[Math.floor(Math.random() * capspell.length)];
+    showcase.appendChild(cap1);
+    let w = getRandomIntInclusive(4, 12);
+    for (let i = 4; i < w; i++) {
+    let n = getRandomIntInclusive(0, 37);
     let magic = document.createElement("span");
-    magic.innerHTML = spell[n];
+    magic.innerHTML = lower[n];
     showcase.appendChild(magic);
    }
+   let punctuation1 = document.createElement("span");
+   punctuation1.innerHTML =
+   punctuations[Math.floor(Math.random() * punctuations.length)] + " ";
+ showcase.appendChild(punctuation1);
+
+ let cap2=document.createElement("span");
+    cap2.innerHTML= capspell[Math.floor(Math.random() * capspell.length)];
+    showcase.appendChild(cap2);
+    let w2 = getRandomIntInclusive(4, 12);
+    for (let i = 4; i < w2; i++) {
+    let n = getRandomIntInclusive(0, 37);
+    let magic2 = document.createElement("span");
+    magic2.innerHTML = lower[n];
+    showcase.appendChild(magic2);
+   }
+   let punctuation2 = document.createElement("span");
+   punctuation2.innerHTML =
+   punctuations[Math.floor(Math.random() * punctuations.length)] + " ";
+ showcase.appendChild(punctuation2);
+
+ let cap3=document.createElement("span");
+    cap3.innerHTML= capspell[Math.floor(Math.random() * capspell.length)];
+    showcase.appendChild(cap3);
+    let w3 = getRandomIntInclusive(4, 12);
+    for (let i = 4; i < w3; i++) {
+    let n = getRandomIntInclusive(0, 37);
+    let magic3 = document.createElement("span");
+    magic3.innerHTML = lower[n];
+    showcase.appendChild(magic3);
+   }
+   let punctuation3 = document.createElement("span");
+   punctuation3.innerHTML =
+   punctuations[Math.floor(Math.random() * punctuations.length)] + " ";
+ showcase.appendChild(punctuation3);
 }
+
 $('#spell').click(function(event){
     remove();
     genspell();
