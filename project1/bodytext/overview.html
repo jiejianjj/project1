@@ -53,6 +53,7 @@
         box-sizing: border-box;
       }
       body {
+        background-color: black;
         cursor: url("../karaoke.png"), auto;
       }
       article {
@@ -69,8 +70,8 @@
         font-family: tensentype-ruihei, sans-serif;
         font-weight: 200;
         font-style: normal;
-        font-size: 16pt;
-        line-height: 1.375em;
+        font-size: 1.2rem;
+        line-height: 1.3em;
         text-indent: 2em;
         color: CornflowerBlue;
       }
@@ -79,8 +80,8 @@
         font-family: hoss-round, sans-serif;
         font-weight: 300;
         font-style: normal;
-        font-size: 17pt;
-        line-height: 1.295em;
+        font-size: 1.3rem;
+        line-height: 1.23em;
         text-indent: 1em;
         color: DarkSeaGreen;
       }
@@ -89,32 +90,33 @@
         font-family: "Murecho", sans-serif;
         font-weight: 300;
         font-style: normal;
-        font-size: 16pt;
-        line-height: 1.375em;
+        font-size: 1.2rem;
+        line-height: 1.3em;
         text-indent: 2em;
         color: MediumPurple;
       }
       h2 {
         font-family: "Murecho", sans-serif;
         color: DarkOrange;
-        font-size: 30pt;
+        font-size: 2.5rem;
         font-weight: 600;
-        margin-top: 22pt;
-        margin-bottom: 22pt;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         text-indent: 0px;
-        line-height: 40px;
+        line-height: 2rem;
       }
       h3 {
         font-family: "Murecho", sans-serif;
         color: Salmon;
-        font-size: 24pt;
+        font-size: 2rem;
         font-weight: 500;
-        margin-top: 22pt;
-        margin-bottom: 22pt;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         text-indent: 0px;
-        line-height: 30px;
+        line-height: 2rem;
       }
       span {
+        
         cursor: pointer;
         position: relative;
         top: -0.4em;
@@ -127,19 +129,19 @@
       .c {
         font-family: tensentype-ruihei, sans-serif;
         font-weight: 300;
-        font-size: 12pt;
+        font-size: 1rem;
         color: CornflowerBlue;
       }
       .e {
         font-family: hoss-round, sans-serif;
         font-weight: 400;
-        font-size: 13pt;
+        font-size: 1rem;
         color: DarkSeaGreen;
       }
       .j {
         font-family: "Murecho", sans-serif;
         font-weight: 300;
-        font-size: 12pt;
+        font-size: 1rem;
         color: MediumPurple;
       }
       #cc1,
@@ -194,7 +196,7 @@
         font-weight: 300;
         font-style: italic;
         text-align: center;
-        font-size: 13pt;
+        font-size: 1rem;
         text-indent: 0;
       }
       .figureen {
@@ -202,7 +204,7 @@
         font-weight: 300;
         font-style: italic;
         text-align: center;
-        font-size: 14pt;
+        font-size: 1rem;
         text-indent: 0;
       }
       .figurejp {
@@ -210,7 +212,7 @@
         font-weight: 300;
         font-style: italic;
         text-align: center;
-        font-size: 13pt;
+        font-size: 1rem;
         text-indent: 0;
       }
       .btn-group{
@@ -228,7 +230,7 @@
         height: 50px;
         text-align: center;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 1.2rem;
         cursor: pointer;
         margin: 0px;
       }
@@ -246,9 +248,16 @@
         background-color: MediumPurple;
       }
       @media only screen and (max-width: 600px) {
+        span{
+          z-index:-1;
+        }
         .container {
           display: block;
         }
+        article {
+        height: inherit;
+       
+      }
         #chinese,
         #japanese,
         #english {
@@ -256,16 +265,16 @@
         }
         #chinese,
         #japanese {
-          font-size: 14pt;
+          font-size: 1.2rem;
         }
         #english {
-          font-size: 13pt;
+          font-size: 1.3rem;
         }
         h2{
-          font-size: 24pt;
+          font-size: 2.5rem;
         }
         h3{
-          font-size:20pt;
+          font-size:2rem;
         }
         .caption {
           display: inline-block;
@@ -281,6 +290,7 @@
     <div class="btn-group"><button id="showc">中</button>
       <button id="showe">EN</button>
       <button id="showj">日</button></div>
+
     <div class="container">
       <article id="chinese">
         <p>

@@ -108,6 +108,7 @@ $(document).ready(function () {
     $(".e").hide();
     $(".j").hide();
     $(".c").show();
+    $("#cc1,#cc2,#cc3,#cc4,#cc5").show();
   })
   $("#showe").click(function(){
     $("#chinese").hide();
@@ -116,6 +117,7 @@ $(document).ready(function () {
     $(".j").hide();
     $(".c").hide();
     $(".e").show();
+    $("#ee1,#ee2,#ee3,#ee4,#ee5,#ee6,#ee7,#ee8,#ee9,#ee10,#ee11,#ee12,#ee13,#ee14,#ee15,#ee16,#ee17,#ee18,#ee19,#ee20,#ee21,#ee22,#ee23").show();
   })
   $("#showj").click(function(){
     $("#english").hide();
@@ -124,7 +126,16 @@ $(document).ready(function () {
     $(".e").hide();
     $(".c").hide();
     $(".j").show();
+    $(" #jj1,#jj2,#jj3,#jj4,#jj5").show();
   })
+  $(window).bind('resize', function(e)
+{
+  if (window.RT) clearTimeout(window.RT);
+  window.RT = setTimeout(function()
+  {
+    this.location.reload(false); /* false to get page from cache */
+  }, 100);
+});
   
   // $("#chinese").mouseover(function () {
   //   $("#english").hide();
