@@ -66,7 +66,7 @@
         grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
       }
       .scrollbar{
-        height:33vh;
+        height:33.3vh;
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
@@ -78,6 +78,8 @@
         font-weight: 200;
         font-style: normal;
         color: CornflowerBlue;
+        font-weight: 500;
+        text-shadow: -3px -3px 0 DarkOrange, 3px -3px 0 DarkOrange, -3px 3px 0 DarkOrange, 3px 3px 0 DarkOrange;
       }
       #introe{
         display: inline-block;
@@ -85,6 +87,8 @@
         font-weight: 300;
         font-style: normal;
         color: DarkSeaGreen;
+        font-weight: 600;
+        text-shadow: -3px -3px 0 Violet, 3px -3px 0 Violet, -3px 3px 0 Violet, 3px 3px 0 Violet;
       }
       #introj{
         display: inline-block;
@@ -92,6 +96,8 @@
         font-weight: 300;
         font-style: normal;
         color: MediumPurple;
+        font-weight: 500;
+        text-shadow: -3px -3px 0 Gold, 3px -3px 0 Gold, -3px 3px 0 Gold, 3px 3px 0 Gold;
       }
       #chinese {
         grid-column: 2/4;
@@ -259,7 +265,7 @@
         text-decoration: none;
         font-size: 1.2rem;
         cursor: pointer;
-        margin: 0px;
+        margin: 5px;
       }
 
       #showc {
@@ -281,10 +287,18 @@
       }
       @media only screen and (max-width: 600px) {
         .scrollbar{
-          height:inherit;
+        height:inherit;
         font-size: 2rem;
         white-space:normal;
-        
+      }
+      #introc{
+        text-shadow: -1px -1px 0 DarkOrange, 1px -1px 0 DarkOrange, -1px 1px 0 DarkOrange, 1px 1px 0 DarkOrange;
+      }
+      #introe{
+      text-shadow: -1px -1px 0 Violet, 1px -1px 0 Violet, -1px 1px 0 Violet, 1px 1px 0 Violet;
+      }
+      #introj{
+        text-shadow: -1px -1px 0 Gold, 1px -1px 0 Gold, -1px 1px 0 Gold, 1px 1px 0 Gold;
       }
         span{
           z-index:-1;
@@ -294,7 +308,6 @@
         }
         article {
         height: inherit;
-       
       }
         #chinese,
         #japanese,
@@ -330,16 +343,20 @@
   <body>
     <div class="btn-group"><button id="showc">中</button><button id="showe">EN</button><button id="showj">日</button></div>
     <article class="scrollbar">
-    <div id="introc">
+      <marquee class="marquee" direction="right" scrollamount="20" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();"><div id="introc">
       卡拉OK通常是在播放预录在录影带之类储存在媒介上、没有主唱人声的音乐伴奏同时，在电视荧幕上同步播放有着节拍提示的歌词，然后由参与者边看着歌词边持麦克风唱歌。
-    </div>
+    </div></marquee>
     </article>
     <article class="scrollbar">
+      <marquee class="marquee" direction="left" scrollamount="20" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
       <div id="introe">Karaoke is the singing of songs to music accompaniment synchronized with lyrics displayed on-screen.</div>
-      </article>
+      </marquee>
+    </article>
       <article class="scrollbar">
+        <marquee class="marquee" direction="right" scrollamount="20" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
     <div id="introj">カラオケとは、歌唱またはメロディパート（主旋律）を担う楽器を演奏する際に、事前に制作された伴奏を再生して歌唱・演奏する行為をいう。</div>
-        </article>
+  </marquee>
+  </article>
     <div class="container">
       <article id="chinese">
         <p>

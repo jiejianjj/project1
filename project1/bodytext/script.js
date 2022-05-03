@@ -139,6 +139,11 @@ $(document).ready(function () {
     this.location.reload(false); /* false to get page from cache */
   }, 100);
 });
+if($(window).width() < 600)
+{
+  $(".marquee").replaceWith(function() { return $(this).contents(); });
+}
+
   
   // $("#chinese").mouseover(function () {
   //   $("#english").hide();

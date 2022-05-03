@@ -8,17 +8,58 @@
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       type="text/javascript"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Murecho:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "qvn5qjj",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
     <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
       @font-face {
         font-family: VCR;
         src: url("VCR_OSD_MONO_1.001.ttf");
       }
       body {
-        font-family: VCR;
-        cursor: url("karaoke.png"), auto;
-        min-height: 100vh;
         background-color: black;
+        max-height: 100vh;
+        overflow: hidden;
       }
+      
       /* .lyrics {
         color: white;
         -webkit-text-stroke: 0.5px black;
@@ -29,31 +70,90 @@
         color: orange;
         -webkit-text-stroke: 0.5px white;
       } */
-
-      #lyrics {
+      #lyricsc {
+        font-family: tensentype-ruihei, sans-serif;
+        font-weight: 500;
         width: fit-content;
-        position: absolute;
-        top: 30vh;
-        left: 15vw;
-
+        position:absolute;
+        top:30px;
+        left:350px;
         color: white;
-        -webkit-text-stroke: 3px black;
-        font-size: 200pt;
+        font-size: 15rem;
+        white-space: nowrap;
       }
-      #sung {
+      #sungc {
+        font-family: tensentype-ruihei, sans-serif;
+        font-weight: 500;
         display: none;
-        position: absolute;
-        top: 30vh;
-        left: 15vw;
+        position:absolute;
+        top:30px;
+        left:350px;
         overflow: hidden;
         animation: animate 6s ease-out;
         animation-fill-mode: forwards;
-        font-size: 200pt;
-        color: orange;
-        -webkit-text-stroke: 3px blue;
+        font-size: 15rem;
+        color: CornflowerBlue;
+        text-shadow: -5px -5px 0 DarkOrange, 5px -5px 0 DarkOrange, -5px 5px 0 DarkOrange, 5px 5px 0 DarkOrange;
         white-space: nowrap;
       }
-      #lyrics:hover ~ #sung {
+      #lyricsc:hover ~ #sungc {
+        display: block;
+      }#lyricse {
+        font-family: hoss-round, sans-serif;
+        font-weight: 600;
+        width: fit-content;
+        position:absolute;
+        top:300px;
+        left:230px;
+        color: white;
+        font-size: 15rem;
+        white-space: nowrap;
+      }
+      #sunge {
+        font-family: hoss-round, sans-serif;
+        font-weight: 600;
+        display: none;
+        position:absolute;
+        top:300px;
+        left:230px;
+        overflow: hidden;
+        animation: animate 6s ease-out;
+        animation-fill-mode: forwards;
+        font-size: 15rem;
+        color: DarkSeaGreen;
+        white-space: nowrap;
+        text-shadow: -5px -5px 0 Violet, 5px -5px 0 Violet, -5px 5px 0 Violet, 5px 5px 0 Violet;
+      }
+      #lyricse:hover ~ #sunge {
+        display: block;
+      }
+      #lyricsj {
+        font-family: "Murecho", sans-serif;
+        font-weight: 500;
+        width: fit-content;
+        position:absolute;
+        top:500px;
+        left:300px;
+        color: white;
+        font-size: 15rem;
+        white-space: nowrap;
+      }
+      #sungj {
+        font-family: "Murecho", sans-serif;
+        font-weight: 500;
+        display: none;
+        position:absolute;
+        top:500px;
+        left:300px;
+        overflow: hidden;
+        animation: animate 6s ease-out;
+        animation-fill-mode: forwards;
+        font-size: 15rem;
+        color: MediumPurple;
+        white-space: nowrap;
+        text-shadow: -5px -5px 0 Gold, 5px -5px 0 Gold, -5px 5px 0 Gold, 5px 5px 0 Gold;
+      }
+      #lyricsj:hover ~ #sungj {
         display: block;
       }
 
@@ -88,11 +188,24 @@
   <body>
     <!-- <h1 class="lyrics">KARAOKE TECHNOLOGY</h1> -->
     <a href="bodytext/overview.html"
-      ><div id="lyrics">
+      >
+      <div id="lyricsc">
+        <span>卡拉OK</span>
+      </div>
+      <div id="sungc">
+        <span>卡拉OK</span>
+      </div>
+      <div id="lyricse">
         <span>KARAOKE</span>
       </div>
-      <div id="sung">
+      <div id="sunge">
         <span>KARAOKE</span>
+      </div>
+      <div id="lyricsj">
+        <span>カラオケ</span>
+      </div>
+      <div id="sungj">
+        <span>カラオケ</span>
       </div>
     </a>
   </body>
