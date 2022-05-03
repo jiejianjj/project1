@@ -50,10 +50,6 @@
         margin: 0;
         box-sizing: border-box;
       }
-      @font-face {
-        font-family: VCR;
-        src: url("VCR_OSD_MONO_1.001.ttf");
-      }
       body {
         background-color: black;
         max-height: 100vh;
@@ -75,8 +71,8 @@
         font-weight: 500;
         width: fit-content;
         position:absolute;
-        top:30px;
-        left:350px;
+        top:7vh;
+        left:22vw;
         color: white;
         font-size: 15rem;
         white-space: nowrap;
@@ -86,8 +82,8 @@
         font-weight: 500;
         display: none;
         position:absolute;
-        top:30px;
-        left:350px;
+        top:7vh;
+        left:22vw;
         overflow: hidden;
         animation: animate 6s ease-out;
         animation-fill-mode: forwards;
@@ -103,8 +99,8 @@
         font-weight: 600;
         width: fit-content;
         position:absolute;
-        top:300px;
-        left:230px;
+        top:35vh;
+        left:15vw;
         color: white;
         font-size: 15rem;
         white-space: nowrap;
@@ -114,8 +110,8 @@
         font-weight: 600;
         display: none;
         position:absolute;
-        top:300px;
-        left:230px;
+        top:35vh;
+        left:15vw;
         overflow: hidden;
         animation: animate 6s ease-out;
         animation-fill-mode: forwards;
@@ -132,8 +128,8 @@
         font-weight: 500;
         width: fit-content;
         position:absolute;
-        top:500px;
-        left:300px;
+        top:57vh;
+        left:18vw;
         color: white;
         font-size: 15rem;
         white-space: nowrap;
@@ -143,8 +139,8 @@
         font-weight: 500;
         display: none;
         position:absolute;
-        top:500px;
-        left:300px;
+        top:57vh;
+        left:18vw;
         overflow: hidden;
         animation: animate 6s ease-out;
         animation-fill-mode: forwards;
@@ -174,15 +170,85 @@
         }
       }
       @media only screen and (max-width: 600px) {
-        #lyrics {
-          font-size:36pt;
-          -webkit-text-stroke: 1px black;
-        }
-        #sung {
-          font-size: 36pt;
-          -webkit-text-stroke: 1px blue;
-        }
+        #lyricsc {
+        font-family: tensentype-ruihei, sans-serif;
+        font-weight: 500;
+        width: fit-content;
+        position:absolute;
+        top:25vh;
+        left:30vw;
+        color: white;
+        font-size: 5rem;
+        white-space: nowrap;
       }
+      #sungc {
+        font-family: tensentype-ruihei, sans-serif;
+        font-weight: 500;
+        display: block;
+        position:absolute;
+        top:25vh;
+        left:30vw;
+        overflow: hidden;
+        animation: animate 6s ease-out;
+        animation-fill-mode: forwards;
+        font-size: 5rem;
+        color: CornflowerBlue;
+        text-shadow: -3px -3px 0 DarkOrange, 3px -3px 0 DarkOrange, -3px 3px 0 DarkOrange, 3px 3px 0 DarkOrange;
+        white-space: nowrap;
+      }
+      #lyricse {
+        font-family: hoss-round, sans-serif;
+        font-weight: 600;
+        width: fit-content;
+        position:absolute;
+        top:40vh;
+        left:20vw;
+        color: white;
+        font-size: 5rem;
+        white-space: nowrap;
+      }
+      #sunge {
+        font-family: hoss-round, sans-serif;
+        font-weight: 600;
+        display: block;
+        position:absolute;
+        top:40vh;
+        left:20vw;
+        overflow: hidden;
+        animation: animate 6s ease-out;
+        animation-fill-mode: forwards;
+        font-size: 5rem;
+        color: DarkSeaGreen;
+        white-space: nowrap;
+        text-shadow: -3px -3px 0 Violet, 3px -3px 0 Violet, -3px 3px 0 Violet, 3px 3px 0 Violet;
+      }
+      #lyricsj {
+        font-family: "Murecho", sans-serif;
+        font-weight: 500;
+        width: fit-content;
+        position:absolute;
+        top:52vh;
+        left:25vw;
+        color: white;
+        font-size: 5rem;
+        white-space: nowrap;
+      }
+      #sungj {
+        font-family: "Murecho", sans-serif;
+        font-weight: 500;
+        display: block;
+        position:absolute;
+        top:52vh;
+        left:25vw;
+        overflow: hidden;
+        animation: animate 6s ease-out;
+        animation-fill-mode: forwards;
+        font-size: 5rem;
+        color: MediumPurple;
+        white-space: nowrap;
+        text-shadow: -3px -3px 0 Gold, 3px -3px 0 Gold, -3px 3px 0 Gold, 3px 3px 0 Gold;
+      }
+    };
     </style>
   </head>
   <body>
