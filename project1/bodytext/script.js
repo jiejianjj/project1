@@ -102,6 +102,7 @@ $(document).ready(function () {
     $("#jj5").toggle({ display: "block" });
   });
   $("#showc").click(function(){
+    $(".scrollbar").hide();
     $("#chinese").show();
     $("#english").hide();
     $("#japanese").hide();
@@ -111,6 +112,7 @@ $(document).ready(function () {
     $("#cc1,#cc2,#cc3,#cc4,#cc5").show();
   })
   $("#showe").click(function(){
+    $(".scrollbar").hide();
     $("#chinese").hide();
     $("#english").show();
     $("#japanese").hide();
@@ -120,13 +122,14 @@ $(document).ready(function () {
     $("#ee1,#ee2,#ee3,#ee4,#ee5,#ee6,#ee7,#ee8,#ee9,#ee10,#ee11,#ee12,#ee13,#ee14,#ee15,#ee16,#ee17,#ee18,#ee19,#ee20,#ee21,#ee22,#ee23").show();
   })
   $("#showj").click(function(){
+    $(".scrollbar").hide();
     $("#english").hide();
     $("#chinese").hide();
     $("#japanese").show();
     $(".e").hide();
     $(".c").hide();
     $(".j").show();
-    $(" #jj1,#jj2,#jj3,#jj4,#jj5").show();
+    $("#jj1,#jj2,#jj3,#jj4,#jj5").show();
   })
   $(window).bind('resize', function(e)
 {
