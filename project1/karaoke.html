@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>karaoke</title>
+    <title>Karaoke</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -55,12 +55,20 @@
         min-height: 100vh;
         overflow: hidden;
         cursor: url("karaoke.png"), auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        height: 100vh;
       }
-
-      a{
+      section {
         cursor: url("pointer.png"), auto;
+        height: 25vh;
+        position: relative;
+        font-size: 13rem;
       }
-      
       /* .lyrics {
         color: white;
         -webkit-text-stroke: 0.5px black;
@@ -75,209 +83,137 @@
         font-family: tensentype-ruihei, sans-serif;
         font-weight: 500;
         width: fit-content;
-        position:absolute;
-        top:7vh;
-        left:22vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         color: white;
-        font-size: 15rem;
         white-space: nowrap;
       }
-      #sungc {
-        font-family: tensentype-ruihei, sans-serif;
-        font-weight: 500;
-        display: none;
-        position:absolute;
-        top:7vh;
-        left:22vw;
+      #lyricsc:hover::after {
+        content: attr(datac);
+        position: absolute;
+        left: 0;
+        top: 0;
         overflow: hidden;
-        animation: animate 6s ease-out;
-        animation-fill-mode: forwards;
-        font-size: 15rem;
+        animation: run-text 5s infinite linear;
         color: CornflowerBlue;
-        text-shadow: -5px -5px 0 DarkOrange, 5px -5px 0 DarkOrange, -5px 5px 0 DarkOrange, 5px 5px 0 DarkOrange;
-        white-space: nowrap;
-      }
-      #lyricsc:hover ~ #sungc {
-        display: block;
-      }#lyricse {
-        font-family: hoss-round, sans-serif;
-        font-weight: 600;
-        width: fit-content;
-        position:absolute;
-        top:35vh;
-        left:15vw;
-        color: white;
-        font-size: 15rem;
-        white-space: nowrap;
-      }
-      #sunge {
-        font-family: hoss-round, sans-serif;
-        font-weight: 600;
-        display: none;
-        position:absolute;
-        top:35vh;
-        left:15vw;
-        overflow: hidden;
-        animation: animate 6s ease-out;
-        animation-fill-mode: forwards;
-        font-size: 15rem;
-        color: DarkSeaGreen;
-        white-space: nowrap;
-        text-shadow: -5px -5px 0 Violet, 5px -5px 0 Violet, -5px 5px 0 Violet, 5px 5px 0 Violet;
-      }
-      #lyricse:hover ~ #sunge {
-        display: block;
-      }
-      #lyricsj {
-        font-family: "Murecho", sans-serif;
-        font-weight: 500;
-        width: fit-content;
-        position:absolute;
-        top:57vh;
-        left:18vw;
-        color: white;
-        font-size: 15rem;
-        white-space: nowrap;
-      }
-      #sungj {
-        font-family: "Murecho", sans-serif;
-        font-weight: 500;
-        display: none;
-        position:absolute;
-        top:57vh;
-        left:18vw;
-        overflow: hidden;
-        animation: animate 6s ease-out;
-        animation-fill-mode: forwards;
-        font-size: 15rem;
-        color: MediumPurple;
-        white-space: nowrap;
-        text-shadow: -5px -5px 0 Gold, 5px -5px 0 Gold, -5px 5px 0 Gold, 5px 5px 0 Gold;
-      }
-      #lyricsj:hover ~ #sungj {
-        display: block;
-      }
-
-      @keyframes animate {
-        0% {
-          width: 0%;
-        }
-        /* 30% {
-          width: 30%;
-          height: 100%;
-        }
-        60% {
-          width: 60%;
-          height: 100%;
-        } */
-        100% {
-          width: 100%;
-        }
-      }
-      @media only screen and (max-width: 600px) {
-        #lyricsc {
-        font-family: tensentype-ruihei, sans-serif;
-        font-weight: 500;
-        width: fit-content;
-        position:absolute;
-        top:25vh;
-        left:30vw;
-        color: white;
-        font-size: 5rem;
-        white-space: nowrap;
-      }
-      #sungc {
-        font-family: tensentype-ruihei, sans-serif;
-        font-weight: 500;
-        display: block;
-        position:absolute;
-        top:25vh;
-        left:30vw;
-        overflow: hidden;
-        animation: animate 6s ease-out;
-        animation-fill-mode: forwards;
-        font-size: 5rem;
-        color: CornflowerBlue;
-        text-shadow: -3px -3px 0 DarkOrange, 3px -3px 0 DarkOrange, -3px 3px 0 DarkOrange, 3px 3px 0 DarkOrange;
-        white-space: nowrap;
+        text-shadow: -5px -5px 0 DarkOrange, 5px -5px 0 DarkOrange,
+          -5px 5px 0 DarkOrange, 5px 5px 0 DarkOrange;
       }
       #lyricse {
         font-family: hoss-round, sans-serif;
         font-weight: 600;
         width: fit-content;
-        position:absolute;
-        top:40vh;
-        left:20vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         color: white;
-        font-size: 5rem;
+        font-size: 14rem;
         white-space: nowrap;
       }
-      #sunge {
-        font-family: hoss-round, sans-serif;
-        font-weight: 600;
-        display: block;
-        position:absolute;
-        top:40vh;
-        left:20vw;
+
+      #lyricse:hover::after {
+        content: attr(datae);
+        position: absolute;
+        left: 0;
+        top: 0;
         overflow: hidden;
-        animation: animate 6s ease-out;
-        animation-fill-mode: forwards;
-        font-size: 5rem;
+        animation: run-text 5s infinite linear;
         color: DarkSeaGreen;
-        white-space: nowrap;
-        text-shadow: -3px -3px 0 Violet, 3px -3px 0 Violet, -3px 3px 0 Violet, 3px 3px 0 Violet;
+        text-shadow: -5px -5px 0 Violet, 5px -5px 0 Violet, -5px 5px 0 Violet,
+          5px 5px 0 Violet;
       }
       #lyricsj {
         font-family: "Murecho", sans-serif;
         font-weight: 500;
         width: fit-content;
-        position:absolute;
-        top:52vh;
-        left:25vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         color: white;
-        font-size: 5rem;
         white-space: nowrap;
       }
-      #sungj {
-        font-family: "Murecho", sans-serif;
-        font-weight: 500;
-        display: block;
-        position:absolute;
-        top:52vh;
-        left:25vw;
+      #lyricsj:hover::after {
+        content: attr(dataj);
+        position: absolute;
+        left: 0;
+        top: 0;
         overflow: hidden;
-        animation: animate 6s ease-out;
-        animation-fill-mode: forwards;
-        font-size: 5rem;
+        animation: run-text 5s infinite linear;
         color: MediumPurple;
-        white-space: nowrap;
-        text-shadow: -3px -3px 0 Gold, 3px -3px 0 Gold, -3px 3px 0 Gold, 3px 3px 0 Gold;
+        text-shadow: -5px -5px 0 Gold, 5px -5px 0 Gold, -5px 5px 0 Gold,
+          5px 5px 0 Gold;
       }
-    };
+      @keyframes run-text {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        #lyricsc {
+          font-size: 6rem;
+        }
+        #lyricsc::after {
+          content: attr(datac);
+          position: absolute;
+          left: 0;
+          top: 0;
+          overflow: hidden;
+          animation: run-text 5s infinite linear;
+          color: CornflowerBlue;
+          text-shadow: -3px -3px 0 DarkOrange, 3px -3px 0 DarkOrange,
+            -3px 3px 0 DarkOrange, 3px 3px 0 DarkOrange;
+        }
+        #lyricse {
+          font-size: 6rem;
+        }
+
+        #lyricse::after {
+          content: attr(datae);
+          position: absolute;
+          left: 0;
+          top: 0;
+          overflow: hidden;
+          animation: run-text 5s infinite linear;
+          color: DarkSeaGreen;
+          text-shadow: -3px -3px 0 Violet, 3px -3px 0 Violet, -3px 3px 0 Violet,
+            3px 3px 0 Violet;
+        }
+        #lyricsj {
+          font-size: 6rem;
+        }
+        #lyricsj::after {
+          content: attr(dataj);
+          position: absolute;
+          left: 0;
+          top: 0;
+          overflow: hidden;
+          animation: run-text 5s infinite linear;
+          color: MediumPurple;
+          text-shadow: -3px -3px 0 Gold, 3px -3px 0 Gold, -3px 3px 0 Gold,
+            3px 3px 0 Gold;
+        }
+      } ;
     </style>
   </head>
   <body>
-    <!-- <h1 class="lyrics">KARAOKE TECHNOLOGY</h1> -->
-    <a href="bodytext/overview.html"
-      >
-      <div id="lyricsc">
-        <span>卡拉OK</span>
-      </div>
-      <div id="sungc">
-        <span>卡拉OK</span>
-      </div>
-      <div id="lyricse">
-        <span>KARAOKE</span>
-      </div>
-      <div id="sunge">
-        <span>KARAOKE</span>
-      </div>
-      <div id="lyricsj">
-        <span>カラオケ</span>
-      </div>
-      <div id="sungj">
-        <span>カラオケ</span>
-      </div>
+    <a href="bodytext/overview.html">
+      <section>
+        <div datac="卡拉OK" id="lyricsc">卡拉OK</div>
+      </section>
+      <section>
+        <div datae="KARAOKE" id="lyricse">KARAOKE</div>
+      </section>
+      <section>
+        <div dataj="カラオケ" id="lyricsj">カラオケ</div>
+      </section>
     </a>
   </body>
   <script src="script.js"></script>

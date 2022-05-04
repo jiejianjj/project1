@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  $(function() {
-        $('a[href]').attr('target', '_blank');
-    });
+  $(function () {
+    $("a[href]").attr("target", "_blank");
+  });
   $("#c1").click(function () {
     $("#cc1").toggle({ display: "block" });
   });
@@ -101,7 +101,7 @@ $(document).ready(function () {
   $("#j5").click(function () {
     $("#jj5").toggle({ display: "block" });
   });
-  $("#showc").click(function(){
+  $("#showc").click(function () {
     $(".scrollbar").hide();
     $("#chinese").show();
     $("#english").hide();
@@ -110,8 +110,8 @@ $(document).ready(function () {
     $(".j").hide();
     $(".c").show();
     $("#cc1,#cc2,#cc3,#cc4,#cc5").show();
-  })
-  $("#showe").click(function(){
+  });
+  $("#showe").click(function () {
     $(".scrollbar").hide();
     $("#chinese").hide();
     $("#english").show();
@@ -119,9 +119,11 @@ $(document).ready(function () {
     $(".j").hide();
     $(".c").hide();
     $(".e").show();
-    $("#ee1,#ee2,#ee3,#ee4,#ee5,#ee6,#ee7,#ee8,#ee9,#ee10,#ee11,#ee12,#ee13,#ee14,#ee15,#ee16,#ee17,#ee18,#ee19,#ee20,#ee21,#ee22,#ee23").show();
-  })
-  $("#showj").click(function(){
+    $(
+      "#ee1,#ee2,#ee3,#ee4,#ee5,#ee6,#ee7,#ee8,#ee9,#ee10,#ee11,#ee12,#ee13,#ee14,#ee15,#ee16,#ee17,#ee18,#ee19,#ee20,#ee21,#ee22,#ee23"
+    ).show();
+  });
+  $("#showj").click(function () {
     $(".scrollbar").hide();
     $("#english").hide();
     $("#chinese").hide();
@@ -130,21 +132,43 @@ $(document).ready(function () {
     $(".c").hide();
     $(".j").show();
     $("#jj1,#jj2,#jj3,#jj4,#jj5").show();
-  })
-  $(window).bind('resize', function(e)
-{
-  if (window.RT) clearTimeout(window.RT);
-  window.RT = setTimeout(function()
-  {
-    this.location.reload(false); /* false to get page from cache */
-  }, 100);
-});
-if($(window).width() < 600)
-{
-  $(".marquee").replaceWith(function() { return $(this).contents(); });
-}
+  });
+  $(window).bind("resize", function (e) {
+    if (window.RT) clearTimeout(window.RT);
+    window.RT = setTimeout(function () {
+      this.location.reload(false); /* false to get page from cache */
+    }, 100);
+  });
+  if ($(window).width() < 600) {
+    $(".marquee").replaceWith(function () {
+      return $(this).contents();
+    });
+  }
 
-  
+    const audioc = new Audio("chinese.m4a" );
+    const audioe = new Audio("english.m4a" );
+    const audioj = new Audio("japanese.m4a" );
+    audioc.muted = false;
+
+  $("#lyricsc").mouseover(function () {
+    audioc.play();
+  });
+  $("#lyricsc").mouseleave(function () {
+    audioc.pause();
+  });
+  $("#lyricse").mouseover(function () {
+    audioe.play();
+  });
+  $("#lyricse").mouseleave(function () {
+    audioe.pause();
+  });
+  $("#lyricsj").mouseover(function () {
+    audioj.play();
+  });
+  $("#lyricsj").mouseleave(function () {
+    audioj.pause();
+  });
+
   // $("#chinese").mouseover(function () {
   //   $("#english").hide();
   //   $("#japanese").hide();
@@ -161,7 +185,7 @@ if($(window).width() < 600)
   //   $("#cc4").css({ display: "none" });
   //   $("#cc5").css({ display: "none" });
   // });
-  
+
   // $("#english").mouseover(function () {
   //   $("#chinese").hide();
   //   $("#japanese").hide();

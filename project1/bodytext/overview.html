@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>karaoke</title>
+    <title>Karaoke</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -55,6 +55,8 @@
       body {
         background-color: black;
         cursor: url("../karaoke.png"), auto;
+        min-height:100vh; 
+        position:relative;
       }
       article {
         height: 100vh;
@@ -286,6 +288,169 @@
         color: darkorange;
         font-size: 1.4rem;
       }
+      #lyricse {
+        font-family: hoss-round, sans-serif;
+        font-weight: 600;
+        width: fit-content;
+        position:absolute;
+        top:35vh;
+        left:15vw;
+        color: white;
+        font-size: 15rem;
+        white-space: nowrap;
+      }
+      #sunge {
+        font-family: hoss-round, sans-serif;
+        font-weight: 600;
+        display: none;
+        position:absolute;
+        top:35vh;
+        left:15vw;
+        overflow: hidden;
+        animation: animate 6s ease-out;
+        animation-fill-mode: forwards;
+        font-size: 15rem;
+        color: DarkSeaGreen;
+        white-space: nowrap;
+        text-shadow: -5px -5px 0 Violet, 5px -5px 0 Violet, -5px 5px 0 Violet, 5px 5px 0 Violet;
+      }
+      #lyricse:hover ~ #sunge {
+        display: block;
+      }
+      .singing{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      section {
+        height: 25vh;
+        position: relative;
+        font-size: 7rem;
+        width:100vw;
+      }
+      #songnamec{
+        font-family: hoss-round, sans-serif;
+        position:absolute;
+        left:50px;
+        color: CornflowerBlue;
+        text-shadow: -0.5px -0.5px 0 DarkOrange, 0.5px -0.5px 0 DarkOrange,
+          -0.5px 0.5px 0 DarkOrange, 0.5px 0.5px 0 DarkOrange;
+        font-size: 2rem;
+      }
+      #songnamee{
+        font-family: hoss-round, sans-serif;
+        position:absolute;
+        left:50px;
+        color: DarkSeaGreen;
+        text-shadow: -0.5px -0.5px 0 Violet, 0.5px -0.5px 0 Violet, -0.5px 0.5px 0 Violet,
+          0.5px 0.5px 0 Violet;
+        font-size: 2rem;
+      }
+      #songnamej{
+        font-family: hoss-round, sans-serif;
+        position:absolute;
+        left:50px;
+        color: MediumPurple;
+        text-shadow: -0.5px -0.5px 0 Gold, 0.5px -0.5px 0 Gold, -0.5px 0.5px 0 Gold,
+          0.5px 0.5px 0 Gold;
+        font-size: 2rem;
+      }
+      #lyricsc {
+        cursor: url("../pointer.png"), pointer;
+        font-family: tensentype-ruihei, sans-serif;
+        font-weight: 500;
+        width: fit-content;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        white-space: nowrap;
+      }
+      #lyricsc:hover::after {
+        cursor: url("../pointer.png"), pointer;
+        content: attr(datac);
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        animation: run-text 3s linear;
+        color: CornflowerBlue;
+        text-shadow: -5px -5px 0 DarkOrange, 5px -5px 0 DarkOrange,
+          -5px 5px 0 DarkOrange, 5px 5px 0 DarkOrange;
+      }
+      #lyricse {
+        cursor: url("../pointer.png"), pointer;
+        font-family: hoss-round, sans-serif;
+        font-weight: 600;
+        width: fit-content;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 6rem;
+        white-space: nowrap;
+      }
+
+      #lyricse:hover::after {
+        cursor: url("../pointer.png"), pointer;
+        content: attr(datae);
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        animation: run-text 3.5s linear;
+        color: DarkSeaGreen;
+        text-shadow: -5px -5px 0 Violet, 5px -5px 0 Violet, -5px 5px 0 Violet,
+          5px 5px 0 Violet;
+      }
+      #lyricsj {
+        cursor: url("../pointer.png"), pointer;
+        font-family: "Murecho", sans-serif;
+        font-weight: 500;
+        width: fit-content;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        white-space: nowrap;
+      }
+      #lyricsj:hover::after {
+        cursor: url("../pointer.png"), pointer;
+        content: attr(dataj);
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        animation: run-text 3s linear;
+        color: MediumPurple;
+        text-shadow: -5px -5px 0 Gold, 5px -5px 0 Gold, -5px 5px 0 Gold,
+          5px 5px 0 Gold;
+      }
+      @keyframes run-text {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      footer{
+        text-align: center;
+        width: 100%;
+        font-family: hoss-round, sans-serif;
+        color:white;
+        font-size: 1rem;
+        text-align: center;
+        position: absolute;
+        bottom: 20px;
+}
       @media only screen and (max-width: 600px) {
         .scrollbar{
         height:inherit;
@@ -707,7 +872,7 @@
       </article>
       <article class="caption">
         <div id="subtitle">References</div>
-        <footer class="c">
+        <div class="c">
           <p id="cc1">
             <span>[1]</span>潘淑红. 《卡拉OK著作权纠纷案法理评析》. 《法学》
             (华东政法大学).
@@ -729,8 +894,8 @@
             <span>[4]</span>烏賀陽弘道 『カラオケ秘史―創意工夫の世界革命―』
           </p>
           <p id="cc5"><span>[5]</span>野口恒 『カラオケ文化産業論』</p>
-        </footer>
-        <footer class="e">
+        </div>
+        <div class="e">
           <p id="ee1">
             <span>[1]</span
             ><a
@@ -865,8 +1030,8 @@
               Phenomenon. Reaktion Books. ISBN 9781780232409.</a
             >
           </p>
-        </footer>
-        <footer class="j">
+        </div>
+        <div class="j">
           <p id="jj1">
             <span>[1]</span
             ><a
@@ -899,8 +1064,38 @@
               >カラオケ発明者の著作物権利、２万口に分割登録 読売新聞</a
             >
           </p>
-        </footer>
+        </div>
       </article>
     </div>
+    <div class="singing">
+      <section style="height:5vh;">
+        <div id="subtitle" style="position:absolute; left:50px; top:0px;">Karaoke Time!</div>
+      </section>
+      <section>
+        
+        <div id="songnamec">朋友—周华健</div>
+        <div datac="朋友一生一起走" id="lyricsc">朋友一生一起走</div>
+        <audio id="audioc">
+          <source src="chinese.m4a" type="audio/m4a"></source>
+      </audio>
+      </section>
+      <section>
+        <div id="songnamee">Billie Jean by Michael Jackson</div>
+        <div datae="Billie Jean is not my lover" id="lyricse">Billie Jean is not my lover</div>
+        <audio id="audioe">
+          <source src="english.m4a" type="audio/m4a"></source>
+      </audio>
+      </section>
+      <section>
+        <div id="songnamej">残酷な天使のテーゼ—高桥洋子</div>
+        <div dataj="少年よ 神話になれ" id="lyricsj">少年よ 神話になれ</div>
+        <audio id="audioj">
+          <source src="japanese.m4a" type="audio/m4a"></source>
+      </audio>
+      </section>
+    </div>
+    <footer>
+      <a href="../karaoke.html">This karaoke site</a> is designed and coded by <a href="https://jjjiejian.me/" target="_blank">Jie Jian JJ</a>. Instructed by <a href="https://motsuka.com/">Marie Otsuka</a>. 2022
+    </footer>
   </body>
 </html>
