@@ -283,7 +283,15 @@
         font-family: "Murecho", sans-serif;
         background-color: MediumPurple;
       }
+      #reference{
+        font-family: hoss-round, sans-serif;
+        color: darkorange;
+        font-size: 1.4rem;
+      }
       #subtitle{
+        position:absolute; 
+        left:50px;
+        top:0px;
         font-family: hoss-round, sans-serif;
         color: darkorange;
         font-size: 1.4rem;
@@ -321,7 +329,7 @@
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-content: center;
         align-items: center;
         height: 100vh;
@@ -442,14 +450,13 @@
         }
       }
       footer{
-        text-align: center;
         width: 100%;
         font-family: hoss-round, sans-serif;
         color:white;
         font-size: 1rem;
         text-align: center;
-        position: absolute;
-        bottom: 20px;
+        padding-left:2%;
+        padding-right:2%;
 }
       @media only screen and (max-width: 600px) {
         .scrollbar{
@@ -500,15 +507,53 @@
         .btn-group{
           display: block;
         }
-        #subtitle{
-          display:none;
+        #reference{
+          display: none;
         }
+        section {
+        font-size: 3rem;
+      }
+      #subtitle{
+        text-align: center;
+        position:relative;
+        left:0px;
+        font-size: 1.5rem;
+      }
+      #songnamec{
+        text-align: center;
+        position:relative;
+        left:0px;
+        font-size: 1.5rem;
+      }
+      #songnamee{
+        text-align: center;
+        position:relative;
+        left:0px;
+        font-size: 1.5rem;
+      }
+      #songnamej{
+        text-align: center;
+        position:relative;
+        left:0px;
+        font-size: 1.5rem;
+      }
+      #lyricsc:hover::after {
+        text-shadow: -1px -1px 0 DarkOrange, 1px -1px 0 DarkOrange, -1px 1px 0 DarkOrange, 1px 1px 0 DarkOrange;
+      }
+      #lyricse {
+        font-size: 2.5rem;
+      }
+      #lyricse:hover::after {
+        text-shadow: -1px -1px 0 Violet, 1px -1px 0 Violet, -1px 1px 0 Violet, 1px 1px 0 Violet;
+      }
+      #lyricsj:hover::after {
+        text-shadow: -1px -1px 0 Gold, 1px -1px 0 Gold, -1px 1px 0 Gold, 1px 1px 0 Gold;
+      }
       }
     </style>
   </head>
   <body>
-    <div class="btn-group"><button id="showc">中</button><button id="showe">EN</button><button id="showj">日</button></div>
-    <article class="scrollbar">
+  <article class="scrollbar">
       <marquee class="marquee" direction="right" scrollamount="20" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();"><div id="introc">
       卡拉OK通常是在播放预录在录影带之类储存在媒介上、没有主唱人声的音乐伴奏同时，在电视荧幕上同步播放有着节拍提示的歌词，然后由参与者边看着歌词边持麦克风唱歌。
     </div></marquee>
@@ -871,7 +916,7 @@
         </p>
       </article>
       <article class="caption">
-        <div id="subtitle">References</div>
+        <div id="reference">References</div>
         <div class="c">
           <p id="cc1">
             <span>[1]</span>潘淑红. 《卡拉OK著作权纠纷案法理评析》. 《法学》
@@ -1069,7 +1114,7 @@
     </div>
     <div class="singing">
       <section style="height:5vh;">
-        <div id="subtitle" style="position:absolute; left:50px; top:0px;">Karaoke Time!</div>
+        <div id="subtitle">Karaoke Time!</div>
       </section>
       <section>
         
@@ -1093,9 +1138,11 @@
           <source src="japanese.m4a" type="audio/m4a"></source>
       </audio>
       </section>
+      <footer>
+        <a href="../karaoke.html">This karaoke site</a> is designed and coded by <a href="https://jjjiejian.me/" target="_blank">Jie Jian JJ</a>. Instructed by <a href="https://motsuka.com/">Marie Otsuka</a>. 2022
+      </footer>
     </div>
-    <footer>
-      <a href="../karaoke.html">This karaoke site</a> is designed and coded by <a href="https://jjjiejian.me/" target="_blank">Jie Jian JJ</a>. Instructed by <a href="https://motsuka.com/">Marie Otsuka</a>. 2022
-    </footer>
+    <div class="btn-group"><button id="showc">中</button><button id="showe">EN</button><button id="showj">日</button></div>
+    
   </body>
 </html>
