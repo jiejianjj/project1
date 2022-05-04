@@ -133,15 +133,17 @@ $(document).ready(function () {
     $(".j").show();
     $("#jj1,#jj2,#jj3,#jj4,#jj5").show();
   });
-  $(window).bind("resize", function (e) {
-    if (window.RT) clearTimeout(window.RT);
-    window.RT = setTimeout(function () {
-      this.location.reload(false); /* false to get page from cache */
-    }, 100);
-  });
   if ($(window).width() < 600) {
     $(".marquee").replaceWith(function () {
       return $(this).contents();
+    });
+  }
+  if ($(window).width() > 600) {
+    $(window).bind("resize", function (e) {
+      if (window.RT) clearTimeout(window.RT);
+      window.RT = setTimeout(function () {
+        this.location.reload(false); /* false to get page from cache */
+      }, 100);
     });
   }
 
