@@ -137,6 +137,15 @@ $(document).ready(function () {
     $(".marquee").replaceWith(function () {
       return $(this).contents();
     });
+    $("#lyricsc").click(function(){
+      audioc.play();
+    })
+    $("#lyricse").click(function () {
+      audioe.play();
+    });
+    $("#lyricsj").click(function () {
+      audioj.play();
+    });
   }
   if ($(window).width() > 600) {
     $(window).bind("resize", function (e) {
