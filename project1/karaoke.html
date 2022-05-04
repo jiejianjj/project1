@@ -52,18 +52,20 @@
       }
       body {
         background-color: black;
-        min-height: 100vh;
         overflow: hidden;
+        height: 100vh;
         cursor: url("karaoke.png"), auto;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
         align-items: center;
-        height: 100vh;
+      }
+      a{
       }
       section {
+        width: 100vw;
         cursor: url("pointer.png"), auto;
         height: 25vh;
         position: relative;
@@ -158,7 +160,7 @@
 
       @media only screen and (max-width: 600px) {
         #lyricsc {
-          font-size: 6rem;
+          font-size: 5rem;
         }
         #lyricsc::after {
           content: attr(datac);
@@ -172,7 +174,7 @@
             -3px 3px 0 DarkOrange, 3px 3px 0 DarkOrange;
         }
         #lyricse {
-          font-size: 6rem;
+          font-size: 5rem;
         }
 
         #lyricse::after {
@@ -187,7 +189,7 @@
             3px 3px 0 Violet;
         }
         #lyricsj {
-          font-size: 6rem;
+          font-size: 5rem;
         }
         #lyricsj::after {
           content: attr(dataj);
