@@ -17,7 +17,8 @@
         src: url("SinsVF.ttf") format("truetype-variations");
       }
       body {
-        background: radial-gradient(crimson,AliceBlue,Azure,OldLace,LavenderBlush,GhostWhite,Ivory,Linen,WhiteSmoke,MintCream,HoneyDew);
+        /* background: radial-gradient(crimson,AliceBlue,Azure,OldLace,LavenderBlush,GhostWhite,Ivory,Linen,WhiteSmoke,MintCream,HoneyDew); */
+        background: radial-gradient(50% 50% at 50% 50%, crimson 0%, Snow 100%);
         min-height: 100vh;
         position: relative;
       }
@@ -26,7 +27,7 @@
         font-weight: 800;
         font-size:1.2rem;
         height: 10vh;
-        background: linear-gradient(to bottom, crimson 1%,white);
+        background: linear-gradient(to bottom, crimson 0%,white 100%);
         mix-blend-mode: multiply;
         display: flex;
         flex-direction: row;
@@ -136,7 +137,7 @@
     
     <div id="content">
     <button id="all">clarity</button>
-    <button id="none">desire</button>
+    <button id="none">action</button>
     </div>
   </body>
 </html>
