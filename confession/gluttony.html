@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>confessions</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vji2wxk.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/rita"></script>
+    <script src="glscript.js"></script>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      @font-face {
+        font-family: "Sins";
+        src: url("SinsVF.ttf") format("truetype-variations");
+      }
+      body {
+        background: radial-gradient(snow,SeaShell,AliceBlue,Azure,OldLace,LavenderBlush,GhostWhite,Ivory,Linen,WhiteSmoke,MintCream,HoneyDew);
+        min-height: 100vh;
+        position: relative;
+      }
+      nav {
+        font-family: "Sins";
+        font-weight: 800;
+        font-size:1.2rem;
+        height: 10vh;
+        background: linear-gradient(to bottom, gold 1%, white);
+        mix-blend-mode: multiply;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 30px;
+        margin-bottom: 30px;
+      }
+      a, a:visited {
+        padding: 20px;
+        color: inherit;
+      }
+      button{
+        font-family: Sins;
+        font-weight: 800;
+        font-size:1.2rem;
+        background-color: transparent;
+        border:none;
+        cursor:pointer;
+      }
+      #all{
+        position: absolute;
+        left:-150px;
+      }
+      #none{
+        position: absolute;
+        right:-150px;
+      }
+      #content {
+        position:relative;
+        font-size: 1.2rem;
+        width: 50vw;
+        margin: 0 auto;
+        line-height: 50px;
+        text-align: center;
+      }
+      ::selection {
+        background: gold;
+      }
+      .else {
+        cursor: pointer;
+        color: white;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: color 1s ease;
+        -moz-transition: color 1s ease;
+        -o-transition: color 1s ease;
+        transition: color 1s ease;
+        mix-blend-mode: multiply;
+        font-family: le-monde-livre-classic-byol, serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      .else::selection {
+        background: transparent;
+      }
+      .punct::selection {
+        background: transparent;
+      }
+      /* .noun {
+        color: black;
+      } */
+      .verb {
+        color: black;
+        font-family: le-monde-livre-classic-byol, serif;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 1.7rem;
+        mix-blend-mode: color-burn;
+        -webkit-transition: color 1s ease;
+        -moz-transition: color 1s ease;
+        -o-transition: color 1s ease;
+        transition: color 1s ease;
+      }
+      .verb:hover{
+        color:white;
+      }
+
+      .punct {
+        color: white;
+        -webkit-transition: color 1s ease;
+        -moz-transition: color 1s ease;
+        -o-transition: color 1s ease;
+        transition: color 1s ease;
+        mix-blend-mode: multiply;
+        font-family: le-monde-livre-classic-byol, serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      .visible {
+        color: black;
+      }
+      .hidden {
+        color: white;
+      }
+      #gl{
+        color:gold;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a id="pr">pride</a><a id="gr">greed</a><a id="lu" href="lust.html">lust</a><a id="gl">gluttony</a><a id="wr">wrath</a><a id="sl">sloth</a>
+    </nav>
+    
+    <div id="content">
+    <button id="all">clarity</button>
+    <button id="none">desire</button>
+    </div>
+  </body>
+</html>
