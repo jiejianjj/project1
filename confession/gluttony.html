@@ -38,7 +38,7 @@
         margin-bottom: 30px;
       }
       a, a:visited {
-        padding: 20px;
+        margin: 20px;
         color: inherit;
       }
       button{
@@ -59,11 +59,14 @@
       }
       #content {
         position:relative;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         width: 50vw;
         margin: 0 auto;
         line-height: 50px;
         text-align: center;
+        font-family: le-monde-livre-classic-byol, serif;
+        font-weight: 300;
+        font-style: normal;
       }
       ::selection {
         background: gold;
@@ -78,9 +81,6 @@
         -o-transition: color 1s ease;
         transition: color 1s ease;
         mix-blend-mode: multiply;
-        font-family: le-monde-livre-classic-byol, serif;
-        font-weight: 300;
-        font-style: normal;
       }
       .else::selection {
         background: transparent;
@@ -93,18 +93,10 @@
       } */
       .verb {
         color: black;
-        font-family: le-monde-livre-classic-byol, serif;
-        font-weight: 300;
-        font-style: italic;
-        font-size: 1.7rem;
-        mix-blend-mode: color-burn;
-        -webkit-transition: color 1s ease;
-        -moz-transition: color 1s ease;
-        -o-transition: color 1s ease;
         transition: color 1s ease;
       }
       .verb:hover{
-        color:white;
+        background-color: gold;
       }
 
       .punct {
@@ -131,11 +123,11 @@
   </head>
   <body>
     <nav>
-      <a id="pr">pride</a><a id="gr">greed</a><a id="lu" href="lust.html">lust</a><a id="en">envy</a><a id="gl">gluttony</a><a id="wr">wrath</a><a id="sl">sloth</a>
+      <a id="pr" a href="pride.html">pride</a><a id="gr" a href="greed.html">greed</a><a id="lu" a href="lust.html">lust</a><a id="en" a href="envy.html">envy</a><a id="gl">gluttony</a><a id="wr" a href="wrath.html">wrath</a><a id="sl" a href="sloth.html">sloth</a>
     </nav>
     
     <div id="content">
-    <button id="all">clarity</button>
+    <button id="all">all</button>
     <button id="none">action</button>
     </div>
   </body>

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/vji2wxk.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/rita"></script>
-    <script src="luscript.js"></script>
+    <script src="wrscript.js"></script>
     <style>
       * {
         margin: 0;
@@ -18,21 +18,22 @@
       }
       body {
         /* background: radial-gradient(crimson,AliceBlue,Azure,OldLace,LavenderBlush,GhostWhite,Ivory,Linen,WhiteSmoke,MintCream,HoneyDew); */
-        /* background: radial-gradient(50% 50% at 50% 50%, crimson 0%, Snow 100%); */
+        background: radial-gradient(50% 50% at 50% 50%, silver 0%, Snow 100%);
         min-height: 100vh;
         position: relative;
-        background-image: url(assets/lust.png);
+        background-image: url(assets/wrath.png);
         background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: bottom;
-        background-size: contain;
+  background-attachment: fixed;
+  background-position:bottom; 
+  background-size: contain;
       }
       nav {
         font-family: "Sins";
         font-weight: 800;
-        font-size: 1.2rem;
+        font-size:1.2rem;
         height: 10vh;
-        background: linear-gradient(to bottom, crimson 0%, white 100%);
+        background: linear-gradient(to bottom, silver 0%,white 100%);
+        mix-blend-mode: overlay;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -42,80 +43,84 @@
         padding-top: 30px;
         margin-bottom: 30px;
         position: sticky;
-        top: 0;
-        z-index: 100;
+    top: 0;
+    z-index: 100;
+        width: 100%;
       }
-      a,
-      a:visited {
+      a, a:visited {
         margin: 20px;
         color: inherit;
       }
-      button {
+      button{
         font-family: Sins;
         font-weight: 800;
-        font-size: 1.2rem;
+        font-size:1.2rem;
         background-color: transparent;
-        border: none;
-        cursor: pointer;
+        border:none;
+        cursor:pointer;
       }
-      #all {
+      #all{
         position: absolute;
-        left: -150px;
+        left:-50px;
       }
-      #none {
+      #none{
         position: absolute;
-        right: -150px;
+        right:-50px;
       }
       #content {
-        position: relative;
+        position:relative;
         font-size: 1.5rem;
-        width: 50vw;
+        width: 70vw;
         margin: 0 auto;
         text-align: left;
-        mix-blend-mode: color-dodge;
+        height:70vh;
       }
       ::selection {
-        background: crimson;
+        background: silver;;
       }
-      .sentences {
+      .sentences{
+        display: none;
+        position: absolute;
         font-family: le-monde-livre-classic-byol, serif;
         font-weight: 300;
         font-style: normal;
-        line-height: 200%;
-        text-indent: 4rem;
-        transition: text-shadow 3s;
-        text-shadow: 0 0 15px black;
-        color: transparent;
+        line-height: 150%;
+        color:black;
+        background-color: white;
+        padding: 5px;
       }
-
-      .visible {
+      .alert{
+        border-style: solid;
+        border-width: 20px 5px 5px 5px;
+        border-color: silver;
+      }
+      .red{
+        cursor: pointer;  
+        border-style: solid;
+        border-width: 20px 5px 5px 5px;
+        border-color: red;
+      }
+      
+      /* .visible {
         text-shadow: 0 0 0px black;
       }
       .hidden {
         text-shadow: 0 0 15px black;
-      }
-
-      #lu {
-        color: crimson;
-      }
-      .show {
-        text-shadow: 0 0 0px black;
+      } */
+      
+      #wr{
+        color:silver;
       }
     </style>
   </head>
   <body>
     <nav>
-      <a id="pr" a href="pride.html">pride</a
-      ><a id="gr" a href="greed.html">greed</a><a id="lu">lust</a
-      ><a id="en" a href="envy.html">envy</a
-      ><a id="gl" a href="gluttony.html">gluttony</a
-      ><a id="wr" a href="wrath.html">wrath</a
-      ><a id="sl" a href="sloth.html">sloth</a>
+      <a id="pr" a href="pride.html">pride</a><a id="gr" a href="greed.html">greed</a><a id="lu" a href="lust.html">lust</a><a id="en" a href="envy.html">envy</a><a id="gl" a href="gluttony.html">gluttony</a><a id="wr">wrath</a><a id="sl" a href="sloth.html">sloth</a>
     </nav>
-
+    
     <div id="content">
-      <button id="all">clear</button>
-      <button id="none">blur</button>
+    <button id="all">anger</button>
+    <button id="none">peace</button>
     </div>
   </body>
 </html>
