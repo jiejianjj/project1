@@ -20,43 +20,52 @@
         background: radial-gradient(snow,SeaShell,AliceBlue,Azure,OldLace,LavenderBlush,GhostWhite,Ivory,Linen,WhiteSmoke,MintCream,HoneyDew);
         min-height: 100vh;
         position: relative;
+        background-image: url(assets/gluttony.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-size: contain;
+        padding-bottom: 30px;
       }
       nav {
         font-family: "Sins";
         font-weight: 800;
-        font-size:1.2rem;
-        height: 10vh;
-        background: linear-gradient(to bottom, gold 1%, white);
-        mix-blend-mode: multiply;
+        font-size: 1.2rem;
+        height: 12vh;
+        background: linear-gradient(to bottom, gold 0%, white 80%, transparent 100%);
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         align-content: stretch;
         justify-content: center;
-        align-items: flex-start;
-        padding-top: 30px;
+        align-items: center;
+        /* padding-top: 30px; */
         margin-bottom: 30px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
       }
-      a, a:visited {
+      #name{
+        position: absolute;
+        margin: 20px;
+        left: 20px;
+      }
+      a,
+      a:visited {
         margin: 20px;
         color: inherit;
       }
-      button{
-        font-family: Sins;
+      button {
+        font-family: "Sins";
         font-weight: 800;
-        font-size:1.5rem;
+        margin: 20px;
+        font-size: 1.2rem;
         background-color: transparent;
-        border:none;
-        cursor:pointer;
+        border: none;
+        cursor: pointer;
+        letter-spacing: 2px;
       }
-      #all{
-        position: absolute;
-        left:-150px;
-      }
-      #none{
-        position: absolute;
-        right:-150px;
-      }
+      
       #content {
         position:relative;
         font-size: 1.5rem;
@@ -72,15 +81,14 @@
         background: gold;
       }
       .else {
-        cursor: pointer;
-        color: white;
+        cursor: url(assets/pointer.png), pointer;
+        color: transparent;
         width: 100%;
         height: 100%;
         -webkit-transition: color 1s ease;
         -moz-transition: color 1s ease;
         -o-transition: color 1s ease;
         transition: color 1s ease;
-        mix-blend-mode: multiply;
       }
       .else::selection {
         background: transparent;
@@ -94,27 +102,26 @@
       .verb {
         color: black;
         transition: color 1s ease;
+        text-shadow: 0 0 10px gold;
       }
       .verb:hover{
         background-color: gold;
       }
 
       .punct {
-        color: white;
+        color: transparent;
         -webkit-transition: color 1s ease;
         -moz-transition: color 1s ease;
         -o-transition: color 1s ease;
         transition: color 1s ease;
-        mix-blend-mode: multiply;
-        font-family: le-monde-livre-classic-byol, serif;
-        font-weight: 300;
-        font-style: normal;
+        
       }
       .visible {
         color: black;
+        text-shadow: 0 0 10px gold;
       }
       .hidden {
-        color: white;
+        color: transparent;
       }
       #gl{
         color:gold;
@@ -123,12 +130,14 @@
   </head>
   <body>
     <nav>
-      <a id="pr" a href="pride.html">pride</a><a id="gr" a href="greed.html">greed</a><a id="lu" a href="lust.html">lust</a><a id="en" a href="envy.html">envy</a><a id="gl">gluttony</a><a id="wr" a href="wrath.html">wrath</a><a id="sl" a href="sloth.html">sloth</a>
-    </nav>
+      <div id="name">Xinhe Zhao</div>
+      <button id="all">SINFUL</button>
+    <a id="pr" a href="pride.html">pride</a><a id="gr" a href="greed.html">greed</a><a id="lu" a href="lust.html">lust</a><a id="en" a href="envy.html">envy</a><a id="gl">gluttony</a><a id="wr" a href="wrath.html">wrath</a><a id="sl" a href="sloth.html">sloth</a>
+    <button id="none">VIRTUOUS</button>
+  </nav>
     
     <div id="content">
-    <button id="all">all</button>
-    <button id="none">action</button>
+    
     </div>
   </body>
 </html>

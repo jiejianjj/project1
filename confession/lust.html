@@ -26,24 +26,30 @@
         background-attachment: fixed;
         background-position: bottom;
         background-size: contain;
+        padding-bottom: 30px;
       }
       nav {
         font-family: "Sins";
         font-weight: 800;
         font-size: 1.2rem;
-        height: 10vh;
-        background: linear-gradient(to bottom, crimson 0%, white 100%);
+        height: 12vh;
+        background: linear-gradient(to bottom, crimson 0%, white 80%, transparent 100%);
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         align-content: stretch;
         justify-content: center;
-        align-items: flex-start;
-        padding-top: 30px;
+        align-items: center;
+        /* padding-top: 30px; */
         margin-bottom: 30px;
         position: sticky;
         top: 0;
         z-index: 100;
+      }
+      #name{
+        position: absolute;
+        margin: 20px;
+        left: 20px;
       }
       a,
       a:visited {
@@ -51,20 +57,14 @@
         color: inherit;
       }
       button {
-        font-family: Sins;
+        font-family: "Sins";
         font-weight: 800;
+        margin: 20px;
         font-size: 1.2rem;
         background-color: transparent;
         border: none;
         cursor: pointer;
-      }
-      #all {
-        position: absolute;
-        left: -150px;
-      }
-      #none {
-        position: absolute;
-        right: -150px;
+        letter-spacing: 2px;
       }
       #content {
         position: relative;
@@ -83,39 +83,43 @@
         font-style: normal;
         line-height: 200%;
         text-indent: 4rem;
-        transition: text-shadow 3s;
-        text-shadow: 0 0 15px black;
+        transition: color 4s;
+        text-shadow: 0 0 15px red;
         color: transparent;
       }
 
       .visible {
-        text-shadow: 0 0 0px black;
+        color: black;
+        text-shadow: 0 0 15px red;
+        
       }
       .hidden {
-        text-shadow: 0 0 15px black;
+        color: transparent;
+        text-shadow: 0 0 15px red;
       }
-
       #lu {
         color: crimson;
       }
       .show {
-        text-shadow: 0 0 0px black;
+        color: black;
+        text-shadow: 0 0 15px red;
       }
     </style>
   </head>
   <body>
     <nav>
+      <div id="name">Lena Luo</div>
+      <button id="all">SINFUL</button>
       <a id="pr" a href="pride.html">pride</a
       ><a id="gr" a href="greed.html">greed</a><a id="lu">lust</a
       ><a id="en" a href="envy.html">envy</a
       ><a id="gl" a href="gluttony.html">gluttony</a
       ><a id="wr" a href="wrath.html">wrath</a
       ><a id="sl" a href="sloth.html">sloth</a>
+      <button id="none">VIRTUOUS</button>
     </nav>
 
     <div id="content">
-      <button id="all">clear</button>
-      <button id="none">blur</button>
     </div>
   </body>
 </html>
