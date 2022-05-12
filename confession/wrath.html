@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>confessions</title>
+    <title>Confessions</title>
     <link rel="stylesheet" href="https://use.typekit.net/vji2wxk.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/rita"></script>
@@ -41,30 +41,32 @@
         );
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: stretch;
+        flex-wrap: wrap;
+        align-content: center;
         justify-content: center;
         align-items: center;
-        /* padding-top: 30px; */
         margin-bottom: 30px;
         position: sticky;
         top: 0;
         z-index: 100;
       }
       #name {
-        position: absolute;
-        margin: 20px;
-        left: 20px;
+        width: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
       }
       a,
       a:visited {
-        margin: 20px;
+        cursor: pointer;
         color: inherit;
+        margin-left: 20px;
+        margin-right: 20px;
       }
       button {
         font-family: "Sins";
         font-weight: 800;
-        margin: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
         font-size: 1.2rem;
         background-color: transparent;
         border: none;
@@ -128,6 +130,7 @@
       ><a id="gl" a href="gluttony.html">gluttony</a><a id="wr">wrath</a
       ><a id="sl" a href="sloth.html">sloth</a>
       <button id="none">VIRTUOUS</button>
+      <div id="name"></div>
     </nav>
 
     <div id="content"></div>
