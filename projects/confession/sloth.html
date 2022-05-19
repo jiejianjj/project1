@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Confessions</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vji2wxk.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/rita"></script>
+    <script src="slscript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      body {
+        background-image: url(assets/sloth.png);
+      }
+      nav {
+        background: linear-gradient(
+          to bottom,
+          darkgreen 0%,
+          white 80%,
+          transparent 100%
+        );
+      }
+      #content {
+        text-align: left;
+        text-shadow: 0 0 10px darkgreen;
+      }
+      ::selection {
+        background: darkgreen;
+        color: white;
+      }
+      .verb:hover {
+        cursor: pointer;
+        color: white;
+        background-color: darkgreen;
+      }
+      #sl {
+        color: darkgreen;
+      }
+      .show {
+        text-shadow: 0 0 0px black;
+      }
+      #all,
+      #none {
+        color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="wrappersins">
+        <a href="confessions.html">confessions</a>
+        <a id="pr" a href="pride.html">pride</a
+        ><a id="gr" a href="greed.html">greed</a>
+        <a id="lu" a href="lust.html">lust</a>
+        <a id="en" a href="envy.html">envy</a
+        ><a id="gl" a href="gluttony.html">gluttony</a
+        ><a id="wr" a href="wrath.html">wrath</a><a id="sl">sloth</a>
+      </div>
+      <div class="wrappername">
+        <button id="all">SINFUL</button>
+        <div id="name">Celine Lam</div>
+        <button id="none">VIRTUOUS</button>
+      </div>
+    </nav>
+
+    <div id="content"></div>
+  </body>
+</html>

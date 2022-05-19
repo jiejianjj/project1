@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Confessions</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vji2wxk.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/rita"></script>
+    <script src="luscript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      body {
+        background-image: url(assets/lust.png);
+      }
+      nav {
+        background: linear-gradient(
+          to bottom,
+          crimson 0%,
+          white 80%,
+          transparent 100%
+        );
+      }
+      #content {
+        text-align: left;
+      }
+      ::selection {
+        background: crimson;
+      }
+      .sentences {
+        text-indent: 4rem;
+        transition: color 4s;
+        text-shadow: 0 0 15px crimson;
+        color: transparent;
+      }
+      .visible {
+        color: black;
+        text-shadow: 0 0 15px crimson;
+      }
+      .hidden {
+        color: transparent;
+        text-shadow: 0 0 15px crimson;
+      }
+      #lu {
+        color: crimson;
+      }
+      .show {
+        color: black;
+        text-shadow: 0 0 15px crimson;
+      }
+      #all,
+      #none {
+        color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="wrappersins">
+        <a href="confessions.html">confessions</a>
+        <a id="pr" a href="pride.html">pride</a
+        ><a id="gr" a href="greed.html">greed</a><a id="lu">lust</a
+        ><a id="en" a href="envy.html">envy</a
+        ><a id="gl" a href="gluttony.html">gluttony</a
+        ><a id="wr" a href="wrath.html">wrath</a
+        ><a id="sl" a href="sloth.html">sloth</a>
+      </div>
+      <div class="wrappername">
+        <button id="all">SINFUL</button>
+        <div id="name">Lena Luo</div>
+        <button id="none">VIRTUOUS</button>
+      </div>
+    </nav>
+    <div id="content"></div>
+  </body>
+</html>

@@ -4,51 +4,62 @@
   box-sizing: border-box;
 }
 :root {
-	--wght: 300;
-	--color: black;
-  }
+  --wght: 300;
+  --color: black;
+}
 body {
   color: black;
   font-family: "Sins", serif;
   font-style: normal;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.5;
-  color: var(--color);
-  height: 100vh;
 }
-h1{
-	font-size: 36pt;
+.container {
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: baseline;
 }
-h2{
-	padding-top: 1em;
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+h2 {
+  padding-top: 10px;
 }
 a,
 a:visited {
-  color: orange;
+  color: magenta;
 }
 .darkmode {
   background: black;
   color: white;
 }
-.darkmode h1 {
-  color: yellow;
+#buttons {
+  text-align: center;
 }
-#buttons{
-	text-align: center;
+button {
+  font-family: "sins";
+  font-variation-settings: "wght" 900;
+  font-size: 1rem;
+  background: white;
+  border-radius: 50%;
+  outline: none;
+  border: 2px solid black;
+  padding: 10px;
 }
-button{
-	font-family: 'sins';
-	font-variation-settings: 'wght' 900;
-	font-size: 1em;
-	background: white;
-	border-radius: 50%;
-	outline: none;
-	border: 2px solid black;
-	padding: 1em;
-}
-button:hover{
-	color: blue;
-	cursor: pointer;
+button:hover {
+  color: greenyellow;
+  cursor: pointer;
 }
 #darkmode {
   font-family: sins;
@@ -62,7 +73,7 @@ button:hover{
   cursor: pointer;
 }
 #darkmode:hover {
-  background-color: orange;
+  background-color: magenta;
 }
 
 @font-face {
@@ -70,40 +81,25 @@ button:hover{
   src: url("SinsVF.ttf") format("truetype-variations");
 }
 
-
 .magical,
 .magical * {
   font-variation-settings: "wght" var(--wght);
 }
 
-section {
-  padding: 2rem 3rem;
-}
-
 #intro {
-  font-size: 20vw;
+  font-size: 7rem;
   line-height: 1;
   text-align: center;
-}
-
-#content {
-  width: 33em;
-  height: 500px;
-  --wght: 900;
-}
-
-#content p {
-  transition: font-variation-settings 400ms ease-in-out;
 }
 
 /*SLIDER STYLES*/
 
 #sliders ul {
-	
-  margin: auto;
+  margin: 20 50px;
+  /* white-space: nowrap; */
 }
 #sliders li {
-	font-size: 20px;
+  font-size: 1.3rem;
   display: flex;
   justify-content: center;
 }
@@ -112,15 +108,29 @@ section {
 .min,
 .max {
   width: 100px;
+  margin: 20px;
 }
-.min {
-  text-align: right;
+.min, .max{
+  text-align: center;
 }
 .range-name::after {
   content: ": ";
 }
 
 input.axis-range {
-  width: 580px;
-  margin: 0 20px;
+  width: 300px;
+  margin: 0px;
+  -webkit-appearance: none;
+  background: none;
+}
+.axis-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: magenta;
+  cursor: pointer;
+}
+#variable {
+  min-width: 100vw;
 }

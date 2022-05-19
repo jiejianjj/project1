@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Confessions</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vji2wxk.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/rita"></script>
+    <script src="grscript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      body {
+        background-image: url(assets/greed.png);
+        padding-bottom: 40px;
+      }
+      nav {
+        background: linear-gradient(
+          to bottom,
+          orangered 0%,
+          white 80%,
+          transparent 100%
+        );
+      }
+      #content {
+        text-align: left;
+      }
+      p {
+        text-indent: 4rem;
+        line-height: 200%;
+      }
+      ::selection {
+        background: orangered;
+      }
+
+      .visible {
+        color: black;
+        text-shadow: 0 0 10px orangered;
+      }
+      .hidden {
+        color: transparent;
+        text-shadow: 0 0 0px;
+      }
+      #gr {
+        color: orangered;
+      }
+      #more {
+        position: absolute;
+        bottom: 0px;
+        left: -100px;
+        cursor: pointer;
+        text-shadow: 0 0 10px orangered;
+      }
+      #more:hover {
+        color: orangered;
+        cursor: pointer;
+      }
+      #output {
+        position: absolute;
+        bottom: 0px;
+        right: -100px;
+      }
+      #score {
+        color: orangered;
+      }
+      #all,
+      #none {
+        color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="wrappersins">
+        <a href="confessions.html">confessions</a>
+        <a id="pr" a href="pride.html">pride</a><a id="gr">greed</a>
+        <a id="lu" a href="lust.html">lust</a>
+        <a id="en" a href="envy.html">envy</a
+        ><a id="gl" a href="gluttony.html">gluttony</a
+        ><a id="wr" a href="wrath.html">wrath</a
+        ><a id="sl" a href="sloth.html">sloth</a>
+      </div>
+      <div class="wrappername">
+        <button id="all">SINFUL</button>
+        <div id="name">Jie Jian JJ</div>
+        <button id="none">VIRTUOUS</button>
+      </div>
+    </nav>
+
+    <div id="content">
+      <div id="more">more</div>
+      <div id="output"></div>
+    </div>
+  </body>
+</html>
